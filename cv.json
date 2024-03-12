@@ -262,13 +262,15 @@
       "isActive": true,
       "description": "Aplicación web de precios de combustibles en Argentina",
       "highlights": ["Precios", "Surtidores", "Nafta", "GNC", "Gasoil", "Mapa"],
-      "url": "https://www.precionafta.com"
+      "url": "https://www.precionafta.com",
+      "github": ""
     },
     {
       "name": "Precios Energía",
       "isActive": false,
       "description": "Aplicación web de precios de energía en Argentina",
-      "highlights": ["Precios", "Energía", "Gas Natural", "Mapa"]
+      "highlights": ["Precios", "Energía", "Gas Natural", "Mapa"],
+      "github": ""
     },
     {
       "name": "Fondos Comunes (Chrome Extension)",
