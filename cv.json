@@ -1,0 +1,299 @@
+{
+  "basics": {
+    "name": "José María Quintana",
+    "label": "Ingeniero Especialista en Oil & Gas con más de 15 años de experiencia. Apasionado por la Tecnología.",
+    "image": "/me.jpg",
+    "email": "mailjmq@gmail.com",
+    "phone": "+54 1141694662",
+    "url": "#",
+    "summary": "+15 años de experiencia en la Industria de la Energía. Actualmente trabajando en Tecpetrol. Vivo en Buenos Aires, Argentina. He trabajado en diferentes puestos: desde la programación de las ventas de gas natural pasando por el desarrollo de clientes, la administración de contratos y presupuestos de costos de comercialización.",
+    "location": {
+      "address": "",
+      "postalCode": "1426",
+      "city": "Ciudad Autónoma de Buenos Aires",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jmquintana",
+        "url": "https://www.linkedin.com/in/jos%C3%A9-mar%C3%ADa-quintana-45a4997/"
+      },
+      {
+        "network": "X",
+        "username": "josemqu1",
+        "url": "https://x.com/Josemqu1"
+      },
+      {
+        "network": "GitHub",
+        "username": "josemqu",
+        "url": "https://github.com/josemqu"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Tecpetrol",
+      "position": "Commercial Backoffice Specialist",
+      "url": "https://www.tecpetrol.com/es",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "summary": "Responsable de la facturación de petróleo crudo de Argentina. Encargado del análisis de costos de comercialización. Seguimiento de líneas de crédito de clientes y del control de los servicios facturados por proveedores. Análisis de cuentas contables de costos de comercialización.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Tecpetrol",
+      "position": "Commercial Lead Analyst",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2017-01-01",
+      "endDate": "2020-12-31",
+      "summary": "Encargado de la facturación de gas natural. Seguimiento de líneas de crédito de clientes y del control de los servicios facturados por proveedores. Análisis de cuentas contables de costos de comercialización. Despacho de gas natural durante guardias de fin de semana.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Tecpetrol",
+      "position": "Gas Sales Analyst",
+      "startDate": "2014-07-01",
+      "endDate": "2016-01-31",
+      "summary": "Colaboré en el desarrollo de clientes, en la administración de contratos de gas natural y en la facturación. Control de desbalances de gas natural. Seguimiento y control de Plan Gas. Despacho de gas natural durante guardias de fin de semana.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Tecpetrol",
+      "position": "Gas Sales Analyst",
+      "startDate": "2009-04-15",
+      "endDate": "2014-06-30",
+      "summary": "Analista responsable del despacho de gas natural. Participación en la programación de ventas de gas natural. Control de desbalances de gas natural. Seguimiento y control de Plan Gas y sociedades en las distintas áreas productivas. Responsable de la presentación de informes de ventas de gas natural. Presentaciónes de información a la Secretaría de Energía y otros entes.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Tecpetrol",
+      "position": "Special Summer Internship",
+      "startDate": "2009-04-15",
+      "endDate": "2014-06-30",
+      "summary": "Analista responsable del despacho de gas natural. Participación en la programación de ventas de gas natural. Control de desbalances de gas natural. Responsable de la presentación de informes de ventas de gas natural.",
+      "highlights": ["Started the company"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Facultad de Ingeniería - Universidad Nacional de Mar del Plata",
+      "url": "https://www.fi.mdp.edu.ar/",
+      "area": "Ingeniero Químico",
+      "studyType": "Bachelor",
+      "startDate": "2003-01-01",
+      "endDate": "2009-01-01",
+      "score": "7.23",
+      "courses": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Leaflet",
+      "level": "Advanced",
+      "keywords": ["Desarrollo Web", "Frontend", "Mapas", "Geolocalización"]
+    },
+    {
+      "name": "Astro",
+      "level": "Advanced",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "NodeJS",
+      "level": "Advanced",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "MongoDb",
+      "level": "Advanced",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "Base de Datos",
+        "NoSQL",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "PowerBI",
+      "level": "Advanced",
+      "keywords": [
+        "Business Intelligence",
+        "Data Analysis",
+        "Data Visualization"
+      ]
+    },
+    {
+      "name": "PowerAutomate",
+      "level": "Intermediate",
+      "keywords": ["Automatización", "Flujos de Trabajo", "Integración"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Beginner",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Learning",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Astrophotography",
+        "Science",
+        "Space",
+        "Technology",
+        "Travel",
+        "Web Development"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "PrecioNafta.com",
+      "isActive": true,
+      "description": "Aplicación web de precios de combustibles en Argentina",
+      "highlights": ["Precios", "Surtidores", "Nafta", "GNC", "Gasoil", "Mapa"],
+      "url": "https://www.precionafta.com"
+    },
+    {
+      "name": "Precios Energía",
+      "isActive": false,
+      "description": "Aplicación web de precios de energía en Argentina",
+      "highlights": ["Precios", "Energía", "Gas Natural", "Mapa"]
+    },
+    {
+      "name": "Fondos Comunes (Chrome Extension)",
+      "isActive": false,
+      "description": "Extensión de Chrome para visualizar los precios de los fondos comunes de inversión en Argentina",
+      "highlights": [
+        "Fondos Comunes",
+        "Inversión",
+        "Cotización",
+        "Charts",
+        "Chrome Extension"
+      ]
+    },
+    {
+      "name": "Promiedos (Chrome Extension)",
+      "isActive": false,
+      "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
+      "highlights": ["Fútbol", "Promedios", "Chrome Extension"]
+    },
+    {
+      "name": "Fixture Mundial 2022",
+      "isActive": true,
+      "description": "Responsive design de fixture de la Copa del Mundo de la FIFA 2022",
+      "highlights": ["Fútbol", "Fixture", "Mundial", "FIFA", "2022", "API"],
+      "url": "https://josemqu.github.io/2022-world-cup-fixture/"
+    }
+  ]
+}

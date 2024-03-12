@@ -1,0 +1,68 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Skills from "@/components/sections/Skills.astro"
+import KeyboardManager from "@/components/KeyboardManager.astro"
+
+import { basics } from "@cv"
+const { name, label } = basics
+---
+
+<Layout title={`Portafolio de ${name} - ${label}`}>
+  <main>
+    <Hero link="/me"/>
+    <About/>
+    <Experience />
+    <Education />
+    <Projects />
+    <Skills />
+  </main>
+  <KeyboardManager />
+</Layout>
+<script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script>
+
+<style>
+
+:root {
+    --profile-img-max-width: 400px;
+  }
+
+  main {
+    padding: 4rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .info {
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .desc {
+      text-wrap: balance;
+    }
+  }
+</style>

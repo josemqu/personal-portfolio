@@ -1,0 +1,15 @@
+---
+import { basics } from "@cv"
+const { name, image } = basics
+
+---
+
+<img transition:name="profile" src={image} alt={name} />
+
+<style>
+  
+  img {
+    aspect-ratio: 1 / 1;
+  }
+  
+</style>
