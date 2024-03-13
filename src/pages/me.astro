@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import Toggle from "../components/ThemeChange.astro"
 import HeroFull from "../components/sections/HeroFull.astro"
 import { basics } from "@cv"
 const { name, label } = basics
 ---
 
+<script src="/lib/theme-util.js" type="text/javascript" is:inline></script>
 <Layout title={`Perfil de ${name} - ${label}`}>
   <main>
     <a href="/" class="body-section">
@@ -13,7 +13,6 @@ const { name, label } = basics
     </a>
   </main>
 </Layout>
-<script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script>
 
 <style>
   :root {
@@ -86,13 +85,6 @@ const { name, label } = basics
     align-items: center;
     margin: 2rem;
     
-  }
-
-  .info {
-    justify-content: center;
-    align-items: center;
-    padding-right: 0;
-    text-align: center;
   }
 
   figure {
