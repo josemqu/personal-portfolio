@@ -99,7 +99,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-right: 32px;
     max-width: var(--profile-img-max-width);
   }
 
@@ -116,17 +115,18 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   h2 {
-    color: var(--bold-text);
-    font-weight: 500;
+    color: var(--color-text);
+    font-weight: 400;
     font-size: 1.1rem;
     text-wrap: balance;
+    margin-bottom: 1rem;
   }
 
   img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    width: 128px;
-    border-radius: 16px;
+    /* aspect-ratio: 1 / 1; */
+    /* object-fit: cover; */
+    /* width: 128px; */
+    /* border-radius: 16px; */
   }
 
   span {

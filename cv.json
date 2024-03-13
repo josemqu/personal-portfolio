@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "José María Quintana",
-    "label": "Ingeniero Especialista en Oil & Gas con más de 15 años de experiencia. Apasionado por la Tecnología.",
+    "label": "Ing. Especialista en Oil & Gas. Apasionado por la Tecnología.",
     "image": "/me.jpg",
     "email": "mailjmq@gmail.com",
     "phone": "+54 1141694662",
     "url": "#",
-    "summary": "+15 años de experiencia en la Industria de la Energía. Actualmente trabajando en Tecpetrol. Vivo en Buenos Aires, Argentina. He trabajado en diferentes puestos: desde la programación de las ventas de gas natural pasando por el desarrollo de clientes, la administración de contratos y presupuestos de costos de comercialización.",
+    "summary": "Más de 15 años de experiencia en la Industria de la Energía. Actualmente trabajando en Tecpetrol. He trabajado en diferentes puestos: desde la programación de las compras y ventas de gas natural pasando por el desarrollo de nuevos clientes, la administración de contratos y la gestión de costos de comercialización.",
     "location": {
       "address": "",
       "postalCode": "1426",
@@ -18,7 +18,7 @@
       {
         "network": "LinkedIn",
         "username": "jmquintana",
-        "url": "https://www.linkedin.com/in/jos%C3%A9-mar%C3%ADa-quintana-45a4997/"
+        "url": "https://www.linkedin.com/in/josemqu/"
       },
       {
         "network": "X",
@@ -93,9 +93,19 @@
       "url": "https://www.fi.mdp.edu.ar/",
       "area": "Ingeniero Químico",
       "studyType": "Bachelor",
-      "startDate": "2003-01-01",
+      "startDate": "2004-01-01",
       "endDate": "2009-01-01",
       "score": "7.23",
+      "courses": [""]
+    },
+    {
+      "institution": "Instituto del Gas y del Petróleo - Universidad de Buenos Aires",
+      "url": "https://igpuba.fi.uba.ar/",
+      "area": "Especialización en Gas Natural",
+      "studyType": "Postgraduate",
+      "startDate": "2015-01-01",
+      "endDate": "2016-01-01",
+      "score": "9.00",
       "courses": [""]
     }
   ],
@@ -276,13 +286,7 @@
       "name": "Fondos Comunes (Chrome Extension)",
       "isActive": false,
       "description": "Extensión de Chrome para visualizar los precios de los fondos comunes de inversión en Argentina",
-      "highlights": [
-        "Fondos Comunes",
-        "Inversión",
-        "Cotización",
-        "Charts",
-        "Chrome Extension"
-      ]
+      "highlights": ["Fondos Comunes", "Inversión", "Cotización", "Charts"]
     },
     {
       "name": "Promiedos (Chrome Extension)",

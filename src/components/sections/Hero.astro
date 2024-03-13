@@ -6,7 +6,6 @@ import X from "@/icons/X.astro"
 import LinkedIn from "@/icons/LinkedIn.astro"
 import GitHub from "@/icons/GitHub.astro"
 import type { SocialIcon } from "@/types"
-import Toggle from "@/components/ThemeChange.astro"
 import Image from "@/components/Image.astro"
 
 const { name, label, location, profiles, phone, email } = basics
@@ -49,7 +48,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   .container {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items:center;
     justify-content: space-between;
     gap: 1rem;
   }
@@ -67,7 +66,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
   h2 {
     color: var(--bold-text);
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.1rem;
     text-wrap: balance;
   }
@@ -110,6 +109,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   @media (width <= 700px) {
     .container {
       flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
     }
 
     .info {
