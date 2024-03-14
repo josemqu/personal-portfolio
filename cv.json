@@ -151,12 +151,22 @@
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": ["Machine Learning", "Data Science", "Data Analysis"]
+    },
+    {
+      "name": "SQL",
+      "level": "Intermediate",
+      "keywords": ["Base de Datos", "Backend", "Data Analysis"]
+    },
+    {
       "name": "Leaflet",
       "level": "Advanced",
       "keywords": ["Desarrollo Web", "Frontend", "Mapas", "Geolocalización"]
     },
     {
-      "name": "Astro",
+      "name": "AstroJS",
       "level": "Advanced",
       "keywords": [
         "Desarrollo Web",
@@ -166,12 +176,12 @@
       ]
     },
     {
-      "name": "NodeJS",
+      "name": "Node",
       "level": "Advanced",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
     },
     {
-      "name": "MongoDb",
+      "name": "MongoDB",
       "level": "Advanced",
       "keywords": [
         "Desarrollo Web",
@@ -271,7 +281,7 @@
       "name": "PrecioNafta.com",
       "isActive": true,
       "description": "Aplicación web de precios de combustibles en Argentina",
-      "highlights": ["Precios", "Surtidores", "Nafta", "GNC", "Gasoil", "Mapa"],
+      "highlights": ["API", "Surtidores", "Nafta", "GNC", "Gasoil", "Mapa"],
       "url": "https://www.precionafta.com",
       "github": ""
     },
@@ -279,7 +289,7 @@
       "name": "Precios Energía",
       "isActive": false,
       "description": "Aplicación web de precios de energía en Argentina",
-      "highlights": ["Precios", "Energía", "Gas Natural", "Mapa"],
+      "highlights": ["Precios", "Energía", "API", "Gas Natural", "Mapa"],
       "github": ""
     },
     {
@@ -298,7 +308,15 @@
       "name": "Fixture Mundial 2022",
       "isActive": true,
       "description": "Responsive design de fixture de la Copa del Mundo de la FIFA 2022",
-      "highlights": ["Fútbol", "Fixture", "Mundial", "FIFA", "2022", "API"],
+      "highlights": [
+        "Fútbol",
+        "Scraping",
+        "Fixture",
+        "Mundial",
+        "FIFA",
+        "2022",
+        "API"
+      ],
       "url": "https://josemqu.github.io/2022-world-cup-fixture/"
     }
   ]
