@@ -227,13 +227,13 @@ const { image, summary, url } = basics
   let prevY = window.scrollY
 
   window.addEventListener('scroll', function( ){
-  if( prevY > window.scrollY && window.scrollY < 200){
+  if( prevY > window.scrollY && window.scrollY < 250){
     desc?.classList.remove('hidden');
     name?.classList.remove('text-sm')
     console.log('show')
   }else if (
     prevY < window.scrollY
-    && window.scrollY > 200
+    && window.scrollY > 250
   ){
     desc?.classList.add('hidden');
     name?.classList.add('text-sm')
