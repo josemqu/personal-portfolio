@@ -94,6 +94,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     flex-direction: column;
     gap: 0.5rem;
     max-width: var(--profile-img-max-width);
+    transition: all 0.5s linear 0.4s !important;
+  }
+
+  .hidden {
+    height : 0;
+    overflow : hidden;
+    margin-bottom : 0;
   }
 
   .icons-inline {
@@ -150,7 +157,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     height: 32px;
     width: 32px;
     border-radius: 6px;
-    /* transition: all 0.3s ease; */
   }
 
   footer a:hover {

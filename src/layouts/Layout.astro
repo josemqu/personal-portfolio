@@ -208,10 +208,11 @@ const { image, summary, url } = basics
       transform: translateX(-2rem);
       background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg2) 100%);
       box-shadow: 0 10px 10px var(--color-box-shadow);
-    }
+      padding: 0 1rem;
 
-    .desc {
-      margin-bottom: 0;
+      .desc {
+        /* display: none; */
+      }
     }
 
     html > body > main > section:first-child section {
@@ -220,3 +221,29 @@ const { image, summary, url } = basics
   }
 </style>
 
+<script>
+  // when scrolling down the page, hide .desc class element
+  const desc = document.querySelector('.desc')
+  let prevY = window.scrollY
+
+  window.addEventListener('scroll', function( ){
+  if( prevY > window.scrollY && window.scrollY < 200){
+    desc?.classList.remove('hidden');
+    console.log('show')
+  }else if (
+    prevY < window.scrollY
+    && window.scrollY > 200
+  ){
+    desc?.classList.add('hidden');
+    console.log('hide')
+  }
+
+  // if( window.scrollY > 60 ){
+  //   desc?.classList.add('solid');
+  // }else{
+  //   desc?.classList.remove('solid');
+  // }
+  prevY = window.scrollY;
+} );
+
+</script>
