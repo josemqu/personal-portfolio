@@ -26,7 +26,7 @@ const linkedUrl = linkedInfo?.url
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
 ---
-<Section>
+<Section >
   <div class="info" >
     <h1 class="name">{name}</h1>
     <h2 class="desc">{label}</h2>
@@ -87,13 +87,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
 <style>
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
+  
 
   .info {
     display: flex;
@@ -169,10 +163,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
     .icons-inline {
       justify-content: space-between;
-    }
-
-    .container {
-      flex-direction: column-reverse;
     }
 
     .info {

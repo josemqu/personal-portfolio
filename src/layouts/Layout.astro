@@ -33,7 +33,7 @@ const { image, summary, url } = basics
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />
     <meta name="twitter:image" content="" />
-    <ViewTransitions fallback="swap"/>
+    <ViewTransitions />
     <script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script>
   </head>
   <body>
@@ -192,6 +192,19 @@ const { image, summary, url } = basics
 
     article {
       break-inside: avoid;
+    }
+  }
+
+  @media (width <= 700px)  {  
+    html > body > main > section:first-child{
+      position: sticky !important;
+      top: -12rem !important;
+      z-index: 1000 !important;
+      background-color: var(--color-bg);
+      /* smooth borders */
+      border-radius: 0.5rem;
+
+      /* box-shadow: #777 0 0 20px; */
     }
   }
 </style>
