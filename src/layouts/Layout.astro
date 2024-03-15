@@ -62,6 +62,7 @@ const { image, summary, url } = basics
 
 [data-theme="light"] {
   --color-bg: #f2f2f2;
+  --color-bg2: #fdfdfd;
   --color-text: #777;
   --bold-text: #222;
   --nav-text: #000000;
@@ -78,6 +79,7 @@ const { image, summary, url } = basics
 
 [data-theme="dark"] {
   --color-bg: #222;
+  --color-bg2: #212121;
   --color-text: #888;
   --bold-text: #eeeeee;
   --nav-text: #dddddd;
@@ -201,10 +203,18 @@ const { image, summary, url } = basics
       top: -12rem !important;
       z-index: 1000 !important;
       background-color: var(--color-bg);
-      /* smooth borders */
-      border-radius: 0.5rem;
+      width: 100vw;
+      transform: translateX(-2rem);
+      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg2) 100%);
+      box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    }
 
-      /* box-shadow: #777 0 0 20px; */
+    .desc {
+      margin-bottom: 0;
+    }
+
+    html > body > main > section:first-child section {
+      margin-bottom: 1rem;
     }
   }
 </style>
