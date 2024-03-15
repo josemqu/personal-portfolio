@@ -113,6 +113,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   h1 {
     font-size: 2rem;
     color: var(--bold-text);
+    transition: all 0.2s ease-out;
+  }
+
+  .text-sm {
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -120,7 +125,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     font-weight: 400;
     font-size: 1.1rem;
     text-wrap: balance;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 
   img {

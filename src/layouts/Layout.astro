@@ -222,19 +222,22 @@ const { image, summary, url } = basics
 </style>
 
 <script>
-  // when scrolling down the page, hide .desc class element
   const desc = document.querySelector('.desc')
+  const name = document.querySelector('h1.name')
   let prevY = window.scrollY
 
   window.addEventListener('scroll', function( ){
   if( prevY > window.scrollY && window.scrollY < 200){
     desc?.classList.remove('hidden');
+    name?.classList.remove('text-sm')
     console.log('show')
   }else if (
     prevY < window.scrollY
     && window.scrollY > 200
   ){
     desc?.classList.add('hidden');
+    name?.classList.add('text-sm')
+    
     console.log('hide')
   }
 
