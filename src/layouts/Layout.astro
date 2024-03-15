@@ -75,6 +75,7 @@ const { image, summary, url } = basics
   --slider-input-bg: #58b4ff;
   /* --slider-input-bg: #8758ff; */
   --color-shadow: #555;
+  --color-box-shadow: rgba(100,100,100,0.1);
 }
 
 [data-theme="dark"] {
@@ -90,6 +91,7 @@ const { image, summary, url } = basics
   /* --hover-border-color: #a380ff; */
   --block-quote-text: #dddddd;
   --color-shadow: #eee;
+  --color-box-shadow: rgba(0,0,0,0.15);
 }
 
   html {
@@ -103,7 +105,6 @@ const { image, summary, url } = basics
     background: var(--color-bg);
     letter-spacing: -0.025rem;
     scrollbar-width:none;
-    transition: all 0.1s ease-in-out;
   }
 
   body,
@@ -206,7 +207,7 @@ const { image, summary, url } = basics
       width: 100vw;
       transform: translateX(-2rem);
       background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg2) 100%);
-      box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 10px var(--color-box-shadow);
     }
 
     .desc {
@@ -218,3 +219,4 @@ const { image, summary, url } = basics
     }
   }
 </style>
+
