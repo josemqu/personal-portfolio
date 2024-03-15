@@ -89,16 +89,6 @@
   ],
   "education": [
     {
-      "institution": "Facultad de Ingeniería - Universidad Nacional de Mar del Plata",
-      "url": "https://www.fi.mdp.edu.ar/",
-      "area": "Ingeniero Químico",
-      "studyType": "Bachelor",
-      "startDate": "2004-01-01",
-      "endDate": "2009-01-01",
-      "score": "7.23",
-      "courses": [""]
-    },
-    {
       "institution": "Instituto del Gas y del Petróleo - Universidad de Buenos Aires",
       "url": "https://igpuba.fi.uba.ar/",
       "area": "Especialización en Gas Natural",
@@ -106,6 +96,16 @@
       "startDate": "2015-01-01",
       "endDate": "2016-01-01",
       "score": "9.00",
+      "courses": [""]
+    },
+    {
+      "institution": "Facultad de Ingeniería - Universidad Nacional de Mar del Plata",
+      "url": "https://www.fi.mdp.edu.ar/",
+      "area": "Ingeniero Químico",
+      "studyType": "Bachelor",
+      "startDate": "2004-01-01",
+      "endDate": "2009-01-01",
+      "score": "7.23",
       "courses": [""]
     }
   ],

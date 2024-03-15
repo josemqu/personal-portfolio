@@ -20,8 +20,9 @@ import { education } from "@cv"
                 <div>
                   <h3>{institution}</h3>
                 </div>
-
-                <time>{years}</time>
+                <div class="time">
+                  <h3><time>{years}</time></h3>
+                </div>
               </header>
 
               <footer>
@@ -39,12 +40,38 @@ import { education } from "@cv"
   ul {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    margin-left: 0.5rem;
+    /* gap: 32px; */
+  }
+
+  li {
+    padding: 1rem 0px 0px 1rem;
+    border-left: 1px solid var(--block-quote-border);
+    position: relative;
+    display: flex;
+  }
+  
+  li:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--block-quote-border);
+    position: absolute;
+    top: 24px;
+    right: auto;
+    left: -4px;
+  }
+
+  article {
+    width: 100%;
   }
 
   article h3 {
+    font-size: large;
     font-weight: 500;
     color: var(--bold-text);
+    margin-right: 0.5rem;
   }
 
   header {
@@ -53,11 +80,12 @@ import { education } from "@cv"
     align-items: flex-start;
     margin-bottom: 4px;
   }
-
+  
   time {
     color: var(--block-quote-border);
     font-size: 0.85rem;
     min-width: 102px;
+    text-wrap: nowrap;
   }
 
   @media (width <= 700px) {
