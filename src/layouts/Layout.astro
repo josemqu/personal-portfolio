@@ -210,9 +210,6 @@ const { image, summary, url } = basics
       box-shadow: 0 10px 10px var(--color-box-shadow);
       padding: 0 1rem;
 
-      .desc {
-        /* display: none; */
-      }
     }
 
     html > body > main > section:first-child section {
@@ -224,6 +221,7 @@ const { image, summary, url } = basics
 <script>
   const desc = document.querySelector('.desc')
   const name = document.querySelector('h1.name')
+  const info = document.querySelector('.info')
   let prevY = window.scrollY
 
   window.addEventListener('scroll', ( )=>{
@@ -235,6 +233,7 @@ const { image, summary, url } = basics
 
     desc?.classList.remove('hidden');
     name?.classList.remove('text-sm')
+    info?.classList.remove('collapse')
     console.log('show')
   }else if (
     prevY < actY
@@ -242,7 +241,7 @@ const { image, summary, url } = basics
   ){
     desc?.classList.add('hidden');
     name?.classList.add('text-sm')
-    
+    info?.classList.add('collapse')
     console.log('hide')
   }
 

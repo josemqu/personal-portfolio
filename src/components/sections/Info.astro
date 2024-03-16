@@ -92,15 +92,23 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   .info {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 0.5rem;
     max-width: var(--profile-img-max-width);
     transition: all 0.5s linear 0.5s !important;
   }
 
+  .collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .hidden {
     height : 0;
     overflow : hidden;
-    margin-bottom : 0;
   }
 
   .icons-inline {
