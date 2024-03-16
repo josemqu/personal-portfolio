@@ -14,8 +14,8 @@ import Footer from "@/components/sections/Footer.astro"
 import { basics } from "@cv"
 const { name, label } = basics
 ---
+<script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script>
 
-<script src="/lib/theme-util.js" type="text/javascript" is:inline></script>
 <Layout title={`CV de ${name}`}>
   <header>
     <Hero />
@@ -78,3 +78,4 @@ const { name, label } = basics
     }
   }
 </style>
+
