@@ -113,7 +113,6 @@ const { image, summary, url } = basics
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 100%;
   }
 
@@ -123,18 +122,16 @@ const { image, summary, url } = basics
     padding: 0;
   }
 
-  html > body > main > section:first-child{
+  html > body > header {
     position: sticky;
     top: 0;
     z-index: 1000 !important;
-    background-color: var(--color-bg);
-    /* width: 100%; */
-    /* transform: translateX(-25vw); */
+    background-color: red; /*var(--color-bg);*/
     background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-bg2) 100%);
     padding: 0 1rem;
   }
 
-  html > body > main > section:first-child.show-shadow {
+  html > body > header.show-shadow {
       box-shadow: 0 10px 10px var(--color-box-shadow);
   }
 
@@ -225,7 +222,7 @@ const { image, summary, url } = basics
   }
 
   @media (width <= 700px)  {  
-    html > body > main > section:first-child{
+    html > body > header {
       position: sticky !important;
       top: -12rem !important;
       z-index: 1000 !important;
@@ -236,10 +233,6 @@ const { image, summary, url } = basics
       padding: 0 1rem;
     }
 
-
-    html > body > main > section:first-child section {
-      margin-bottom: 1rem;
-    }
   }
 </style>
 
@@ -247,7 +240,7 @@ const { image, summary, url } = basics
   const desc = document.querySelector('.desc')
   const name = document.querySelector('h1.name')
   const info = document.querySelector('.info')
-  const section = document.querySelector('section')
+  const header = document.querySelector('header')
   let prevY = window.scrollY
 
   window.addEventListener('scroll', ( )=>{
@@ -272,9 +265,9 @@ const { image, summary, url } = basics
   }
 
   if ( actY >= 260 ){
-    section?.classList.add('show-shadow')
+    header?.classList.add('show-shadow')
   }else{
-    section?.classList.remove('show-shadow')
+    header?.classList.remove('show-shadow')
   }
 
   // if( window.scrollY > 60 ){

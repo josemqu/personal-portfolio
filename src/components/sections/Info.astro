@@ -26,14 +26,13 @@ const linkedUrl = linkedInfo?.url
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
 ---
-<Section >
   <div class="info" >
     <h1 class="name">{name}</h1>
     <h2 class="desc">{label}</h2>
-    <span class="location">
-      <!-- <WorldMap /> -->
-      <!-- {city}, {region} -->
-    </span>
+    <!-- <span class="location">
+      <WorldMap />
+      {region}
+    </span> -->
     <footer class="print">
       {printInfo}
     </footer>
@@ -83,18 +82,14 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         <Toggle />
       </div>
     </div>
-</Section>
 
 <style>
 
-  .name {
-    margin-top: 1rem;
-  }
 
   .info {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     max-width: var(--profile-img-max-width);
     transition: all 0.5s linear 0.5s !important;
   }
@@ -116,7 +111,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     font-weight: 400;
     font-size: 1.1rem;
     text-wrap: balance;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 
   span {
@@ -189,7 +184,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       display: flex;
       justify-content: center;
       align-items: center;
-      /* margin: 0 auto; */
+      margin: 0 auto;
     }
 
     h2 {
