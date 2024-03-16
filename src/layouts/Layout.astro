@@ -226,14 +226,19 @@ const { image, summary, url } = basics
   const name = document.querySelector('h1.name')
   let prevY = window.scrollY
 
-  window.addEventListener('scroll', function( ){
-  if( prevY > window.scrollY && window.scrollY < 250){
+  window.addEventListener('scroll', ( )=>{
+    const actY = window.scrollY
+  if( 
+    prevY > actY
+    && actY < 260
+    ){
+
     desc?.classList.remove('hidden');
     name?.classList.remove('text-sm')
     console.log('show')
   }else if (
-    prevY < window.scrollY
-    && window.scrollY > 250
+    prevY < actY
+    && actY > 260
   ){
     desc?.classList.add('hidden');
     name?.classList.add('text-sm')
