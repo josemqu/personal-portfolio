@@ -79,7 +79,7 @@ const { image, summary, url } = basics
 
 [data-theme="dark"] {
   --color-bg: #222;
-  --color-bg2: #212121;
+  --color-bg2: #333;
   --color-text: #888;
   --bold-text: #eeeeee;
   --nav-text: #dddddd;
@@ -92,7 +92,7 @@ const { image, summary, url } = basics
   --pills-bg: #58b4ff;
   --pills-text: #222;
   --color-shadow: #eee;
-  --color-box-shadow: rgba(0,0,0,0.15);
+  --color-box-shadow: rgba(0,0,0,0.25);
 }
 
   html {
@@ -214,10 +214,13 @@ const { image, summary, url } = basics
       background-color: var(--color-bg);
       width: 100vw;
       transform: translateX(-1rem);
-      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg2) 100%);
+      background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-bg2) 100%);
       box-shadow: 0 10px 10px var(--color-box-shadow);
       padding: 0 1rem;
+    }
 
+    html > body > main > section:first-child.top {
+      box-shadow: none;
     }
 
     html > body > main > section:first-child section {
@@ -230,6 +233,7 @@ const { image, summary, url } = basics
   const desc = document.querySelector('.desc')
   const name = document.querySelector('h1.name')
   const info = document.querySelector('.info')
+  const section = document.querySelector('section')
   let prevY = window.scrollY
 
   window.addEventListener('scroll', ( )=>{
@@ -251,6 +255,12 @@ const { image, summary, url } = basics
     name?.classList.add('text-sm')
     info?.classList.add('collapse')
     console.log('hide')
+  }
+
+  if ( actY <= 260 ){
+    section?.classList.add('top')
+  }else{
+    section?.classList.remove('top')
   }
 
   // if( window.scrollY > 60 ){
