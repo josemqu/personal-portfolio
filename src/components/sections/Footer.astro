@@ -1,0 +1,53 @@
+---
+import Section from "../Section.astro"
+---
+
+<Section title="">
+  <div>
+    <p>
+      Made with <span class="heart">&hearts;</span> by <a target="_blank" href="https://github.com/josemqu">josemqu</a>
+    </p>
+    <p>
+      based on <a target="_blank" href="https://github.com/midudev">midudev's</a> <a href="https://github.com/midudev/minimalist-portfolio-json" target="_blank">minimalist-portfolio-json</a>
+    </p>
+    
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Document</title>
+      </head>
+      <body>
+        
+      </body>
+    </html>
+  </div>
+</Section>
+
+<style>
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+
+  a {
+    text-decoration:underline;
+  }
+
+  a:hover {
+    color: var(--hover-border-color);
+  }
+
+  span {
+    text-align: center;
+  }
+  
+  .heart {
+    color: red;
+  }
+</style>
