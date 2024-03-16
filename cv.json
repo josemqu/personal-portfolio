@@ -34,38 +34,71 @@
   },
   "work": [
     {
-      "name": "Tecpetrol",
+      "name": "Tecpetrol S.A.",
       "position": "Commercial Backoffice Specialist",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01",
       "endDate": null,
       "summary": "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Facturación de Petróleo Crudo",
+        "Análisis de Costos de Comercialización",
+        "Administración de Líneas de Crédito",
+        "Control de Servicios Facturados",
+        "Análisis de Cuentas Contables"
+      ]
     },
     {
-      "name": "Tecpetrol",
+      "name": "Tecpetrol S.A.",
       "position": "Commercial Lead Analyst",
-      "url": "https://twitch.tv/midudev",
+      "url": "https://www.tecpetrol.com/es",
       "startDate": "2017-01-01",
       "endDate": "2020-12-31",
       "summary": "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural en guardias de fin de semana.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Despacho de Gas Natural",
+        "Administración de Líneas de Crédito",
+        "Control de Servicios Facturados",
+        "Análisis de Cuentas Contables"
+      ]
     },
     {
-      "name": "Tecpetrol",
+      "name": "Tecpetrol S.A.",
       "position": "Gas Sales Analyst",
+      "url": "https://www.tecpetrol.com/es",
       "startDate": "2014-07-01",
       "endDate": "2016-01-31",
       "summary": "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural en guardias de fin de semana.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Desarrollo de Clientes",
+        "Administración de Contratos",
+        "Facturación",
+        "Despacho de Gas Natural",
+        "Plan Gas"
+      ]
     },
     {
-      "name": "Tecpetrol",
+      "name": "Tecpetrol S.A.",
       "position": "Gas Sales Analyst",
+      "url": "https://www.tecpetrol.com/es",
       "startDate": "2009-04-15",
       "endDate": "2014-06-30",
       "summary": "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Despacho de Gas Natural",
+        "Programación de Ventas",
+        "Control de Desbalances",
+        "Plan Gas",
+        "Informes Gubernamentales"
+      ]
+    },
+    {
+      "name": "Frigorífico Giorno",
+      "position": "Analista de Control de Calidad",
+      "startDate": "2008-02-01",
+      "endDate": "2008-07-01",
+      "summary": "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura.",
+      "highlights": ["Pasantía", "Control de Calidad", "BPM", "Laboratorio"]
     }
   ],
   "volunteer": [
@@ -98,6 +131,16 @@
       "startDate": "2004-01-01",
       "endDate": "2009-01-01",
       "score": "7.23",
+      "courses": [""]
+    },
+    {
+      "institution": "ESMET N° 1 (Escuela Secundaria de Educación Técnica N° 1 - Mar del Plata)",
+      "url": "https://www.facebook.com/esmetmdp/?locale=es_LA",
+      "area": "Técnico en Alimentos",
+      "studyType": "High School",
+      "startDate": "1998-01-01",
+      "endDate": "2002-01-01",
+      "score": "9.81",
       "courses": [""]
     }
   ],
@@ -278,28 +321,42 @@
       "github": ""
     },
     {
+      "name": "Clasificador de E-mails",
+      "isActive": false,
+      "description": "Realizado en Python utilizando Machine Learning para predecir la categoría de un email",
+      "highlights": [
+        "Machine Learning",
+        "Data Science",
+        "Data Analysis",
+        "Python"
+      ],
+      "github": "https://github.com/josemqu/email_classifier_2"
+    },
+    {
       "name": "Precios Energía",
       "isActive": false,
       "description": "Aplicación web de precios de energía en Argentina",
       "highlights": ["Precios", "Energía", "API", "Gas Natural", "Mapa"],
-      "github": ""
+      "github": "https://github.com/josemqu/precios_energia"
     },
     {
       "name": "Fondos Comunes (Chrome Extension)",
       "isActive": false,
       "description": "Extensión de Chrome para visualizar los precios de los fondos comunes de inversión en Argentina",
-      "highlights": ["Fondos Comunes", "Inversión", "Cotización", "Charts"]
+      "highlights": ["Fondos Comunes", "Inversión", "Cotización", "Charts"],
+      "github": "https://github.com/josemqu/fondos_comunes"
     },
     {
       "name": "Promiedos (Chrome Extension)",
       "isActive": false,
       "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
-      "highlights": ["Fútbol", "Promedios", "Chrome Extension"]
+      "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
+      "github": "https://github.com/josemqu/promiedos"
     },
     {
       "name": "Fixture Mundial 2022",
       "isActive": true,
-      "description": "Responsive design de fixture de la Copa del Mundo de la FIFA 2022",
+      "description": "Responsive design del fixture de la Copa del Mundo de la FIFA 2022",
       "highlights": [
         "Fútbol",
         "Scraping",
@@ -309,6 +366,7 @@
         "2022",
         "API"
       ],
+      "github": "https://github.com/josemqu/2022-world-cup-fixture",
       "url": "https://josemqu.github.io/2022-world-cup-fixture/"
     }
   ]
