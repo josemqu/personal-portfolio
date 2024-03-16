@@ -215,12 +215,11 @@ const { image, summary, url } = basics
       width: 100vw;
       transform: translateX(-1rem);
       background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-bg2) 100%);
-      box-shadow: 0 10px 10px var(--color-box-shadow);
       padding: 0 1rem;
     }
 
-    html > body > main > section:first-child.top {
-      box-shadow: none;
+    html > body > main > section:first-child.show-shadow {
+      box-shadow: 0 10px 10px var(--color-box-shadow);
     }
 
     html > body > main > section:first-child section {
@@ -257,10 +256,10 @@ const { image, summary, url } = basics
     console.log('hide')
   }
 
-  if ( actY <= 260 ){
-    section?.classList.add('top')
+  if ( actY >= 260 ){
+    section?.classList.add('show-shadow')
   }else{
-    section?.classList.remove('top')
+    section?.classList.remove('show-shadow')
   }
 
   // if( window.scrollY > 60 ){
