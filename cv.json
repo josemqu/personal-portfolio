@@ -34,8 +34,8 @@
   },
   "work": [
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Commercial Backoffice Specialist",
+      "name": "Tecpetrol",
+      "position": "Backoffice Comercial Especialista",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01",
       "endDate": null,
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Commercial Lead Analyst",
+      "name": "Tecpetrol",
+      "position": "Analista Comercial Sr",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2017-01-01",
       "endDate": "2020-12-31",
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Gas Sales Analyst",
+      "name": "Tecpetrol",
+      "position": "Analista Comercial Ssr",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2014-07-01",
       "endDate": "2016-01-31",
@@ -78,8 +78,8 @@
       ]
     },
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Gas Sales Analyst",
+      "name": "Tecpetrol",
+      "position": "Analista Comercial Jr",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2009-04-15",
       "endDate": "2014-06-30",
@@ -284,12 +284,12 @@
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
     },
     {
-      "language": "English",
-      "fluency": "Intermediate"
+      "language": "Inglés",
+      "fluency": "Intermedio"
     }
   ],
   "interests": [
