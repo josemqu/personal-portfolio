@@ -26,13 +26,23 @@ import Section from "../Section.astro"
 </Section>
 
 <style>
-  
+  footer {
+    background: var(--slider-bg);
+    color: var(--color-text);
+    border-top: 1px solid var(--color-text);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-block: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+    
   div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
     margin-top: 2rem;
   }
 
@@ -42,6 +52,7 @@ import Section from "../Section.astro"
   }
 
   a {
+    color: var(--border-color);
     text-decoration:underline;
   }
 
@@ -52,7 +63,7 @@ import Section from "../Section.astro"
   span {
     text-align: center;
   }
-  
+
   .heart {
     color: red;
   }
