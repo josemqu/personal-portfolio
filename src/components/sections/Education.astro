@@ -15,6 +15,7 @@ import { education } from "@cv"
 
         return (
           <li>
+            <div class="bullet"></div>
             <article>
               <header>
                 <div>
@@ -48,13 +49,24 @@ import { education } from "@cv"
 
   li {
     padding: 1rem 0px 0px 1rem;
-    border-left: 1px solid var(--block-quote-border);
+    border-left: 2px solid var(--block-quote-border);
     position: relative;
     display: flex;
   }
+
+  .bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 4px var(--block-quote-border);
+    position: absolute;
+    top: 24px;
+    left: -5px;
+  }
   
-  li:before {
+  /* li::before {
     content: "";
+    color: var(--block-quote-border);
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -63,7 +75,7 @@ import { education } from "@cv"
     top: 24px;
     right: auto;
     left: -4px;
-  }
+  } */
 
   article {
     width: 100%;
