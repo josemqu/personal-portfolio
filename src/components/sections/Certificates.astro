@@ -1,5 +1,5 @@
 ---
-import GitHub from "@/icons/GitHub.astro"
+import Popup from "@/icons/popup.astro"
 import Section from "../Section.astro"
 
 import { certificates } from "@cv"
@@ -18,6 +18,10 @@ import { certificates } from "@cv"
                     <a href={url} target="_blank" rel="noopener noreferrer">
                       {name}
                     </a>
+                    <a href={url} target
+                    ="_blank" rel="noopener noreferrer" class="icon">
+                    <Popup />
+                    </a>
                   </h3>
                   <p>
                     <span>{date}</span>
@@ -25,10 +29,6 @@ import { certificates } from "@cv"
                 </header>
                 <footer>
                   <span>{issuer}</span>
-                  <a href={url} target
-                    ="_blank" rel="noopener noreferrer" class="github-code-link">
-                    <GitHub class="bullet" />
-                  </a>
                 </footer>
               </article>
             </li>
@@ -101,7 +101,8 @@ import { certificates } from "@cv"
     padding: 0.2rem 0.6rem;
   }
 
-  .github-code-link {
+  .icon {
+    color: var(--bold-text);
     margin-left: 5px;
   }
 
