@@ -136,7 +136,7 @@ const { image, summary, url } = basics
     position: sticky;
     top: 0;
     z-index: 1000 !important;
-    background-color: red; /*var(--color-bg);*/
+    background-color: var(--color-bg);
     background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-bg2) 100%);
     padding: 0 1rem;
   }
@@ -184,7 +184,6 @@ const { image, summary, url } = basics
     object-fit: cover;
     width: 148px;
     border-radius: 16px;
-    /* box-shadow: 0 0 2px var(--color-shadow); */
   }
 
   h1 {
@@ -205,10 +204,6 @@ const { image, summary, url } = basics
   }
 
   @media print {
-
-    html {
-      /* background: var(--slider-bg); */
-    }
 
     h1,h2,h3,h4 {
       color: var(--bold-text);
@@ -233,14 +228,7 @@ const { image, summary, url } = basics
 
   @media (width <= 700px)  {  
     html > body > header {
-      position: sticky !important;
-      top: -11rem !important;
-      z-index: 1000 !important;
-      background-color: var(--color-bg);
-      width: 100vw;
-      /* transform: translateX(-1rem); */
-      background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-bg2) 100%);
-      padding: 0 1rem;
+      top: -11rem;
     }
 
   }
@@ -280,11 +268,6 @@ const { image, summary, url } = basics
 };
 
 const isMobile = mobileCheck();
-
-// case if
-// is mobile then 200
-// is not mobile and actY < 700 then 180
-// else 20
 
 const heigthTreshold = isMobile ? 200 : window.innerWidth < 700 ? 180 : 20;
 
