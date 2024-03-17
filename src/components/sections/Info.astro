@@ -84,7 +84,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
 <style>
 
-
   .info {
     display: flex;
     flex-direction: column;
@@ -104,6 +103,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   h1 {
     font-size: 2rem;
     color: var(--bold-text);
+    font-weight: 500;
   }
 
   h2 {
@@ -111,7 +111,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     font-weight: 400;
     font-size: 1.2rem;
     text-wrap: balance;
-    /* margin-bottom: 1rem; */
   }
 
   span {
@@ -164,8 +163,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       align-items: center;
     }
 
-    .text-sm {
-      font-size: 1.8rem;
+    h1.text-sm {
+      font-size: 1.5rem;
       transform: translateY(1rem);
     }
 
