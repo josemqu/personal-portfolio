@@ -153,25 +153,25 @@
   "certificates": [
     {
       "name": "Backend",
-      "date": "2023-07-31",
+      "date": "jul-23",
       "issuer": "Coderhouse",
       "url": "https://www.coderhouse.com/ar/certificados/64f6b47348a66355d4493d26?lang=es"
     },
     {
       "name": "SQL",
-      "date": "2023-02-06",
+      "date": "feb-23",
       "issuer": "Coderhouse",
       "url": "https://www.coderhouse.com/ar/certificados/640113565da0b8000e3d4f58?lang=es"
     },
     {
       "name": "JavaScript",
-      "date": "2022-10-31",
+      "date": "oct-22",
       "issuer": "Coderhouse",
       "url": "https://www.coderhouse.com/ar/certificados/6367a7fa931dfd000efc7cf8?lang=es"
     },
     {
       "name": "Data Science",
-      "date": "2022-05-20",
+      "date": "may-22",
       "issuer": "Acamica",
       "url": "https://media.licdn.com/dms/document/media/C4D2DAQHFc-q65g_jdg/profile-treasury-document-pdf-analyzed/0/1658970247541?e=1711584000&v=beta&t=-FHUnMQQghPds-n7lXQI6tdl5SGhSU37DrQU8Sfsro8"
     }
