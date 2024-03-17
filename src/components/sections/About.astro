@@ -6,9 +6,11 @@ const { summary } = basics
 ---
 
 <Section title="Sobre mí">
-  <p>
-    {summary}
-  </p>
+  <div>
+    {
+      summary.map((p)=><p>{p}</p>)
+      }
+  </div>
 </Section>
 
 <style>

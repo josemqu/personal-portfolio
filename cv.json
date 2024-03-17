@@ -1,12 +1,15 @@
 {
   "basics": {
     "name": "José María Quintana",
-    "label": "Ing. Especialista en Oil & Gas. Apasionado por la Tecnología.",
+    "label": "Ing. Químico especializado en Oil & Gas, meticuloso y orientado a la eficiencia. Apasionado por la ciencia de datos y la innovación tecnológica.",
     "image": "/me.jpg",
     "email": "mailjmq@gmail.com",
-    "phone": "+54 1141694662",
-    "url": "#",
-    "summary": "Más de 15 años de experiencia en la Industria de la Energía. Actualmente trabajando en Tecpetrol. He trabajado en diferentes puestos: desde la programación de las compras y ventas de gas natural pasando por el desarrollo de nuevos clientes, la administración de contratos y la gestión de costos de comercialización.",
+    "phone": "+54 11 4169 4662",
+    "url": "https://portfolio-delta-seven-33.vercel.app/",
+    "summary": [
+      "Más de 15 años en la Industria de la Energía. He trabajado en programación de compras y ventas de gas natural pasando por el desarrollo de nuevos clientes, la administración de contratos y la gestión de costos de comercialización.",
+      "Mi pasión por la ciencia de datos y la tecnología emergente me impulsa a buscar nuevos desafíos en este campo, con el objetivo de optimizar procesos y generar soluciones innovadoras."
+    ],
     "location": {
       "address": "",
       "postalCode": "1426",
@@ -35,7 +38,7 @@
   "work": [
     {
       "name": "Tecpetrol",
-      "position": "Backoffice Comercial Especialista",
+      "position": "Especialista Backoffice Comercial",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01",
       "endDate": null,
@@ -154,10 +157,28 @@
   ],
   "certificates": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Carrera de Desarrollo Backend",
+      "date": "2023-07-31",
+      "issuer": "Coderhouse",
+      "url": "https://www.coderhouse.com/ar/certificados/64f6b47348a66355d4493d26?lang=es"
+    },
+    {
+      "name": "SQL",
+      "date": "2023-02-06",
+      "issuer": "Coderhouse",
+      "url": "https://www.coderhouse.com/ar/certificados/640113565da0b8000e3d4f58?lang=es"
+    },
+    {
+      "name": "JavaScript",
+      "date": "2022-10-31",
+      "issuer": "Coderhouse",
+      "url": "https://www.coderhouse.com/ar/certificados/6367a7fa931dfd000efc7cf8?lang=es"
+    },
+    {
+      "name": "Data Science",
+      "date": "2022-05-20",
+      "issuer": "Acamica (Digital House)",
+      "url": "https://media.licdn.com/dms/document/media/C4D2DAQHFc-q65g_jdg/profile-treasury-document-pdf-analyzed/0/1658970247541?e=1711584000&v=beta&t=-FHUnMQQghPds-n7lXQI6tdl5SGhSU37DrQU8Sfsro8"
     }
   ],
   "publications": [
@@ -296,6 +317,7 @@
     {
       "name": "Wildlife",
       "keywords": [
+        "AI",
         "Astrophotography",
         "Science",
         "Space",
@@ -307,7 +329,7 @@
   ],
   "references": [
     {
-      "name": "Jane Doe",
+      "name": "",
       "reference": "Reference…"
     }
   ],

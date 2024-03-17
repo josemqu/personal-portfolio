@@ -12,11 +12,11 @@ const { image, summary, url } = basics
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
-    <meta name="description" content={summary} />
+    <meta name="description" content={summary.toString()} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preload" as="image" href={image} />
@@ -24,16 +24,22 @@ const { image, summary, url } = basics
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={summary} />
+    <meta property="og:description" content={summary.toString()} />
     <meta property="og:image" content="" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={url.split("//")[1] ?? ''} />
     <meta property="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={summary} />
+    <meta name="twitter:description" content={summary.toString()} />
     <meta name="twitter:image" content="" />
-    <!-- <script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script> -->
+    <script>
+      // load the theme from local storage
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    </script>
     <ViewTransitions />
   </head>
   <body>
