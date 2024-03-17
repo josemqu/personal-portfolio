@@ -1,0 +1,123 @@
+---
+import GitHub from "@/icons/GitHub.astro"
+import Section from "../Section.astro"
+
+import { certificates } from "@cv"
+---
+
+<Section title="Certificados">
+  <ul>
+    {
+      certificates.map(
+        ({ name, date, issuer, url, }) => {
+          return (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {name}
+                    </a>
+                  </h3>
+                  <p>
+                    <span>{date}</span>
+                  </p>
+                </header>
+                <footer>
+                  <span>{issuer}</span>
+                  <a href={url} target
+                    ="_blank" rel="noopener noreferrer" class="github-code-link">
+                    <GitHub class="bullet" />
+                  </a>
+                </footer>
+              </article>
+            </li>
+          )
+        }
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    /* margin-inline: 8px; */
+  }
+
+  article {
+    border-radius: 8px;
+    border: 2px solid var(--block-quote-border);
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+  }
+
+  article header {
+    flex: 1;
+  }
+
+  article h3 {
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  article a {
+    color: var(--bold-text);
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  article h3 span {
+    color: var(--slider-input-bg);;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 0.6rem;
+  }
+
+  footer span {
+    border-radius: 6px;
+    background: var(--pills-bg);
+    color: var(--pills-text);
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .github-code-link {
+    margin-left: 5px;
+  }
+
+  .bullet {
+    font-size: 1rem;
+  }
+
+  @media (width <= 700px) {
+    ul {
+      /* margin-inline: 0px; */
+    }
+
+    article {
+      /* border: none; */
+      /* box-shadow: 0 1px 1px var(--code); */
+      /* padding: 0 0 16px 0; */
+    }
+  }
+</style>
