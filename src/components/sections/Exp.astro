@@ -22,23 +22,22 @@ console.log({
           return (
               <li>
                 <div class="bullet"></div>
-                <article>
-                  <header class="collapsible">
-                    <div>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
+                <details >
+                  <summary >
+                    <header>
+                      <article>
                         <h3>{name}</h3>
-                      </a>
-                      <h4>{position}</h4>
-                    </div>
-                    <div class="right">
-                      <h3><time>{years}</time></h3>
-                      <div class="button"><ArrowDown /></div>
-                    </div>
-                  </header>
-                  <footer class="content collapsed">
-                    <p>{summary}</p>
-                  </footer>
-                </article>
+                        <h4>{position}</h4>
+                      </article>
+                      <time>{years}</time>
+                    </header>
+                  </summary>
+                  <div >
+                    <article>
+                      <p>{summary}</p>
+                    </article>
+                  </div>
+                </details>
               </li>
           )
         }
@@ -98,6 +97,14 @@ console.log({
     font-weight: 400;
   }
 
+  details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    color: aliceblue;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -122,33 +129,6 @@ console.log({
     gap: 1rem;
   }
 
-  .button {
-    color: var(--bold-text);
-    background-color: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    transform: rotate(-90deg);
-  }
-
-  .button:hover {
-    /* background-color: var(--color-header-header); */
-  }
-
-  .button.active {
-    transform: rotate(0deg);
-  }
-
-  .content {
-    transition: all 0.3s ease-in-out;
-  }
-
-  /* Style the collapsible content. Note: hidden by default */
-  .collapsed {
-    height: 0;
-    /* transform:scaleY( 0); */
-    overflow: hidden;
-  }
 
   @media (width <= 700px) {
     time {
@@ -156,26 +136,3 @@ console.log({
     }
   }
 </style>
-
-<script>
-  let coll = document.getElementsByClassName("collapsible");
-  let i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function(this: HTMLButtonElement) {
-      let content = this.nextElementSibling;
-      content?.classList.toggle("collapsed");
-      if (
-        content?.classList.contains("collapsed") ||
-        content?.clientHeight === 0
-      ) {
-        content?.classList.add("collapsed");
-        this.querySelector(".button")?.classList.remove("active");
-      } else {
-        content?.classList.remove("collapsed");
-        this.querySelector(".button")?.classList.add("active");
-      }
-    });
-  }
-  
-</script>
