@@ -25,11 +25,9 @@ console.log({
                 <article>
                   <header class="collapsible">
                     <div>
-                      <h3>
-                        <a href={url} title={`Ver ${name}`} target="_blank">
-                          {name}
-                        </a>
-                      </h3>
+                      <a href={url} title={`Ver ${name}`} target="_blank">
+                        <h3>{name}</h3>
+                      </a>
                       <h4>{position}</h4>
                     </div>
                     <div class="right">
@@ -73,9 +71,12 @@ console.log({
     left: -5px;
   }
 
+  article * {
+    transition: transform 0.2s ease-in-out;
+  }
+
   article {
     width: 100%;
-    transition: all 0.3s ease-in-out;
   }
 
   article h3 {
@@ -139,6 +140,7 @@ console.log({
   /* Style the collapsible content. Note: hidden by default */
   .collapsed {
     height: 0;
+    /* transform:scaleY( 0); */
     overflow: hidden;
   }
 

@@ -1,5 +1,6 @@
 ---
 import Section from "../Section.astro"
+import ArrowDown from "../../icons/arrow-down.astro"
 
 import { education } from "@cv"
 ---
@@ -17,24 +18,25 @@ import { education } from "@cv"
           <li>
             <div class="bullet"></div>
             <article>
-              <header>
+              <header class="collapsible">
                 <div>
                   <a href={url} title={`Ver ${url}`} target="_blank">
                     <h3>{institution}</h3>
                   </a>
                 </div>
-                <div class="time">
-                  <h3><time>{years}</time></h3>
+                <div class="right">
+                    <h3><time>{years}</time></h3>
+                    <div class="button"><ArrowDown /></div>
                 </div>
               </header>
-
-              <footer>
+              <footer class="content collapsed">
                 <p>{area}</p>
               </footer>
             </article>
           </li>
         )
-      })
+      }
+    )
     }
   </ul>
 </Section>
@@ -44,7 +46,6 @@ import { education } from "@cv"
     display: flex;
     flex-direction: column;
     margin-left: 0.5rem;
-    /* gap: 32px; */
   }
 
   li {
@@ -62,6 +63,10 @@ import { education } from "@cv"
     position: absolute;
     top: 0.7rem;
     left: -5px;
+  }
+
+  article * {
+    transition: transform 0.2s ease-in-out;
   }
 
   article {
@@ -87,6 +92,37 @@ import { education } from "@cv"
     min-width: 102px;
     text-wrap: nowrap;
     margin-left: 0.5rem;
+  }
+
+  
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .button {
+    color: var(--bold-text);
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .button.active {
+    transform: rotate(180deg);
+  }
+
+  .content {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsed {
+    height: 0;
+    /* transform:scaleY( 0); */
+    overflow: hidden;
   }
 
   @media (width <= 700px) {
