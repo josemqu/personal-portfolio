@@ -1,7 +1,6 @@
 ---
 import Section from "../Section.astro"
 import { work } from "@cv"
-import ArrowUp from "../../icons/arrow-up.astro"
 import ArrowDown from "../../icons/arrow-down.astro"
 
 console.log({
@@ -155,19 +154,20 @@ console.log({
   let i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function(this: HTMLButtonElement) {
       let content = this.nextElementSibling;
-      content.classList.toggle("collapsed");
+      content?.classList.toggle("collapsed");
       if (
-        content.classList.contains("collapsed") ||
-        content.clientHeight === 0
+        content?.classList.contains("collapsed") ||
+        content?.clientHeight === 0
       ) {
-        content.classList.add("collapsed");
-        this.querySelector(".button").classList.remove("active");
+        content?.classList.add("collapsed");
+        this.querySelector(".button")?.classList.remove("active");
       } else {
-        content.classList.remove("collapsed");
-        this.querySelector(".button").classList.add("active");
+        content?.classList.remove("collapsed");
+        this.querySelector(".button")?.classList.add("active");
       }
     });
   }
+  
 </script>
