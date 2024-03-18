@@ -1,6 +1,8 @@
 ---
 import Section from "../Section.astro"
 import { work } from "@cv"
+import ArrowUp from "../../icons/arrow-up.astro"
+import ArrowDown from "../../icons/arrow-down.astro"
 
 console.log({
   work,
@@ -22,7 +24,7 @@ console.log({
               <li>
                 <div class="bullet"></div>
                 <article>
-                  <header>
+                  <header class="collapsible">
                     <div>
                       <h3>
                         <a href={url} title={`Ver ${name}`} target="_blank">
@@ -31,10 +33,12 @@ console.log({
                       </h3>
                       <h4>{position}</h4>
                     </div>
-                    <h3><time>{years}</time></h3>
+                    <div class="right">
+                      <h3><time>{years}</time></h3>
+                      <div class="button"><ArrowDown /></div>
+                    </div>
                   </header>
-
-                  <footer>
+                  <footer class="content collapsed">
                     <p>{summary}</p>
                   </footer>
                 </article>
@@ -72,6 +76,7 @@ console.log({
 
   article {
     width: 100%;
+    transition: all 0.3s ease-in-out;
   }
 
   article h3 {
@@ -98,6 +103,7 @@ console.log({
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 4px;
+    cursor: pointer;
   }
 
   time {
@@ -108,9 +114,60 @@ console.log({
     margin-left: 0.5rem;
   }
 
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .button {
+    color: var(--bold-text);
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .button.active {
+    transform: rotate(180deg);
+  }
+
+  .content {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsed {
+    height: 0;
+    overflow: hidden;
+  }
+
   @media (width <= 700px) {
     time {
       text-align: right;
     }
   }
 </style>
+
+<script>
+  let coll = document.getElementsByClassName("collapsible");
+  let i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      let content = this.nextElementSibling;
+      content.classList.toggle("collapsed");
+      if (
+        content.classList.contains("collapsed") ||
+        content.clientHeight === 0
+      ) {
+        content.classList.add("collapsed");
+        this.querySelector(".button").classList.remove("active");
+      } else {
+        content.classList.remove("collapsed");
+        this.querySelector(".button").classList.add("active");
+      }
+    });
+  }
+</script>
