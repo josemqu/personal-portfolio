@@ -91,6 +91,7 @@ interface Publications {
 
 interface Education {
   institution: string;
+  college: string;
   url: string;
   area: string;
   studyType: string;

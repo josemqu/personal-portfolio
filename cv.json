@@ -112,7 +112,8 @@
   ],
   "education": [
     {
-      "institution": "Instituto del Gas y del Petróleo - Universidad de Buenos Aires",
+      "institution": "Instituto del Gas y del Petróleo",
+      "college": "Universidad de Buenos Aires",
       "url": "https://igpuba.fi.uba.ar/",
       "area": "Especialización en Gas Natural",
       "studyType": "Postgraduate",
@@ -122,7 +123,8 @@
       "courses": [""]
     },
     {
-      "institution": "Facultad de Ingeniería - Universidad Nacional de Mar del Plata",
+      "institution": "Facultad de Ingeniería",
+      "college": "Universidad Nacional de Mar del Plata",
       "url": "https://www.fi.mdp.edu.ar/",
       "area": "Ingeniero Químico",
       "studyType": "Bachelor",
@@ -132,7 +134,8 @@
       "courses": [""]
     },
     {
-      "institution": "ESMET N° 1 (Escuela Secundaria de Educación Técnica N° 1 - Mar del Plata)",
+      "institution": "ESMET N° 1",
+      "college": "Municipalidad de General Pueyrredón",
       "url": "https://www.facebook.com/esmetmdp/?locale=es_LA",
       "area": "Técnico en Alimentos",
       "studyType": "High School",
