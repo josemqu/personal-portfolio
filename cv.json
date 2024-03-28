@@ -345,7 +345,6 @@
       "isActive": false,
       "description": "Información nutricional de tus comidas (hecha con AI)",
       "highlights": ["API", "Nutrición", "Alimentos", "Machine Learning", "OpenAI"],
-      "url": "",
       "github": "https://github.com/josemqu/que-comemos-ai"
     },
     {
