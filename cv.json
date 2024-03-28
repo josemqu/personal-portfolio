@@ -347,8 +347,7 @@
       "highlights": ["API", "Nutrición", "Alimentos", "Machine Learning", "OpenAI"],
       "url": "https://q-comemos.vercel.app/",
       "github": "https://github.com/josemqu/que-comemos-ai"
-
-    }
+    },
     {
       "name": "Clasificador de E-mails",
       "isActive": false,
