@@ -342,10 +342,10 @@
     },
     {
       "name": "¿Qué comemos?",
-      "isActive": true,
+      "isActive": false,
       "description": "Información nutricional de tus comidas (hecha con AI)",
       "highlights": ["API", "Nutrición", "Alimentos", "Machine Learning", "OpenAI"],
-      "url": "https://q-comemos.vercel.app/",
+      "url": "",
       "github": "https://github.com/josemqu/que-comemos-ai"
     },
     {
