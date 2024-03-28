@@ -343,8 +343,8 @@
     {
       "name": "¿Qué comemos?",
       "isActive": false,
-      "description": "Información nutricional de tus comidas (hecha con AI)",
-      "highlights": ["API", "Nutrición", "Alimentos", "Machine Learning", "OpenAI"],
+      "description": "Información nutricional de tus comidas analizando imágenes (hecha con AI)",
+      "highlights": ["API", "Nutrición", "Alimentos", "OpenAI", "Svelte", "Astro", "TS"],
       "github": "https://github.com/josemqu/que-comemos-ai"
     },
     {
