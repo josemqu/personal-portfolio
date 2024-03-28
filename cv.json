@@ -341,6 +341,15 @@
       "github": ""
     },
     {
+      "name": "¿Qué comemos?",
+      "isActive": true,
+      "description": "Información nutricional de tus comidas (hecha con AI)",
+      "highlights": ["API", "Nutrición", "Alimentos", "Machine Learning", "OpenAI"],
+      "url": "https://q-comemos.vercel.app/",
+      "github": "https://github.com/josemqu/que-comemos-ai"
+
+    }
+    {
       "name": "Clasificador de E-mails",
       "isActive": false,
       "description": "Realizado en Python utilizando Machine Learning para predecir la categoría de un email",
