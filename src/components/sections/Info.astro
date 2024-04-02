@@ -19,6 +19,10 @@ const SOCIAL_ICONS: SocialIcon = {
   X,
 }
 
+const firstName = name.split(" ")[0]
+const middleName = name.split(" ")[1]
+const lastName = name.split(" ")[2]
+
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
 const linkedUrl = linkedInfo?.url
 
@@ -26,12 +30,18 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
 ---
   <div class="info" >
-    <h1 class="name">{name}</h1>
+    <h1 class="name">
+      <span class="first-name">
+        {firstName}
+      </span>
+      <span class="middle-name">
+        {middleName}
+      </span>
+      <span class="last-name">
+        {lastName}
+      </span>
+    </h1>
     <p class="desc">{label}</p>
-    <!-- <span class="location">
-      <WorldMap />
-      {region}
-    </span> -->
     <footer class="print">
       {printInfo}
     </footer>
@@ -103,6 +113,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     font-size: 2rem;
     color: var(--bold-text);
     font-weight: 500;
+    width: 100%;
+    transition: all 0.1s ease-out;
   }
 
   /* span {
@@ -145,19 +157,35 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
     .hidden {
       height : 0;
-      overflow : hidden;
+      /* overflow : hidden; */
+      display: none;
     }
 
     .collapse {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
     }
 
+    .collapse h1 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
     h1.text-sm {
       font-size: 1.5rem;
-      transform: translateY(1rem);
+      /* transform: translateY(1rem); */
+    }
+
+    .collapse .first-name,
+    .collapse .middle-name {
+      font-size: 1.3rem;
+    }
+
+    .collapse .icons-inline {
+      justify-content: flex-end;
     }
 
     .icons-inline {
@@ -168,8 +196,37 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       justify-content: center;
       align-items: center;
       padding-right: 0;
+      gap: 0.5rem;
       text-align: center;
     }
 
   }
+
+  @media (width < 430px ){
+
+    .container {
+      padding-bottom: 0 !important;
+    }
+
+    .collapse h1 {
+      line-height: 1.2em;
+      height: 3em;
+      overflow: hidden;
+      white-space: wrap;
+      /* text-overflow: ellipsis; */
+    }
+
+    .collapse .first-name,
+    .collapse .middle-name {
+      font-size: 1.2rem;
+      color: var(--color-text);
+    }
+  }
+
+  @media (width < 335px ){
+    .collapse .middle-name {
+      display: none;
+    }
+  }
+
 </style>
