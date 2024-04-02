@@ -117,15 +117,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     transition: all 0.1s ease-out;
   }
 
-  /* span {
-    color: var(--color-text);
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
-  } */
-
   footer {
     color: var(--color-text);
     font-size: 0.85rem;
@@ -169,6 +160,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     }
 
     .collapse h1 {
+      text-align: left;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -176,12 +168,12 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
     h1.text-sm {
       font-size: 1.5rem;
-      /* transform: translateY(1rem); */
     }
 
     .collapse .first-name,
     .collapse .middle-name {
-      font-size: 1.3rem;
+      /* font-size: 1.2rem; */
+      /* color: var(--color-text); */
     }
 
     .collapse .icons-inline {
@@ -202,7 +194,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
   }
 
-  @media (width < 430px ){
+  @media (width < 425px ){
 
     .container {
       padding-bottom: 0 !important;
@@ -219,7 +211,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     .collapse .first-name,
     .collapse .middle-name {
       font-size: 1.2rem;
-      color: var(--color-text);
+      /* color: var(--color-text); */
     }
   }
 
