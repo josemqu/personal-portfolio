@@ -14,7 +14,7 @@ import { projects } from "@cv"
             <li>
               <article>
                 <header>
-                  <h3>
+                  <h3><div class="nowrap">
                     <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
                       {name}
                     </a>
@@ -28,7 +28,7 @@ import { projects } from "@cv"
                       >
                         <GitHub />
                       </a>
-                    )}
+                    )}</div>
                   </h3>
                   <p>{description}</p>
                 </header>
@@ -90,6 +90,13 @@ import { projects } from "@cv"
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
+  }
+
+  .nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:0.2rem;
   }
 
   footer span {
