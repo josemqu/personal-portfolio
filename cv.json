@@ -341,14 +341,24 @@
       "github": ""
     },
     {
-      "name": "¿Qué comemos?",
-      "isActive": false,
-      "description": "Información nutricional de tus comidas analizando imágenes (hecha con AI)",
-      "highlights": ["API", "Nutrición", "Alimentos", "OpenAI", "Svelte", "Astro", "TS"],
+      "name": "¿Qué Comemos?",
+      "isActive": true,
+      "description": "Información nutricional de tus comidas analizando imágenes",
+      "highlights": [
+        "API",
+        "Nutrición",
+        "Anthropic",
+        "ClaudeAI",
+        "Svelte",
+        "Astro",
+        "TypeScript",
+        "IA generativa"
+      ],
+      "url": "https://que-comemos-ai.vercel.app/",
       "github": "https://github.com/josemqu/que-comemos-ai"
     },
     {
-      "name": "Clasificador de E-mails",
+      "name": "Clasificador Mails",
       "isActive": false,
       "description": "Realizado en Python utilizando Machine Learning para predecir la categoría de un email",
       "highlights": [
@@ -367,21 +377,27 @@
       "github": "https://github.com/josemqu/precios_energia"
     },
     {
-      "name": "Fondos Comunes (Chrome Extension)",
+      "name": "Fondos Comunes",
       "isActive": false,
       "description": "Extensión de Chrome para visualizar los precios de los fondos comunes de inversión en Argentina",
-      "highlights": ["Fondos Comunes", "Inversión", "Cotización", "Charts"],
+      "highlights": [
+        "Fondos Comunes",
+        "Inversión",
+        "Cotización",
+        "Chrome Extension",
+        "Charts"
+      ],
       "github": "https://github.com/josemqu/fondos_comunes"
     },
     {
-      "name": "Promiedos (Chrome Extension)",
+      "name": "Promiedos",
       "isActive": false,
       "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
       "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
       "github": "https://github.com/josemqu/promiedos"
     },
     {
-      "name": "Fixture Mundial 2022",
+      "name": "Mundial 2022",
       "isActive": true,
       "description": "Responsive design del fixture de la Copa del Mundo de la FIFA 2022",
       "highlights": [
