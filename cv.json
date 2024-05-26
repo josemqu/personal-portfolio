@@ -33,10 +33,25 @@
   "work": [
     {
       "name": "Tecpetrol",
+      "position": "Especialista en Soluciones de Negocio IT",
+      "url": "https://www.tecpetrol.com/es",
+      "startDate": "2024-06-01 00:00:00",
+      "endDate": null,
+      "summary": "Diseño e implementación de aplicaciones personalizadas para operaciones convencionales y no convencionales en la industria del Petróleo y el Gas. Mantenimiento y soporte de aplicaciones de perforación, workover y completación de pozos, priorizando la eficiencia y la calidad de los servicios.",
+      "highlights": [
+        "Desarrollo de Soluciones de Negocio",
+        "Soporte de Aplicaciones",
+        "Automatización de Flujos de Trabajo",
+        "Visualización de Datos",
+        "Metodologías Ágiles"
+      ]
+    },
+    {
+      "name": "Tecpetrol",
       "position": "Especialista Backoffice Comercial",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2021-01-01",
-      "endDate": null,
+      "startDate": "2021-01-01 00:00:00",
+      "endDate": "2024-05-31 00:00:00",
       "summary": "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables.",
       "highlights": [
         "Facturación de Petróleo Crudo",
@@ -50,8 +65,8 @@
       "name": "Tecpetrol",
       "position": "Analista Comercial Sr",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2017-01-01",
-      "endDate": "2020-12-31",
+      "startDate": "2017-01-01 00:00:00",
+      "endDate": "2020-12-31 00:00:00",
       "summary": "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural en guardias de fin de semana.",
       "highlights": [
         "Despacho de Gas Natural",
@@ -64,8 +79,8 @@
       "name": "Tecpetrol",
       "position": "Analista Comercial Ssr",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2014-07-01",
-      "endDate": "2016-01-31",
+      "startDate": "2014-07-01 00:00:00",
+      "endDate": "2016-01-31 00:00:00",
       "summary": "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural en guardias de fin de semana.",
       "highlights": [
         "Desarrollo de Clientes",
@@ -79,8 +94,8 @@
       "name": "Tecpetrol",
       "position": "Analista Comercial Jr",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2009-04-15",
-      "endDate": "2014-06-30",
+      "startDate": "2009-04-15 00:00:00",
+      "endDate": "2014-06-30 00:00:00",
       "summary": "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales.",
       "highlights": [
         "Despacho de Gas Natural",
@@ -93,8 +108,8 @@
     {
       "name": "Frigorífico Giorno",
       "position": "Analista de Control de Calidad",
-      "startDate": "2008-02-01",
-      "endDate": "2008-07-01",
+      "startDate": "2008-02-01 00:00:00",
+      "endDate": "2008-07-01 00:00:00",
       "summary": "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura.",
       "highlights": ["Pasantía", "Control de Calidad", "BPM", "Laboratorio"]
     }
@@ -104,8 +119,8 @@
       "organization": "Organization",
       "position": "Volunteer",
       "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "2012-01-01 00:00:00",
+      "endDate": "2013-01-01 00:00:00",
       "summary": "Description…",
       "highlights": ["Awarded 'Volunteer of the Month'"]
     }
@@ -117,8 +132,8 @@
       "url": "https://igpuba.fi.uba.ar/",
       "area": "Especialización en Gas Natural",
       "studyType": "Postgraduate",
-      "startDate": "2015-01-01",
-      "endDate": "2016-01-01",
+      "startDate": "2015-01-01 00:00:00",
+      "endDate": "2016-01-01 00:00:00",
       "score": "9.00",
       "courses": [""]
     },
@@ -128,8 +143,8 @@
       "url": "https://www.fi.mdp.edu.ar/",
       "area": "Ingeniero Químico",
       "studyType": "Bachelor",
-      "startDate": "2004-01-01",
-      "endDate": "2009-01-01",
+      "startDate": "2004-01-01 00:00:00",
+      "endDate": "2009-01-01 00:00:00",
       "score": "7.23",
       "courses": [""]
     },
@@ -139,8 +154,8 @@
       "url": "https://www.facebook.com/esmetmdp/?locale=es_LA",
       "area": "Técnico en Alimentos",
       "studyType": "High School",
-      "startDate": "1998-01-01",
-      "endDate": "2002-01-01",
+      "startDate": "1998-01-01 00:00:00",
+      "endDate": "2002-01-01 00:00:00",
       "score": "9.81",
       "courses": [""]
     }
@@ -148,7 +163,7 @@
   "awards": [
     {
       "title": "Award",
-      "date": "2014-11-01",
+      "date": "2014-11-01 00:00:00",
       "awarder": "Company",
       "summary": "There is no spoon."
     }
@@ -183,7 +198,7 @@
     {
       "name": "Publication",
       "publisher": "Company",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "2014-10-01 00:00:00",
       "url": "https://publication.com",
       "summary": "Description…"
     }
