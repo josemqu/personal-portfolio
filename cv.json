@@ -230,11 +230,6 @@
       "keywords": ["Base de Datos", "Backend", "Data Analysis"]
     },
     {
-      "name": "Leaflet",
-      "level": "Advanced",
-      "keywords": ["Desarrollo Web", "Frontend", "Mapas", "Geolocalización"]
-    },
-    {
       "name": "AstroJS",
       "level": "Advanced",
       "keywords": [
@@ -297,22 +292,6 @@
         "Frontend",
         "CSS Framework",
         "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Learning",
-      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
       ]
     }
   ],
