@@ -1,14 +1,13 @@
 {
   "basics": {
     "name": "José María Quintana",
-    "label": "Ing. Químico especializado en Oil & Gas, meticuloso y orientado a la eficiencia. Apasionado por la ciencia de datos y la innovación tecnológica.",
+    "label": "Ing. Químico especializado en Oil & Gas. Meticuloso, analítico y proactivo. Orientado a la ciencia de datos y la innovación tecnológica.",
     "image": "/me.webp",
     "email": "mailjmq@gmail.com",
     "phone": "+54 11 4169 4662",
     "url": "https://portfolio-delta-seven-33.vercel.app/",
     "summary": [
-      "Más de 15 años en la Industria de la Energía. He trabajado en programación de compras y ventas de gas natural pasando por el desarrollo de nuevos clientes, la administración de contratos y la gestión de costos de comercialización.",
-      "Mi pasión por la ciencia de datos y la tecnología emergente me impulsa a buscar nuevos desafíos en este campo, con el objetivo de optimizar procesos y generar soluciones innovadoras."
+      "Mi pasión por la ciencia de datos y la tecnología emergente me impulsa a buscar nuevos desafíos en este campo, con el objetivo generar soluciones innovadoras y con foco en la eficiencia."
     ],
     "location": {
       "address": "",
