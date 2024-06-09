@@ -19,12 +19,12 @@ const textYpos = 19
           stroke-width="1"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="feather feather-en"
+          class="feather feather-es"
         >
         <text
           x="5"
           y={textYpos}
-        >EN</text>
+        >ES</text>
         </svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +36,12 @@ const textYpos = 19
           stroke-width="1"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="feather feather-es"
+          class="feather feather-en"
         >
         <text
           x="-1"
           y={textYpos}
-        >ES</text>
+        >EN</text>
         </svg>
       </div>
     </label>
@@ -117,26 +117,26 @@ text {
   user-select: none;
 }
 
-.feather-es {
+.feather-en {
   opacity: 0;
   left: 6px;
   bottom: 6px;
   transform: translateX(4px);
 }
 
-.feather-en {
+.feather-es {
   opacity: 1;
   right: 6px;
   bottom: 6px;
   transform: translateX(0px);
 }
 
-input:checked + .slider .feather-es {
+input:checked + .slider .feather-en {
   opacity: 1;
   transform: translateX(0);
 }
 
-input:checked + .slider .feather-en {
+input:checked + .slider .feather-es {
   opacity: 0;
   transform: translateX(-4px);
 }
