@@ -1,0 +1,144 @@
+---
+const textSize = 20
+const textYpos = 19
+---
+<!-- <Section > -->
+  <div 
+    class="language-switch-wrapper no-print"
+  >
+    <label class="language-switch" for="language">
+      <input type="checkbox" id="language" />
+        <div class="slider no-select">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={textSize}
+          height={textSize}
+          viewBox="0 0 24 24"
+          fill="#222"
+          stroke="#222"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-en"
+        >
+        <text
+          x="5"
+          y={textYpos}
+        >EN</text>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={textSize}
+          height={textSize}
+          viewBox="0 0 24 24"
+          fill="#222"
+          stroke="#222"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-es"
+        >
+        <text
+          x="-1"
+          y={textYpos}
+        >ES</text>
+        </svg>
+      </div>
+    </label>
+  </div>
+<!-- </Section> -->
+
+<style>
+/* TOGGLE  */
+.language-switch-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  margin-left: 0.5rem;
+}
+
+.language-switch {
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  width: 48px;
+}
+
+.language-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--pills-bg);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  background-color: var(--slider-bg-before);
+  bottom: 4px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 1 !important;
+}
+
+input:checked + .slider {
+  background-color: var(--pills-bg);
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider svg {
+  color: var(--pills-bg);
+  position: absolute;
+  transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
+  pointer-events: none;
+  z-index: 2000 !important;
+}
+
+text {
+  z-index: 5000 !important;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.feather-es {
+  opacity: 0;
+  left: 6px;
+  bottom: 6px;
+  transform: translateX(4px);
+}
+
+.feather-en {
+  opacity: 1;
+  right: 6px;
+  bottom: 6px;
+  transform: translateX(0px);
+}
+
+input:checked + .slider .feather-es {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+input:checked + .slider .feather-en {
+  opacity: 0;
+  transform: translateX(-4px);
+}
+</style>
+
