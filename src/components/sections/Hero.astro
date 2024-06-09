@@ -7,15 +7,14 @@ const { name, label, location, profiles, phone, email } = basics
 const { link } = Astro.props
 
 ---
-
   <div class="container">
       <Info
         name={name}
-        label={label}
-        location={location}
-        profiles={profiles}
-        phone={phone}
         email={email}
+        phone={phone}
+        profiles={profiles}
+        location={location}
+        label={label}
       />
     <figure>
       <a href={link} data-astro-prefetch >
