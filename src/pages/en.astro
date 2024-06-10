@@ -12,19 +12,24 @@ import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 import Footer from "@/components/sections/Footer.astro"
 
-import { basics } from "@cv-en"
+import { 
+  basics, 
+  certificates,
+  work 
+} from "@cv-en"
+
 const { name, label } = basics
 ---
 <script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script>
 
 <Layout title={`${name}'s CV`}>
   <header>
-    <Hero />
+    <Hero basics={basics}/>
   </header>
-  <main>
-    <About />
-    <Experience />
-    <Certificates />
+  <main transition:name="main-section">
+    <About basics={basics} />
+    <Experience work={work}/>
+    <Certificates certificates={certificates}/>
     <Education />
     <Languages />
     <Projects />
