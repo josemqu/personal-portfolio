@@ -8,7 +8,7 @@ const textYpos = 19
   >
     <label class="language-switch" for="language">
       <input type="checkbox" id="language" />
-        <div class="slider no-select">
+        <div class="language-slider no-select">
           <svg
           xmlns="http://www.w3.org/2000/svg"
           width={textSize}
@@ -68,7 +68,7 @@ const textYpos = 19
   display: none;
 }
 
-.slider {
+.language-slider {
   background-color: var(--pills-bg);
   bottom: 0;
   cursor: pointer;
@@ -80,7 +80,7 @@ const textYpos = 19
   border-radius: 28px;
 }
 
-.slider:before {
+.language-slider:before {
   background-color: var(--slider-bg-before);
   bottom: 4px;
   content: "";
@@ -93,15 +93,15 @@ const textYpos = 19
   z-index: 1 !important;
 }
 
-input:checked + .slider {
+input:checked + .language-slider {
   background-color: var(--pills-bg);
 }
 
-input:checked + .slider:before {
+input:checked + .language-slider:before {
   transform: translateX(20px);
 }
 
-.slider svg {
+.language-slider svg {
   color: var(--pills-bg);
   position: absolute;
   transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
@@ -131,14 +131,38 @@ text {
   transform: translateX(0px);
 }
 
-input:checked + .slider .feather-en {
+input:checked + .language-slider .feather-en {
   opacity: 1;
   transform: translateX(0);
 }
 
-input:checked + .slider .feather-es {
+input:checked + .language-slider .feather-es {
   opacity: 0;
   transform: translateX(-4px);
 }
 </style>
 
+<script>
+const enURL = "/en"
+const esURL = "/"
+const sliderElement = document.querySelector('.language-slider')
+const languageSwitch = document.querySelector('.language-switch')
+
+const handleLanguageToggle = (event: any) => {
+  event.preventDefault()
+  
+  const url = window.location.href
+  const isEnglish = url.includes(enURL)
+  const isSpanish = !isEnglish
+  
+  if (isEnglish) {
+    window.location.href = esURL
+  } else {
+    window.location.href = enURL
+  }
+
+}
+
+sliderElement?.addEventListener('click', handleLanguageToggle)
+
+</script>
