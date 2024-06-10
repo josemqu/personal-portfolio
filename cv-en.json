@@ -1,16 +1,18 @@
 {
   "basics": {
     "name": "José María Quintana",
-    "label": "Engineer Specialist in Oil & Gas. Passionate about Technology.",
+    "label": "Chemical Engineer specialized in Oil & Gas. Meticulous, analytical, and proactive. Oriented towards data science and technological innovation.",
     "image": "/me.webp",
     "email": "mailjmq@gmail.com",
-    "phone": "+54 1141694662",
-    "url": "#",
-    "summary": "Over 15 years of experience in the Energy Industry. Currently working at Tecpetrol. I have worked in various roles, from programming natural gas purchases and sales to developing new clients, contract administration, and marketing cost management.",
+    "phone": "+54 11 4169 4662",
+    "url": "https://portfolio-delta-seven-33.vercel.app/",
+    "summary": [
+      "My passion for data science and emerging technology drives me to seek new challenges in this field, aiming to generate innovative solutions with a focus on efficiency."
+    ],
     "location": {
       "address": "",
       "postalCode": "1426",
-      "city": "Ciudad Autónoma de Buenos Aires",
+      "city": "Autonomous City of Buenos Aires",
       "countryCode": "AR",
       "region": "Argentina"
     },
@@ -19,11 +21,6 @@
         "network": "LinkedIn",
         "username": "jmquintana",
         "url": "https://www.linkedin.com/in/josemqu/"
-      },
-      {
-        "network": "X",
-        "username": "josemqu1",
-        "url": "https://x.com/Josemqu1"
       },
       {
         "network": "GitHub",
@@ -35,84 +32,79 @@
   "work": [
     {
       "name": "Tecpetrol",
-      "position": "Especialista en Soluciones de Negocio IT",
-      "url": "https://www.tecpetrol.com/es",
-      "startDate": "2024-06-01 00:00:00",
-      "endDate": null,
-      "summary": "Diseño e implementación de aplicaciones personalizadas para operaciones convencionales y no convencionales en la industria del Petróleo y el Gas. Mantenimiento y soporte de aplicaciones de perforación, workover y completación de pozos, priorizando la eficiencia y la calidad de los servicios.",
-      "highlights": [
-        "Desarrollo de Soluciones de Negocio",
-        "Soporte de Aplicaciones",
-        "Automatización de Flujos de Trabajo",
-        "Visualización de Datos",
-        "Metodologías Ágiles"
-      ]
-    },
-    {
-      "name": "Tecpetrol S.A.",
       "position": "Commercial Backoffice Specialist",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "summary": "Responsible for crude oil billing and marketing cost analysis in Argentina. Customer credit line management, control of services invoiced by suppliers, and analysis of accounting accounts.",
+      "startDate": "2021-01-01 00:00:00",
+      "endDate": "2024-05-31 00:00:00",
+      "summary": [
+        "In charge of crude oil billing and cost analysis for marketing in Argentina. Customer credit line management, control of services billed by suppliers, and analysis of accounting accounts."
+      ],
       "highlights": [
         "Crude Oil Billing",
         "Marketing Cost Analysis",
-        "Customer Credit Line Management",
-        "Control of Invoiced Services",
-        "Analysis of Accounting Accounts"
+        "Credit Line Management",
+        "Control of Billed Services",
+        "Accounting Account Analysis"
       ]
     },
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Commercial Lead Analyst",
+      "name": "Tecpetrol",
+      "position": "Senior Commercial Analyst",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2017-01-01",
-      "endDate": "2020-12-31",
-      "summary": "Management of natural gas billing, customer credit line management, control of invoiced services, and analysis of accounting accounts. Natural gas dispatch during weekend shifts.",
+      "startDate": "2017-01-01 00:00:00",
+      "endDate": "2020-12-31 00:00:00",
+      "summary": [
+        "Natural gas billing management, credit line management, control of billed services, and analysis of accounting accounts. Natural gas dispatch."
+      ],
       "highlights": [
         "Natural Gas Dispatch",
-        "Customer Credit Line Management",
-        "Control of Invoiced Services",
-        "Analysis of Accounting Accounts"
+        "Credit Line Management",
+        "Control of Billed Services",
+        "Accounting Account Analysis"
       ]
     },
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Gas Sales Analyst",
+      "name": "Tecpetrol",
+      "position": "Semi-Senior Commercial Analyst",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2014-07-01",
-      "endDate": "2016-01-31",
-      "summary": "Client development, natural gas contract management, billing, imbalance control, Plan Gas monitoring, and natural gas dispatch during weekend shifts.",
+      "startDate": "2014-07-01 00:00:00",
+      "endDate": "2016-01-31 00:00:00",
+      "summary": [
+        "Customer development, natural gas contract management, billing, imbalance control, monitoring of the Gas Plan, and natural gas dispatch."
+      ],
       "highlights": [
-        "Client Development",
+        "Customer Development",
         "Contract Management",
         "Billing",
         "Natural Gas Dispatch",
-        "Plan Gas"
+        "Gas Plan"
       ]
     },
     {
-      "name": "Tecpetrol S.A.",
-      "position": "Gas Sales Analyst",
+      "name": "Tecpetrol",
+      "position": "Junior Commercial Analyst",
       "url": "https://www.tecpetrol.com/es",
-      "startDate": "2009-04-15",
-      "endDate": "2014-06-30",
-      "summary": "Responsible for natural gas dispatch, sales scheduling, imbalance control, Plan Gas monitoring, and reporting to government entities.",
+      "startDate": "2009-04-15 00:00:00",
+      "endDate": "2014-06-30 00:00:00",
+      "summary": [
+        "Responsible for natural gas dispatch, sales programming, imbalance control, Gas Plan monitoring, and reporting to government entities."
+      ],
       "highlights": [
         "Natural Gas Dispatch",
-        "Sales Scheduling",
+        "Sales Programming",
         "Imbalance Control",
-        "Plan Gas",
+        "Gas Plan",
         "Government Reports"
       ]
     },
     {
       "name": "Frigorífico Giorno",
       "position": "Quality Control Analyst",
-      "startDate": "2008-02-01",
-      "endDate": "2008-07-01",
-      "summary": "Quality control of fish and seafood at the processing plant. Analysis of finished products and raw materials. Control of Good Manufacturing Practices application.",
+      "startDate": "2008-02-01 00:00:00",
+      "endDate": "2008-07-01 00:00:00",
+      "summary": [
+        "Quality control of fish and seafood at the processing plant. Analysis of finished products and raw materials. Control of Good Manufacturing Practices application."
+      ],
       "highlights": ["Internship", "Quality Control", "GMP", "Laboratory"]
     }
   ],
@@ -121,40 +113,43 @@
       "organization": "Organization",
       "position": "Volunteer",
       "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
+      "startDate": "2012-01-01 00:00:00",
+      "endDate": "2013-01-01 00:00:00",
+      "summary": ["Description…"],
       "highlights": ["Awarded 'Volunteer of the Month'"]
     }
   ],
   "education": [
     {
-      "institution": "Gas and Oil Institute - University of Buenos Aires",
+      "institution": "Gas and Oil Institute",
+      "college": "University of Buenos Aires",
       "url": "https://igpuba.fi.uba.ar/",
-      "area": "Specialization in Natural Gas",
+      "area": "Natural Gas Specialization",
       "studyType": "Postgraduate",
-      "startDate": "2015-01-01",
-      "endDate": "2016-01-01",
+      "startDate": "2015-01-01 00:00:00",
+      "endDate": "2016-01-01 00:00:00",
       "score": "9.00",
       "courses": [""]
     },
     {
-      "institution": "Faculty of Engineering - National University of Mar del Plata",
+      "institution": "Faculty of Engineering",
+      "college": "National University of Mar del Plata",
       "url": "https://www.fi.mdp.edu.ar/",
       "area": "Chemical Engineer",
       "studyType": "Bachelor",
-      "startDate": "2004-01-01",
-      "endDate": "2009-01-01",
+      "startDate": "2004-01-01 00:00:00",
+      "endDate": "2009-01-01 00:00:00",
       "score": "7.23",
       "courses": [""]
     },
     {
-      "institution": "ESMET N° 1 (Mar del Plata Technical High School N° 1)",
+      "institution": "ESMET N° 1",
+      "college": "Municipality of General Pueyrredón",
       "url": "https://www.facebook.com/esmetmdp/?locale=es_LA",
       "area": "Food Technician",
       "studyType": "High School",
-      "startDate": "1998-01-01",
-      "endDate": "2002-01-01",
+      "startDate": "1998-01-01 00:00:00",
+      "endDate": "2002-01-01 00:00:00",
       "score": "9.81",
       "courses": [""]
     }
@@ -162,26 +157,44 @@
   "awards": [
     {
       "title": "Award",
-      "date": "2014-11-01",
+      "date": "2014-11-01 00:00:00",
       "awarder": "Company",
-      "summary": "There is no spoon."
+      "summary": ["There is no spoon."]
     }
   ],
   "certificates": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Backend",
+      "date": "Jul-23",
+      "issuer": "Coderhouse",
+      "url": "https://www.coderhouse.com/ar/certificados/64f6b47348a66355d4493d26?lang=es"
+    },
+    {
+      "name": "SQL",
+      "date": "Feb-23",
+      "issuer": "Coderhouse",
+      "url": "https://www.coderhouse.com/ar/certificados/640113565da0b8000e3d4f58?lang=es"
+    },
+    {
+      "name": "JavaScript",
+      "date": "Oct-22",
+      "issuer": "Coderhouse",
+      "url": "https://www.coderhouse.com/ar/certificados/6367a7fa931dfd000efc7cf8?lang=es"
+    },
+    {
+      "name": "Data Science",
+      "date": "May-22",
+      "issuer": "Acamica",
+      "url": "https://media.licdn.com/dms/document/media/C4D2DAQHFc-q65g_jdg/profile-treasury-document-pdf-analyzed/0/1658970247541?e=1711584000&v=beta&t=-FHUnMQQghPds-n7lXQI6tdl5SGhSU37DrQU8Sfsro8"
     }
   ],
   "publications": [
     {
       "name": "Publication",
       "publisher": "Company",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "2014-10-01 00:00:00",
       "url": "https://publication.com",
-      "summary": "Description…"
+      "summary": ["Description…"]
     }
   ],
   "skills": [
@@ -209,11 +222,6 @@
       "name": "SQL",
       "level": "Intermediate",
       "keywords": ["Database", "Backend", "Data Analysis"]
-    },
-    {
-      "name": "Leaflet",
-      "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "Maps", "Geolocation"]
     },
     {
       "name": "AstroJS",
@@ -263,7 +271,7 @@
     {
       "name": "PowerAutomate",
       "level": "Intermediate",
-      "keywords": ["Automation", "Workflow", "Integration"]
+      "keywords": ["Automation", "Workflows", "Integration"]
     },
     {
       "name": "Tailwind",
@@ -274,38 +282,23 @@
         "CSS Framework",
         "Responsive Design"
       ]
-    },
-    {
-      "name": "React",
-      "level": "Learning",
-      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
     }
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Intermediate speaker"
+      "fluency": "Advanced"
     }
   ],
   "interests": [
     {
       "name": "Wildlife",
       "keywords": [
+        "AI",
         "Astrophotography",
         "Science",
         "Space",
@@ -317,7 +310,7 @@
   ],
   "references": [
     {
-      "name": "Jane Doe",
+      "name": "",
       "reference": "Reference…"
     }
   ],
@@ -326,21 +319,31 @@
       "name": "PrecioNafta.com",
       "isActive": true,
       "description": "Web application for fuel prices in Argentina",
-      "highlights": [
-        "API",
-        "Fuel Stations",
-        "Gasoline",
-        "CNG",
-        "Diesel",
-        "Map"
-      ],
+      "highlights": ["API", "Pumps", "Gasoline", "CNG", "Diesel", "Map"],
       "url": "https://www.precionafta.com",
       "github": ""
     },
     {
+      "name": "¿Qué Comemos?",
+      "isActive": true,
+      "description": "Nutritional information of your meals by analyzing images",
+      "highlights": [
+        "API",
+        "Nutrition",
+        "Anthropic",
+        "ClaudeAI",
+        "Svelte",
+        "Astro",
+        "TypeScript",
+        "Generative AI"
+      ],
+      "url": "https://que-comemos-ai.vercel.app/",
+      "github": "https://github.com/josemqu/que-comemos-ai"
+    },
+    {
       "name": "Email Classifier",
       "isActive": false,
-      "description": "Developed in Python using Machine Learning to predict email category",
+      "description": "Created in Python using Machine Learning to predict the category of an email",
       "highlights": [
         "Machine Learning",
         "Data Science",
@@ -357,25 +360,31 @@
       "github": "https://github.com/josemqu/precios_energia"
     },
     {
-      "name": "Mutual Funds (Chrome Extension)",
+      "name": "Mutual Funds",
       "isActive": false,
-      "description": "Chrome extension to visualize mutual funds prices in Argentina",
-      "highlights": ["Mutual Funds", "Investment", "Quotation", "Charts"],
+      "description": "Chrome extension to view the prices of mutual funds in Argentina",
+      "highlights": [
+        "Mutual Funds",
+        "Investment",
+        "Quotation",
+        "Chrome Extension",
+        "Charts"
+      ],
       "github": "https://github.com/josemqu/fondos_comunes"
     },
     {
-      "name": "Promiedos (Chrome Extension)",
+      "name": "Promiedos",
       "isActive": false,
-      "description": "Chrome extension to enhance user experience on promiedos.com.ar",
-      "highlights": ["Football", "Averages", "Chrome Extension"],
+      "description": "Chrome extension to enhance user experience on the promiedos.com.ar website",
+      "highlights": ["Soccer", "Averages", "Chrome Extension"],
       "github": "https://github.com/josemqu/promiedos"
     },
     {
-      "name": "World Cup 2022 Fixture",
+      "name": "World Cup 2022",
       "isActive": true,
       "description": "Responsive design of the FIFA World Cup 2022 fixture",
       "highlights": [
-        "Football",
+        "Soccer",
         "Web Scraping",
         "Fixture",
         "World Cup",

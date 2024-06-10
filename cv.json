@@ -36,7 +36,9 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
       "endDate": "2024-05-31 00:00:00",
-      "summary": "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables.",
+      "summary": [
+        "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables."
+      ],
       "highlights": [
         "Facturación de Petróleo Crudo",
         "Análisis de Costos de Comercialización",
@@ -51,7 +53,9 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2017-01-01 00:00:00",
       "endDate": "2020-12-31 00:00:00",
-      "summary": "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural.",
+      "summary": [
+        "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural."
+      ],
       "highlights": [
         "Despacho de Gas Natural",
         "Administración de Líneas de Crédito",
@@ -65,7 +69,9 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2014-07-01 00:00:00",
       "endDate": "2016-01-31 00:00:00",
-      "summary": "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural.",
+      "summary": [
+        "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural."
+      ],
       "highlights": [
         "Desarrollo de Clientes",
         "Administración de Contratos",
@@ -80,7 +86,9 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2009-04-15 00:00:00",
       "endDate": "2014-06-30 00:00:00",
-      "summary": "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales.",
+      "summary": [
+        "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales."
+      ],
       "highlights": [
         "Despacho de Gas Natural",
         "Programación de Ventas",
@@ -92,9 +100,12 @@
     {
       "name": "Frigorífico Giorno",
       "position": "Analista de Control de Calidad",
+      "url": "",
       "startDate": "2008-02-01 00:00:00",
       "endDate": "2008-07-01 00:00:00",
-      "summary": "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura.",
+      "summary": [
+        "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura."
+      ],
       "highlights": ["Pasantía", "Control de Calidad", "BPM", "Laboratorio"]
     }
   ],
@@ -105,7 +116,7 @@
       "url": "https://organization.com/",
       "startDate": "2012-01-01 00:00:00",
       "endDate": "2013-01-01 00:00:00",
-      "summary": "Description…",
+      "summary": ["Description…"],
       "highlights": ["Awarded 'Volunteer of the Month'"]
     }
   ],
@@ -149,31 +160,31 @@
       "title": "Award",
       "date": "2014-11-01 00:00:00",
       "awarder": "Company",
-      "summary": "There is no spoon."
+      "summary": ["There is no spoon."]
     }
   ],
   "certificates": [
     {
       "name": "Backend",
-      "date": "jul-23",
+      "date": "Jul-23",
       "issuer": "Coderhouse",
       "url": "https://www.coderhouse.com/ar/certificados/64f6b47348a66355d4493d26?lang=es"
     },
     {
       "name": "SQL",
-      "date": "feb-23",
+      "date": "Feb-23",
       "issuer": "Coderhouse",
       "url": "https://www.coderhouse.com/ar/certificados/640113565da0b8000e3d4f58?lang=es"
     },
     {
       "name": "JavaScript",
-      "date": "oct-22",
+      "date": "Oct-22",
       "issuer": "Coderhouse",
       "url": "https://www.coderhouse.com/ar/certificados/6367a7fa931dfd000efc7cf8?lang=es"
     },
     {
       "name": "Data Science",
-      "date": "may-22",
+      "date": "May-22",
       "issuer": "Acamica",
       "url": "https://media.licdn.com/dms/document/media/C4D2DAQHFc-q65g_jdg/profile-treasury-document-pdf-analyzed/0/1658970247541?e=1711584000&v=beta&t=-FHUnMQQghPds-n7lXQI6tdl5SGhSU37DrQU8Sfsro8"
     }
@@ -184,7 +195,7 @@
       "publisher": "Company",
       "releaseDate": "2014-10-01 00:00:00",
       "url": "https://publication.com",
-      "summary": "Description…"
+      "summary": ["Description…"]
     }
   ],
   "skills": [
