@@ -1,11 +1,13 @@
 ---
-import Section from "../Section.astro"
-import { work } from "@cv"
 import ArrowDown from "../../icons/arrow-down.astro"
+import Section from "../Section.astro"
+import type { Work } from "@/types/cv.ts"
 
-console.log({
-  work,
-})
+interface Props {
+  work: Work[]
+}
+
+const {work} = Astro.props
 
 ---
 

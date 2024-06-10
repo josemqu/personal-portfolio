@@ -1,21 +1,26 @@
 ---
-import { basics } from "@cv"
 import Info from "./Info.astro"
 import Section from "@/components/Section.astro"
 import X from "@/icons/X.astro"
 import LinkedIn from "@/icons/LinkedIn.astro"
 import GitHub from "@/icons/GitHub.astro"
-import type { SocialIcon } from "@/types"
+import type { SocialIcon } from "@/types/types/types"
 
-const { name, label, image, location, profiles, phone, email } = basics
-const { city, region } = location
+interface Props {
+  name: string
+}
+
+const {
+  name,
+} = Astro.props
+
 
 ---
 
 <Section>
   <div class="profileContainer">
     <figure>
-      <a href="/">
+      <a href="/me">
         <img transition:name="profile" src="me_big.jpg" alt={name}/>
       </a>
     </figure>
