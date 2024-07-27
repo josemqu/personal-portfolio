@@ -78,8 +78,7 @@
       "url": "https://organization.com/",
       "startDate": "2012-01-01 00:00:00",
       "endDate": "2013-01-01 00:00:00",
-      "summary": ["Description…"],
-      "highlights": ["Awarded 'Volunteer of the Month'"]
+      "summary": "Description…"
     }
   ],
   "education": [
