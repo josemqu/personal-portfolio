@@ -32,6 +32,14 @@
   "work": [
     {
       "name": "Tecpetrol",
+      "position": "Especialista en Soluciones Informáticas de Negocio",
+      "url": "https://www.tecpetrol.com/es",
+      "startDate": "2024-06-01 00:00:00",
+      "endDate": "",
+      "summary": "Diseño e implementación de aplicaciones personalizadas para operaciones convencionales y no convencionales en la industria del petróleo y el gas. Soporte y optimización de sala de control de perforación y terminación de pozos."
+    },
+    {
+      "name": "Tecpetrol",
       "position": "Especialista Backoffice Comercial",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
