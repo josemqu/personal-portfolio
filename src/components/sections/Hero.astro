@@ -1,24 +1,28 @@
 ---
-import { basics } from "@cv"
 import Info from "../sections/Info.astro"
 import Image from "@/components/Image.astro"
+import type { CV } from "@/types/cv"
 
+interface Props {
+  basics: CV["basics"]
+}
+
+const { basics } = Astro.props
 const { name, label, location, profiles, phone, email } = basics
-const { link } = Astro.props
+console.log(basics)
 
 ---
-
   <div class="container">
       <Info
         name={name}
-        label={label}
-        location={location}
-        profiles={profiles}
-        phone={phone}
         email={email}
+        phone={phone}
+        profiles={profiles}
+        location={location}
+        label={label}
       />
     <figure>
-      <a href={link} data-astro-prefetch >
+      <a href="/" data-astro-prefetch >
         <Image />
       </a>
     </figure>

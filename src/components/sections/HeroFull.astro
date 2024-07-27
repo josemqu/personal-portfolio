@@ -1,30 +1,45 @@
 ---
-import { basics } from "@cv"
-import Info from "./Info.astro"
-import Section from "@/components/Section.astro"
-import X from "@/icons/X.astro"
-import LinkedIn from "@/icons/LinkedIn.astro"
-import GitHub from "@/icons/GitHub.astro"
-import type { SocialIcon } from "@/types"
+import Info from "./Info.astro";
+import Section from "@/components/Section.astro";
 
-const { name, label, image, location, profiles, phone, email } = basics
-const { city, region } = location
+interface Props {
+  name: string;
+  label: string;
+  email: string;
+  phone: string;
+  location: {
+    city: string;
+    region: string;
+  };
+  profiles: {
+    network: string;
+    url: string;
+    username: string;
+  }[];
+}
 
+const { name, label, email, phone, location, profiles } = Astro.props;
 ---
 
 <Section>
   <div class="profileContainer">
     <figure>
-      <a href="/">
-        <img transition:name="profile" src="me_big.jpg" alt={name}/>
+      <a href="/me">
+        <img transition:name="profile" src="me_big.jpg" alt={name} />
       </a>
     </figure>
-    <Info class="info"/>
+    <Info
+      name={name}
+      label={label}
+      email={email}
+      phone={phone}
+      location={location}
+      profiles={profiles}
+    />
   </div>
 </Section>
 
 <style>
-
   img {
     aspect-ratio: 4 / 5;
     object-fit: cover;

@@ -1,40 +1,49 @@
 ---
-import Popup from "@/icons/popup.astro"
-import Section from "../Section.astro"
+import Popup from "@/icons/popup.astro";
+import Section from "../Section.astro";
+// import type { CV } from "@/types/cv"
+import type { Certificates } from "@/types/cv.ts";
 
-import { certificates } from "@cv"
+interface Props {
+  certificates: Certificates[];
+}
+
+const { certificates } = Astro.props;
+console.log({ certificates });
 ---
 
 <Section title="Certificados">
   <ul>
     {
-      certificates.map(
-        ({ name, date, issuer, url, }) => {
-          return (
-            <li>
-              <article>
-                <header>
-                  <h3><time>
+      certificates.map(({ name, date, issuer, url }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <h3>
+                  <time>
                     <span>{date}</span>
                   </time>
-                  </h3>
-                  <h3>
-                    <a href={url} target="_blank" rel="noopener noreferrer" title={
-                      `Certificado de ${name} emitido por ${issuer}`
-                    }>
-                      {name}
+                </h3>
+                <h3>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`Certificado de ${name} emitido por ${issuer}`}
+                  >
+                    {name}
                     <Popup />
-                    </a>
-                  </h3>
-                </header>
-                <footer>
-                  <span>{issuer}</span>
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
+                  </a>
+                </h3>
+              </header>
+              <footer>
+                <span>{issuer}</span>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>
@@ -101,5 +110,4 @@ import { certificates } from "@cv"
     color: var(--bold-text);
     margin-left: 5px;
   }
-
 </style>

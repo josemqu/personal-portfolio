@@ -30,7 +30,7 @@ import { education } from "@cv"
                     <div class="button"><ArrowDown /></div>
                 </div>
               </header>
-              <footer class="content collapsed">
+              <footer class="content">
                 <p>{college}</p>
               </footer>
             </article>
@@ -123,15 +123,22 @@ import { education } from "@cv"
   }
 
   .content {
-    transition: all 0.3s ease-in-out;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .content.show {
+    /* height: auto; */
+    height: calc-size(auto);
   }
 
   /* Style the collapsible content. Note: hidden by default */
-  .collapsed {
-    height: 0;
+  /* .collapsed { */
+    /* height: 0; */
     /* transform:scaleY( 0); */
-    overflow: hidden;
-  }
+    /* overflow: hidden; */
+  /* } */
 
   @media (width <= 700px) {
     time {

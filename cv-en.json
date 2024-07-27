@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "José María Quintana",
-    "label": "Ing. Químico especializado en Oil & Gas. Meticuloso, analítico y proactivo. Orientado a la ciencia de datos y la innovación tecnológica.",
+    "label": "Chemical Engineer specialized in Oil & Gas. Meticulous, analytical, and proactive. Oriented towards data science and technological innovation.",
     "image": "/me.webp",
     "email": "mailjmq@gmail.com",
     "phone": "+54 11 4169 4662",
     "url": "https://portfolio-delta-seven-33.vercel.app/",
     "summary": [
-      "Mi pasión por la ciencia de datos y la tecnología emergente me impulsa a buscar nuevos desafíos en este campo, con el objetivo generar soluciones innovadoras y con foco en la eficiencia."
+      "My passion for data science and emerging technology drives me to seek new challenges in this field, aiming to generate innovative solutions with a focus on efficiency."
     ],
     "location": {
       "address": "",
       "postalCode": "1426",
-      "city": "Ciudad Autónoma de Buenos Aires",
+      "city": "Autonomous City of Buenos Aires",
       "countryCode": "AR",
       "region": "Argentina"
     },
@@ -32,43 +32,42 @@
   "work": [
     {
       "name": "Tecpetrol",
-      "position": "Especialista Backoffice Comercial",
+      "position": "Commercial Backoffice Specialist",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
       "endDate": "2024-05-31 00:00:00",
-      "summary": "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables."
+      "summary": "In charge of crude oil billing and cost analysis for marketing in Argentina. Customer credit line management, control of services billed by suppliers, and analysis of accounting accounts."
     },
     {
       "name": "Tecpetrol",
-      "position": "Analista Comercial Sr",
+      "position": "Senior Commercial Analyst",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2017-01-01 00:00:00",
       "endDate": "2020-12-31 00:00:00",
-      "summary": "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural."
+      "summary": "Natural gas billing management, credit line management, control of billed services, and analysis of accounting accounts. Natural gas dispatch."
     },
     {
       "name": "Tecpetrol",
-      "position": "Analista Comercial Ssr",
+      "position": "Semi-Senior Commercial Analyst",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2014-07-01 00:00:00",
       "endDate": "2016-01-31 00:00:00",
-      "summary": "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural."
+      "summary": "Customer development, natural gas contract management, billing, imbalance control, monitoring of the Gas Plan, and natural gas dispatch."
     },
     {
       "name": "Tecpetrol",
-      "position": "Analista Comercial Jr",
+      "position": "Junior Commercial Analyst",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2009-04-15 00:00:00",
       "endDate": "2014-06-30 00:00:00",
-      "summary": "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales."
+      "summary": "Responsible for natural gas dispatch, sales programming, imbalance control, Gas Plan monitoring, and reporting to government entities."
     },
     {
       "name": "Frigorífico Giorno",
-      "position": "Analista de Control de Calidad",
-      "url": "",
+      "position": "Quality Control Analyst",
       "startDate": "2008-02-01 00:00:00",
       "endDate": "2008-07-01 00:00:00",
-      "summary": "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura."
+      "summary": "Quality control of fish and seafood at the processing plant. Analysis of finished products and raw materials. Control of Good Manufacturing Practices application."
     }
   ],
   "volunteer": [
@@ -84,10 +83,10 @@
   ],
   "education": [
     {
-      "institution": "Instituto del Gas y del Petróleo",
-      "college": "Universidad de Buenos Aires",
+      "institution": "Gas and Oil Institute",
+      "college": "University of Buenos Aires",
       "url": "https://igpuba.fi.uba.ar/",
-      "area": "Especialización en Gas Natural",
+      "area": "Natural Gas Specialization",
       "studyType": "Postgraduate",
       "startDate": "2015-01-01 00:00:00",
       "endDate": "2016-01-01 00:00:00",
@@ -95,10 +94,10 @@
       "courses": [""]
     },
     {
-      "institution": "Facultad de Ingeniería",
-      "college": "Universidad Nacional de Mar del Plata",
+      "institution": "Faculty of Engineering",
+      "college": "National University of Mar del Plata",
       "url": "https://www.fi.mdp.edu.ar/",
-      "area": "Ingeniero Químico",
+      "area": "Chemical Engineer",
       "studyType": "Bachelor",
       "startDate": "2004-01-01 00:00:00",
       "endDate": "2009-01-01 00:00:00",
@@ -107,9 +106,9 @@
     },
     {
       "institution": "ESMET N° 1",
-      "college": "Municipalidad de General Pueyrredón",
+      "college": "Municipality of General Pueyrredón",
       "url": "https://www.facebook.com/esmetmdp/?locale=es_LA",
-      "area": "Técnico en Alimentos",
+      "area": "Food Technician",
       "studyType": "High School",
       "startDate": "1998-01-01 00:00:00",
       "endDate": "2002-01-01 00:00:00",
@@ -164,17 +163,17 @@
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend"]
+      "keywords": ["Web Development", "Frontend"]
     },
     {
       "name": "CSS",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
     },
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "Python",
@@ -184,30 +183,30 @@
     {
       "name": "SQL",
       "level": "Intermediate",
-      "keywords": ["Base de Datos", "Backend", "Data Analysis"]
+      "keywords": ["Database", "Backend", "Data Analysis"]
     },
     {
       "name": "AstroJS",
       "level": "Advanced",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "Framework",
-        "Diseño Responsive"
+        "Responsive Design"
       ]
     },
     {
       "name": "Node",
       "level": "Advanced",
-      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+      "keywords": ["Web Development", "Backend", "JavaScript", "Server"]
     },
     {
       "name": "MongoDB",
       "level": "Advanced",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Backend",
-        "Base de Datos",
+        "Database",
         "NoSQL",
         "JavaScript"
       ]
@@ -215,17 +214,12 @@
     {
       "name": "Git",
       "level": "Advanced",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+      "keywords": ["Version Control", "Collaboration", "Source Code"]
     },
     {
       "name": "GitHub",
       "level": "Advanced",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     },
     {
       "name": "PowerBI",
@@ -239,27 +233,27 @@
     {
       "name": "PowerAutomate",
       "level": "Intermediate",
-      "keywords": ["Automatización", "Flujos de Trabajo", "Integración"]
+      "keywords": ["Automation", "Workflows", "Integration"]
     },
     {
       "name": "Tailwind",
       "level": "Beginner",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "CSS Framework",
-        "Diseño Responsive"
+        "Responsive Design"
       ]
     }
   ],
   "languages": [
     {
-      "language": "Español",
-      "fluency": "Nativo"
+      "language": "Spanish",
+      "fluency": "Native"
     },
     {
-      "language": "Inglés",
-      "fluency": "Avanzado"
+      "language": "English",
+      "fluency": "Advanced"
     }
   ],
   "interests": [
@@ -286,32 +280,32 @@
     {
       "name": "PrecioNafta.com",
       "isActive": true,
-      "description": "Aplicación web de precios de combustibles en Argentina",
-      "highlights": ["API", "Surtidores", "Nafta", "GNC", "Gasoil", "Mapa"],
+      "description": "Web application for fuel prices in Argentina",
+      "highlights": ["API", "Pumps", "Gasoline", "CNG", "Diesel", "Map"],
       "url": "https://www.precionafta.com",
       "github": ""
     },
     {
       "name": "¿Qué Comemos?",
       "isActive": true,
-      "description": "Información nutricional de tus comidas analizando imágenes",
+      "description": "Nutritional information of your meals by analyzing images",
       "highlights": [
         "API",
-        "Nutrición",
+        "Nutrition",
         "Anthropic",
         "ClaudeAI",
         "Svelte",
         "Astro",
         "TypeScript",
-        "IA generativa"
+        "Generative AI"
       ],
       "url": "https://que-comemos-ai.vercel.app/",
       "github": "https://github.com/josemqu/que-comemos-ai"
     },
     {
-      "name": "Clasificador Mails",
+      "name": "Email Classifier",
       "isActive": false,
-      "description": "Realizado en Python utilizando Machine Learning para predecir la categoría de un email",
+      "description": "Created in Python using Machine Learning to predict the category of an email",
       "highlights": [
         "Machine Learning",
         "Data Science",
@@ -321,20 +315,20 @@
       "github": "https://github.com/josemqu/email_classifier_2"
     },
     {
-      "name": "Precios Energía",
+      "name": "Energy Prices",
       "isActive": false,
-      "description": "Aplicación web de precios de energía en Argentina",
-      "highlights": ["Precios", "Energía", "API", "Gas Natural", "Mapa"],
+      "description": "Web application for energy prices in Argentina",
+      "highlights": ["Prices", "Energy", "API", "Natural Gas", "Map"],
       "github": "https://github.com/josemqu/precios_energia"
     },
     {
-      "name": "Fondos Comunes",
+      "name": "Mutual Funds",
       "isActive": false,
-      "description": "Extensión de Chrome para visualizar los precios de los fondos comunes de inversión en Argentina",
+      "description": "Chrome extension to view the prices of mutual funds in Argentina",
       "highlights": [
-        "Fondos Comunes",
-        "Inversión",
-        "Cotización",
+        "Mutual Funds",
+        "Investment",
+        "Quotation",
         "Chrome Extension",
         "Charts"
       ],
@@ -343,19 +337,19 @@
     {
       "name": "Promiedos",
       "isActive": false,
-      "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
-      "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
+      "description": "Chrome extension to enhance user experience on the promiedos.com.ar website",
+      "highlights": ["Soccer", "Averages", "Chrome Extension"],
       "github": "https://github.com/josemqu/promiedos"
     },
     {
-      "name": "Mundial 2022",
+      "name": "World Cup 2022",
       "isActive": true,
-      "description": "Responsive design del fixture de la Copa del Mundo de la FIFA 2022",
+      "description": "Responsive design of the FIFA World Cup 2022 fixture",
       "highlights": [
-        "Fútbol",
+        "Soccer",
         "Web Scraping",
         "Fixture",
-        "Mundial",
+        "World Cup",
         "FIFA",
         "2022",
         "API"

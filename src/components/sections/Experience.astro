@@ -1,48 +1,51 @@
 ---
-import Section from "../Section.astro"
-import { work } from "@cv"
-import ArrowDown from "../../icons/arrow-down.astro"
+import ArrowDown from "../../icons/arrow-down.astro";
+import Section from "../Section.astro";
+import type { Work } from "@/types/cv.ts";
 
-console.log({
-  work,
-})
+interface Props {
+  work: Work[];
+}
 
+const { work } = Astro.props;
 ---
 
 <Section title="Experiencia laboral">
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
-          const years = `${startYear} - ${endYear}`
+      work.map(({ name, startDate, endDate, position, summary, url }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;
 
-          return (
-              <li>
-                <div class="bullet"></div>
-                <article>
-                  <header class="collapsible">
-                    <div>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
-                        <h3>{name}</h3>
-                      </a>
-                      <h4>{position}</h4>
-                    </div>
-                    <div class="right">
-                      <h3><time>{years}</time></h3>
-                      <div class="button"><ArrowDown /></div>
-                    </div>
-                  </header>
-                  <footer class="content collapsed">
-                    <p>{summary}</p>
-                  </footer>
-                </article>
-              </li>
-          )
-        }
-      )
+        return (
+          <li>
+            <div class="bullet" />
+            <article>
+              <header class="collapsible">
+                <div>
+                  <a href={url} title={`Ver ${name}`} target="_blank">
+                    <h3>{name}</h3>
+                  </a>
+                  <h4>{position}</h4>
+                </div>
+                <div class="right">
+                  <h3>
+                    <time>{years}</time>
+                  </h3>
+                  <div class="button">
+                    <ArrowDown />
+                  </div>
+                </div>
+              </header>
+              <footer class="content">
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>
@@ -140,14 +143,21 @@ console.log({
   }
 
   .content {
+    height: 0;
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
   }
 
   /* Style the collapsible content. Note: hidden by default */
-  .collapsed {
+  /* .collapsed {
     height: 0;
-    /* transform:scaleY( 0); */
+    height: calc-size(0);
     overflow: hidden;
+  } */
+
+  .content.show {
+    height: auto;
+    height: calc-size(auto);
   }
 
   @media (width <= 700px) {
@@ -162,20 +172,20 @@ console.log({
   let i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function(this: HTMLButtonElement) {
+    coll[i].addEventListener("click", function (this: HTMLButtonElement) {
       let content = this.nextElementSibling;
-      content?.classList.toggle("collapsed");
-      if (
-        content?.classList.contains("collapsed") ||
-        content?.clientHeight === 0
-      ) {
-        content?.classList.add("collapsed");
-        this.querySelector(".button")?.classList.remove("active");
-      } else {
-        content?.classList.remove("collapsed");
-        this.querySelector(".button")?.classList.add("active");
-      }
+      // content?.classList.toggle("collapsed");
+      content?.classList.toggle("show");
+      // if (
+      //   content?.classList.contains("collapsed") ||
+      //   content?.clientHeight === 0
+      // ) {
+      //   content?.classList.add("collapsed");
+      //   this.querySelector(".button")?.classList.remove("active");
+      // } else {
+      //   content?.classList.remove("collapsed");
+      //   this.querySelector(".button")?.classList.add("active");
+      // }
     });
   }
-  
 </script>
