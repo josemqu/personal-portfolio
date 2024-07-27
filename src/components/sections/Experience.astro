@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 import ArrowDown from "../../icons/arrow-down.astro";
 import Section from "../Section.astro";
 import type { Work } from "@/types/cv.ts";
@@ -6,6 +7,17 @@ import type { Work } from "@/types/cv.ts";
 interface Props {
   work: Work[];
 }
+=======
+import ArrowDown from "../../icons/arrow-down.astro"
+import Section from "../Section.astro"
+import type { Work } from "@/types/cv.ts"
+
+interface Props {
+  work: Work[]
+}
+
+const {work} = Astro.props
+>>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
 
 const { work } = Astro.props;
 ---

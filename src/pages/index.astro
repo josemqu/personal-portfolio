@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
+<<<<<<< HEAD
 import About from "@/components/sections/About.astro";
 import Education from "@/components/sections/Education.astro";
 import Languages from "@/components/sections/Languages.astro";
@@ -16,6 +17,28 @@ import { basics, work, certificates } from "@cv";
 
 const { name, label } = basics;
 console.log({ work });
+=======
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Languages from "@/components/sections/Languages.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Certificates from "@/components/sections/Certificates.astro"
+import Skills from "@/components/sections/Skills.astro"
+import KeyboardManager from "@/components/KeyboardManager.astro"
+import Footer from "@/components/sections/Footer.astro"
+import type { Certificates } from "@/types/cv"
+
+import {
+  basics,
+  work,
+  certificates
+} from "@cv"
+
+const { name, label } = basics
+console.log({work})
+>>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
 ---
 
 <script src="/lib/theme-util.js" type="text/javascript" is:inline defer
@@ -23,12 +46,21 @@ console.log({ work });
 
 <Layout title={`CV de ${name}`}>
   <header>
+<<<<<<< HEAD
     <Hero basics={basics} />
   </header>
   <main transition:name="main-section">
     <About basics={basics} />
     <Experience work={work} />
     <Certificates certificates={certificates} />
+=======
+    <Hero basics={basics}/>
+  </header>
+  <main transition:name="main-section">
+    <About basics={basics}/>
+    <Experience work={work}/>
+    <Certificates certificates={certificates}/>
+>>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     <Education />
     <Languages />
     <Projects />

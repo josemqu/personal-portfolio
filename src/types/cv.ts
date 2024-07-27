@@ -42,10 +42,18 @@ export interface Profiles {
 export interface Work {
   name: string;
   position: string;
+<<<<<<< HEAD
   startDate: string;
   endDate: string | null;
   summary: string;
   url?: string;
+=======
+  startDate: DateStr;
+  endDate: DateStr | null;
+  summary: string;
+  highlights: Highlight[];
+  url?: undefined;
+>>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
 }
 
 type DateStr = `${string}-${string}-${string}`;

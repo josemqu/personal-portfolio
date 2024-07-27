@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 import Info from "./Info.astro";
 import Section from "@/components/Section.astro";
 
@@ -17,6 +18,23 @@ interface Props {
     username: string;
   }[];
 }
+=======
+import Info from "./Info.astro"
+import Section from "@/components/Section.astro"
+import X from "@/icons/X.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import GitHub from "@/icons/GitHub.astro"
+import type { SocialIcon } from "@/types/types/types"
+
+interface Props {
+  name: string
+}
+
+const {
+  name,
+} = Astro.props
+
+>>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
 
 const { name, label, email, phone, location, profiles } = Astro.props;
 ---
@@ -25,7 +43,11 @@ const { name, label, email, phone, location, profiles } = Astro.props;
   <div class="profileContainer">
     <figure>
       <a href="/me">
+<<<<<<< HEAD
         <img transition:name="profile" src="me_big.jpg" alt={name} />
+=======
+        <img transition:name="profile" src="me_big.jpg" alt={name}/>
+>>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
       </a>
     </figure>
     <Info
