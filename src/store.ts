@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+// import { writable } from "svelte/store";
 
 // import { cvES } from "@cv";
 // import { cvEN } from "@cv-en";
