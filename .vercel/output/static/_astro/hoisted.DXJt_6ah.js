@@ -1,0 +1,1 @@
+import"./hoisted.DEwJr31K.js";import"./index.CZNXKH1e.js";let e=document.getElementsByClassName("collapsible"),t;for(t=0;t<e.length;t++)e[t].addEventListener("click",function(){this.nextElementSibling?.classList.toggle("show")});
