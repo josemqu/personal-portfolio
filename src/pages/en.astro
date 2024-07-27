@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 import Layout from "@/layouts/Layout.astro";
 
 import About from "@/components/sections/About.astro";
@@ -29,39 +28,6 @@ const { name, label } = basics;
     <About basics={basics} />
     <Experience work={work} />
     <Certificates certificates={certificates} />
-=======
-import Layout from "@/layouts/Layout.astro"
-
-import About from "@/components/sections/About.astro"
-import Education from "@/components/sections/Education.astro"
-import Languages from "@/components/sections/Languages.astro"
-import Experience from "@/components/sections/Experience.astro"
-import Hero from "@/components/sections/Hero.astro"
-import Projects from "@/components/sections/Projects.astro"
-import Certificates from "@/components/sections/Certificates.astro"
-import Skills from "@/components/sections/Skills.astro"
-import KeyboardManager from "@/components/KeyboardManager.astro"
-import Footer from "@/components/sections/Footer.astro"
-
-import { 
-  basics, 
-  certificates,
-  work 
-} from "@cv-en"
-
-const { name, label } = basics
----
-<script src="/lib/theme-util.js" type="text/javascript" is:inline defer></script>
-
-<Layout title={`${name}'s CV`}>
-  <header>
-    <Hero basics={basics}/>
-  </header>
-  <main transition:name="main-section">
-    <About basics={basics} />
-    <Experience work={work}/>
-    <Certificates certificates={certificates}/>
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     <Education />
     <Languages />
     <Projects />
@@ -72,12 +38,7 @@ const { name, label } = basics
 </Layout>
 
 <style>
-<<<<<<< HEAD
   :root {
-=======
-
-:root {
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     --profile-img-max-width: 500px;
   }
 
@@ -97,18 +58,10 @@ const { name, label } = basics
   }
 
   @media (width <= 700px) {
-<<<<<<< HEAD
     main {
       padding: 1rem;
     }
 
-=======
-
-    main {
-      padding: 1rem;
-    }
- 
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     .info {
       justify-content: center;
       align-items: center;
@@ -128,7 +81,3 @@ const { name, label } = basics
     }
   }
 </style>
-<<<<<<< HEAD
-=======
-
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c

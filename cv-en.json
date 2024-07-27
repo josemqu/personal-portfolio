@@ -36,20 +36,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
       "endDate": "2024-05-31 00:00:00",
-<<<<<<< HEAD
       "summary": "In charge of crude oil billing and cost analysis for marketing in Argentina. Customer credit line management, control of services billed by suppliers, and analysis of accounting accounts."
-=======
-      "summary": [
-        "In charge of crude oil billing and cost analysis for marketing in Argentina. Customer credit line management, control of services billed by suppliers, and analysis of accounting accounts."
-      ],
-      "highlights": [
-        "Crude Oil Billing",
-        "Marketing Cost Analysis",
-        "Credit Line Management",
-        "Control of Billed Services",
-        "Accounting Account Analysis"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Tecpetrol",
@@ -57,19 +44,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2017-01-01 00:00:00",
       "endDate": "2020-12-31 00:00:00",
-<<<<<<< HEAD
       "summary": "Natural gas billing management, credit line management, control of billed services, and analysis of accounting accounts. Natural gas dispatch."
-=======
-      "summary": [
-        "Natural gas billing management, credit line management, control of billed services, and analysis of accounting accounts. Natural gas dispatch."
-      ],
-      "highlights": [
-        "Natural Gas Dispatch",
-        "Credit Line Management",
-        "Control of Billed Services",
-        "Accounting Account Analysis"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Tecpetrol",
@@ -77,20 +52,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2014-07-01 00:00:00",
       "endDate": "2016-01-31 00:00:00",
-<<<<<<< HEAD
       "summary": "Customer development, natural gas contract management, billing, imbalance control, monitoring of the Gas Plan, and natural gas dispatch."
-=======
-      "summary": [
-        "Customer development, natural gas contract management, billing, imbalance control, monitoring of the Gas Plan, and natural gas dispatch."
-      ],
-      "highlights": [
-        "Customer Development",
-        "Contract Management",
-        "Billing",
-        "Natural Gas Dispatch",
-        "Gas Plan"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Tecpetrol",
@@ -98,34 +60,14 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2009-04-15 00:00:00",
       "endDate": "2014-06-30 00:00:00",
-<<<<<<< HEAD
       "summary": "Responsible for natural gas dispatch, sales programming, imbalance control, Gas Plan monitoring, and reporting to government entities."
-=======
-      "summary": [
-        "Responsible for natural gas dispatch, sales programming, imbalance control, Gas Plan monitoring, and reporting to government entities."
-      ],
-      "highlights": [
-        "Natural Gas Dispatch",
-        "Sales Programming",
-        "Imbalance Control",
-        "Gas Plan",
-        "Government Reports"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Frigorífico Giorno",
       "position": "Quality Control Analyst",
       "startDate": "2008-02-01 00:00:00",
       "endDate": "2008-07-01 00:00:00",
-<<<<<<< HEAD
       "summary": "Quality control of fish and seafood at the processing plant. Analysis of finished products and raw materials. Control of Good Manufacturing Practices application."
-=======
-      "summary": [
-        "Quality control of fish and seafood at the processing plant. Analysis of finished products and raw materials. Control of Good Manufacturing Practices application."
-      ],
-      "highlights": ["Internship", "Quality Control", "GMP", "Laboratory"]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     }
   ],
   "volunteer": [

@@ -36,20 +36,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
       "endDate": "2024-05-31 00:00:00",
-<<<<<<< HEAD
       "summary": "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables."
-=======
-      "summary": [
-        "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables."
-      ],
-      "highlights": [
-        "Facturación de Petróleo Crudo",
-        "Análisis de Costos de Comercialización",
-        "Administración de Líneas de Crédito",
-        "Control de Servicios Facturados",
-        "Análisis de Cuentas Contables"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Tecpetrol",
@@ -57,19 +44,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2017-01-01 00:00:00",
       "endDate": "2020-12-31 00:00:00",
-<<<<<<< HEAD
       "summary": "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural."
-=======
-      "summary": [
-        "Gestión de facturación de gas natural, administración de líneas de crédito, control de servicios facturados y análisis de cuentas contables. Despacho de gas natural."
-      ],
-      "highlights": [
-        "Despacho de Gas Natural",
-        "Administración de Líneas de Crédito",
-        "Control de Servicios Facturados",
-        "Análisis de Cuentas Contables"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Tecpetrol",
@@ -77,20 +52,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2014-07-01 00:00:00",
       "endDate": "2016-01-31 00:00:00",
-<<<<<<< HEAD
       "summary": "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural."
-=======
-      "summary": [
-        "Desarrollo de clientes, administración de contratos de gas natural, facturación, control de desbalances, seguimiento del Plan Gas y despacho de gas natural."
-      ],
-      "highlights": [
-        "Desarrollo de Clientes",
-        "Administración de Contratos",
-        "Facturación",
-        "Despacho de Gas Natural",
-        "Plan Gas"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Tecpetrol",
@@ -98,20 +60,7 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2009-04-15 00:00:00",
       "endDate": "2014-06-30 00:00:00",
-<<<<<<< HEAD
       "summary": "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales."
-=======
-      "summary": [
-        "Responsable del despacho de gas natural, programación de ventas, control de desbalances, seguimiento del Plan Gas y presentación de informes a entidades gubernamentales."
-      ],
-      "highlights": [
-        "Despacho de Gas Natural",
-        "Programación de Ventas",
-        "Control de Desbalances",
-        "Plan Gas",
-        "Informes Gubernamentales"
-      ]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     },
     {
       "name": "Frigorífico Giorno",
@@ -119,14 +68,7 @@
       "url": "",
       "startDate": "2008-02-01 00:00:00",
       "endDate": "2008-07-01 00:00:00",
-<<<<<<< HEAD
       "summary": "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura."
-=======
-      "summary": [
-        "Control de calidad de pescados y mariscos en la planta de procesamiento. Análisis de productos terminados y materias primas. Control de aplicación de Buenas Prácticas de Manufactura."
-      ],
-      "highlights": ["Pasantía", "Control de Calidad", "BPM", "Laboratorio"]
->>>>>>> 40e6ebf70c6bedc83c245672043cb40dab10480c
     }
   ],
   "volunteer": [
