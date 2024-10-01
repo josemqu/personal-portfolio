@@ -30,7 +30,6 @@ export function Player() {
 
   const handleClick = () => {
     if (playing) {
-      console.log("pause");
       audioRef.current.pause();
     } else {
       audioRef.current.src = `/sounds/sound.mp3`;
