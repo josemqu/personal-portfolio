@@ -1,123 +1,118 @@
 ---
-import Mail from "@/icons/Mail.astro"
-import Phone from "@/icons/Phone.astro"
-import X from "@/icons/X.astro"
-import LinkedIn from "@/icons/LinkedIn.astro"
-import GitHub from "@/icons/GitHub.astro"
-import WorldMap from "@/icons/WorldMap.astro"
-import ThemeToggle from "@/components/ThemeToggle.astro"
-import LanguageToggle from "@/components/LanguageToggle.astro"
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import X from "@/icons/X.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import ThemeToggle from "@/components/ThemeToggle.astro";
+import LanguageToggle from "@/components/LanguageToggle.astro";
+import { Player } from "@/components/Player.jsx";
 
-import type { SocialIcon } from "@/types/types.d.ts"
+import type { SocialIcon } from "@/types/types.d.ts";
 
 interface Props {
-  name: string
-  label: string
-  email: string
-  phone: string
+  name: string;
+  label: string;
+  email: string;
+  phone: string;
   location: {
-    city: string
-    region: string
-  }
+    city: string;
+    region: string;
+  };
   profiles: {
-    network: string
-    url: string
-    username: string
-  }[]
+    network: string;
+    url: string;
+    username: string;
+  }[];
 }
 
-
-const {
-  name,
-  email,
-  phone,
-  profiles,
-  location,
-  label,
-} = Astro.props
+const { name, email, phone, profiles, location, label } = Astro.props;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
   X,
-}
+};
 
-const firstName = name?.split(" ")[0]
-const middleName = name?.split(" ")[1]
-const lastName = name?.split(" ")[2]
+const firstName = name?.split(" ")[0];
+const middleName = name?.split(" ")[1];
+const lastName = name?.split(" ")[2];
 
-const linkedInfo = profiles?.find(({ network }) => network === "LinkedIn")
-const linkedUrl = linkedInfo?.url
+const linkedInfo = profiles?.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
-
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
-  <div class="info" >
-    <h1 class="name">
-      <span class="first-name">
-        {firstName}
-      </span>
-      <span class="middle-name">
-        {middleName}
-      </span>
-      <span class="last-name">
-        {lastName}
-      </span>
-    </h1>
-    <p class="desc">{label}</p>
-    <footer class="print">
-      {printInfo}
-    </footer>
-      <div class="icons-inline">
-        <footer class="no-print">
-          {
-            email && (
-              <a
-                href={`mailto:${email}`}
-                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Mail />
-              </a>
-            )
-          }
-          {
-            phone && (
-              <a
-                href={`tel:${phone}`}
-                title={`Llamar por teléfono a ${name} al número ${phone}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Phone />
-              </a>
-            )
-          }
-          {
-            profiles?.map(({ network, url, username }) => {
-              const Icon = SOCIAL_ICONS[network]
 
-              return (
-                <a
-                  href={url}
-                  title={`Visitar el perfil de ${name} en ${network}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Icon />
-                </a>
-              )
-            })
-          }
-        </footer>
-        <ThemeToggle />
-        <LanguageToggle />
+<div class="info">
+  <h1 class="name">
+    <span class="first-name">
+      {firstName}
+    </span>
+    <span class="middle-name">
+      {middleName}
+    </span>
+    <span class="last-name">
+      {lastName}
+    </span>
+  </h1>
+  <p class="desc">{label}</p>
+  <footer class="print">
+    {printInfo}
+  </footer>
+  <div class="icons-inline">
+    <footer class="no-print">
+      {
+        email && (
+          <a
+            href={`mailto:${email}`}
+            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Mail />
+          </a>
+        )
+      }
+      {
+        phone && (
+          <a
+            href={`tel:${phone}`}
+            title={`Llamar por teléfono a ${name} al número ${phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Phone />
+          </a>
+        )
+      }
+      {
+        profiles?.map(({ network, url, username }) => {
+          const Icon = SOCIAL_ICONS[network];
+
+          return (
+            <a
+              href={url}
+              title={`Visitar el perfil de ${name} en ${network}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon />
+            </a>
+          );
+        })
+      }
+      <div class="icon" title="Reproducir/pausar sonido" id="play-pause">
+        <Player client:load />
       </div>
-    </div>
+    </footer>
+    <ThemeToggle />
+  </div>
+  <!-- <LanguageToggle /> -->
+</div>
 
 <style>
-
   .info {
     display: flex;
     flex-direction: column;
@@ -128,7 +123,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 
   .icons-inline {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
   }
@@ -149,7 +144,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     gap: 4px;
   }
 
-  footer a {
+  footer a,
+  footer .icon {
     color: var(--bold-text);
     display: inline-flex;
     align-items: center;
@@ -159,9 +155,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     height: 32px;
     width: 32px;
     border-radius: 6px;
+    cursor: pointer;
   }
 
-  footer a:hover {
+  footer a:hover,
+  footer .icon:hover {
     background: var(--slider-bg);
     border-color: var(--hover-border-color);
     transform: scale(1.1);
@@ -169,9 +167,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   @media (width <= 700px) {
-
     .hidden {
-      height : 0;
+      height: 0;
       /* overflow : hidden; */
       display: none;
     }
@@ -215,11 +212,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       gap: 0.5rem;
       text-align: center;
     }
-
   }
 
-  @media (width < 425px ){
-
+  @media (width < 425px) {
     .container {
       padding-bottom: 0 !important;
     }
@@ -239,10 +234,20 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     }
   }
 
-  @media (width < 335px ){
+  @media (width < 335px) {
     .collapse .middle-name {
       display: none;
     }
   }
-
 </style>
+
+<!-- <script>
+  function playPause() {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script> -->
