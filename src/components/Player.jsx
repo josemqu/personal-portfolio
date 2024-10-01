@@ -32,12 +32,10 @@ export function Player() {
     if (playing) {
       console.log("pause");
       audioRef.current.pause();
-      audioRef.current.volume = 0.5;
     } else {
-      console.log("play");
-      audioRef.current.play();
-      audioRef.current.volume = 0.5;
       audioRef.current.src = `/sounds/sound.mp3`;
+      audioRef.current.volume = 0.5;
+      audioRef.current.play();
     }
 
     setPlaying(!playing);
@@ -46,7 +44,7 @@ export function Player() {
   return (
     <div>
       <div onClick={handleClick}>{playing ? <Pause /> : <Play />}</div>
-      <audio ref={audioRef} src={`/sounds/sound.mp3`} />
+      <audio ref={audioRef} />
     </div>
   );
 }
