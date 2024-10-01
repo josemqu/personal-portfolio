@@ -43,7 +43,7 @@ export interface Work {
   name: string;
   position: string;
   startDate: string;
-  endDate: string | null;
+  endDate?: string | null;
   summary: string;
   url?: string;
 }

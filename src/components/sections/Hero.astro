@@ -1,39 +1,38 @@
 ---
-import Info from "../sections/Info.astro"
-import Image from "@/components/Image.astro"
-import type { CV } from "@/types/cv"
+import Info from "../sections/Info.astro";
+import Image from "@/components/Image.astro";
+import type { CV } from "@/types/cv";
 
 interface Props {
-  basics: CV["basics"]
+  basics: CV["basics"];
 }
 
-const { basics } = Astro.props
-const { name, label, location, profiles, phone, email } = basics
-console.log(basics)
-
+const { basics } = Astro.props;
+const { name, label, location, profiles, phone, email } = basics;
+// console.log(basics)
 ---
-  <div class="container">
-      <Info
-        name={name}
-        email={email}
-        phone={phone}
-        profiles={profiles}
-        location={location}
-        label={label}
-      />
-    <figure>
-      <a href="/" data-astro-prefetch >
-        <Image />
-      </a>
-    </figure>
-  </div>
+
+<div class="container">
+  <Info
+    name={name}
+    email={email}
+    phone={phone}
+    profiles={profiles}
+    location={location}
+    label={label}
+  />
+  <figure>
+    <a href="/" data-astro-prefetch>
+      <Image />
+    </a>
+  </figure>
+</div>
 
 <style>
-  
   .container {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
     width: 100%;
@@ -42,13 +41,10 @@ console.log(basics)
   }
 
   @media (width <= 700px) {
-
     .container {
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
     }
-
   }
-
 </style>
