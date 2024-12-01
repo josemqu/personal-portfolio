@@ -1,22 +1,23 @@
 ---
 import ArrowDown from "../../icons/arrow-down.astro";
 import Section from "../Section.astro";
-import type { Work } from "@/types/cv.ts";
+import type { Work, Titles } from "@/types/cv.ts";
 
 interface Props {
   work: Work[];
+  titles: Titles;
 }
 
-const { work } = Astro.props;
+const { work, titles } = Astro.props;
 ---
 
-<Section title="Experiencia laboral">
+<Section title={titles.work}>
   <ul>
     {
-      work.map(({ name, startDate, endDate, position, summary, url }) => {
+      work?.map(({ name, startDate, endDate, position, summary, url }) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+          endDate != null ? new Date(endDate).getFullYear() : `${titles.now}`;
         const years = `${startYear} - ${endYear}`;
         return (
           <li>

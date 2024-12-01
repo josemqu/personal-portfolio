@@ -1,43 +1,55 @@
 ---
-import Section from "../Section.astro"
-import ArrowDown from "../../icons/arrow-down.astro"
+import Section from "../Section.astro";
+import ArrowDown from "../../icons/arrow-down.astro";
+import type { Education, Titles } from "@/types/cv.ts";
 
-import { education } from "@cv"
+interface Props {
+  education: Education[];
+  titles: Titles;
+}
+
+const { education, titles } = Astro.props;
+const title = titles.education;
 ---
 
-<Section title="Educación">
+<Section title={title}>
   <ul>
     {
-      education.map(({ institution, college, startDate, endDate, area, url }) => {
-        const startYear = new Date(startDate).getFullYear()
-        const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual"
-        const years = `${startYear} - ${endYear}`
+      education.map(
+        ({ institution, college, startDate, endDate, area, url }) => {
+          const startYear = new Date(startDate).getFullYear();
+          const endYear =
+            endDate != null ? new Date(endDate).getFullYear() : `${titles.now}`;
+          const years = `${startYear} - ${endYear}`;
 
-        return (
-          <li>
-            <div class="bullet"></div>
-            <article>
-              <header class="collapsible">
-                <div>
-                  <a href={url} title={`Ver ${url}`} target="_blank">
-                    <h3>{institution}</h3>
-                  </a>
-                  <h4>{area}</h4>
-                </div>
-                <div class="right">
-                    <h3><time>{years}</time></h3>
-                    <div class="button"><ArrowDown /></div>
-                </div>
-              </header>
-              <footer class="content">
-                <p>{college}</p>
-              </footer>
-            </article>
-          </li>
-        )
-      }
-    )
+          return (
+            <li>
+              <div class="bullet" />
+              <article>
+                <header class="collapsible">
+                  <div>
+                    <a href={url} title={`Ver ${url}`} target="_blank">
+                      <h3>{institution}</h3>
+                    </a>
+                    <h4>{area}</h4>
+                  </div>
+                  <div class="right">
+                    <h3>
+                      <time>{years}</time>
+                    </h3>
+                    <div class="button">
+                      <ArrowDown />
+                    </div>
+                  </div>
+                </header>
+                <footer class="content">
+                  <p>{college}</p>
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
     }
   </ul>
 </Section>
@@ -91,7 +103,7 @@ import { education } from "@cv"
     align-items: flex-start;
     margin-bottom: 4px;
   }
-  
+
   time {
     color: var(--block-quote-border);
     font-size: 0.85rem;
@@ -101,7 +113,6 @@ import { education } from "@cv"
     user-select: none;
   }
 
-  
   .right {
     display: flex;
     justify-content: flex-end;
@@ -135,9 +146,9 @@ import { education } from "@cv"
 
   /* Style the collapsible content. Note: hidden by default */
   /* .collapsed { */
-    /* height: 0; */
-    /* transform:scaleY( 0); */
-    /* overflow: hidden; */
+  /* height: 0; */
+  /* transform:scaleY( 0); */
+  /* overflow: hidden; */
   /* } */
 
   @media (width <= 700px) {

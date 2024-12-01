@@ -1,45 +1,79 @@
 ---
-import GitHub from "@/icons/GitHub.astro"
-import Section from "../Section.astro"
+import GitHub from "@/icons/GitHub.astro";
+import PlayStore from "@/icons/PlayStore.astro";
+import Section from "../Section.astro";
+import type { Projects, Titles } from "@/types/cv.ts";
 
-import { projects } from "@cv"
+interface Props {
+  projects: Projects[];
+  titles: Titles;
+}
+
+const { projects, titles } = Astro.props;
+const title = titles.projects;
 ---
 
-<Section title="Proyectos">
+<Section title={title}>
   <ul>
     {
-      projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
+      projects?.map(
+        ({
+          name,
+          isActive,
+          description,
+          highlights,
+          url,
+          github,
+          playStore,
+        }) => {
+          const urlSrc = url ? new URL(url) : "#";
+          const playStoreSrc = playStore ? new URL(playStore) : "#";
           return (
             <li>
               <article>
                 <header>
-                  <h3><div class="nowrap">
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-                      {name}
-                    </a>
-                    {isActive && <span class="bullet">&#x25cf;</span>}
-                    {github && (
+                  <h3>
+                    <div class="nowrap">
                       <a
-                        class="github-code-link"
-                        href={github}
+                        href={urlSrc}
                         target="_blank"
-                        title={`Ver código fuente del proyecto ${name}`}
+                        title={`${titles.viewProject} ${name}`}
                       >
-                        <GitHub />
+                        {name}
                       </a>
-                    )}</div>
+                      {isActive && <span class="bullet">&#x25cf;</span>}
+                      {github && (
+                        <a
+                          class="github-code-link"
+                          href={github}
+                          target="_blank"
+                          title={`${titles.viewCode} ${name}`}
+                        >
+                          <GitHub />
+                        </a>
+                      )}
+                      {playStore && (
+                        <a
+                          class="github-code-link"
+                          href={playStoreSrc}
+                          target="_blank"
+                          title={`${name} ${titles.inPlayStore}`}
+                        >
+                          <PlayStore />
+                        </a>
+                      )}
+                    </div>
                   </h3>
                   <p>{description}</p>
                 </header>
                 <footer>
                   {highlights.map((highlight) => {
-                    return <span>{highlight}</span>
+                    return <span>{highlight}</span>;
                   })}
                 </footer>
               </article>
             </li>
-          )
+          );
         }
       )
     }
@@ -83,7 +117,7 @@ import { projects } from "@cv"
   }
 
   article h3 span {
-    color: var(--slider-input-bg);;
+    color: var(--slider-input-bg);
   }
 
   footer {
@@ -96,7 +130,7 @@ import { projects } from "@cv"
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap:0.2rem;
+    gap: 0.2rem;
   }
 
   footer span {

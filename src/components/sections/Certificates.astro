@@ -2,17 +2,18 @@
 import Popup from "@/icons/popup.astro";
 import Section from "../Section.astro";
 // import type { CV } from "@/types/cv"
-import type { Certificates } from "@/types/cv.ts";
+import type { Certificates, Titles } from "@/types/cv.ts";
 
 interface Props {
   certificates: Certificates[];
+  titles: Titles;
 }
 
-const { certificates } = Astro.props;
-// console.log({ certificates });
+const { certificates, titles } = Astro.props;
+const title = titles.certificates;
 ---
 
-<Section title="Certificados">
+<Section title={title}>
   <ul>
     {
       certificates.map(({ name, date, issuer, url }) => {

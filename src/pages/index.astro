@@ -11,10 +11,19 @@ import Certificates from "@/components/sections/Certificates.astro";
 import Skills from "@/components/sections/Skills.astro";
 import Footer from "@/components/sections/Footer.astro";
 
-import { basics, work, certificates } from "@cv";
+import {
+  titles,
+  basics,
+  certificates,
+  work,
+  education,
+  languages,
+  projects,
+  skills,
+} from "@cv";
 
 const { name } = basics;
-// console.log({ work });
+console.log({ projects });
 ---
 
 <script src="/lib/theme-util.js" type="text/javascript" is:inline defer
@@ -25,13 +34,13 @@ const { name } = basics;
     <Hero basics={basics} />
   </header>
   <main transition:name="main-section">
-    <About basics={basics} />
-    <Experience work={work} />
-    <Certificates certificates={certificates} />
-    <Education />
-    <Languages />
-    <Projects />
-    <Skills />
+    <About basics={basics} titles={titles} />
+    <Experience work={work} titles={titles} />
+    <Certificates certificates={certificates} titles={titles} />
+    <Education education={education} titles={titles} />
+    <Languages languages={languages} titles={titles} />
+    <Projects projects={projects} titles={titles} />
+    <Skills skills={skills} titles={titles} />
     <Footer />
   </main>
   <!-- <KeyboardManager /> -->

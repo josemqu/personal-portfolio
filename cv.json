@@ -1,4 +1,23 @@
 {
+  "titles": {
+    "about": "Sobre Mi",
+    "work": "Experiencia Laboral",
+    "education": "Educación",
+    "volunteer": "Voluntariado",
+    "awards": "Premios",
+    "certificates": "Certificados",
+    "publications": "Publicaciones",
+    "skills": "Habilidades",
+    "languages": "Idiomas",
+    "interests": "Intereses",
+    "references": "Referencias",
+    "projects": "Proyectos",
+    "now": "Actual",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código de",
+    "viewApp": "Ver App",
+    "inPlayStore": "en Play Store"
+  },
   "basics": {
     "name": "José María Quintana",
     "label": "Ing. Químico especializado en Oil & Gas. Meticuloso, analítico y proactivo. Orientado a la ciencia de datos y la innovación tecnológica.",
@@ -97,8 +116,7 @@
       "studyType": "Postgraduate",
       "startDate": "2015-01-01 00:00:00",
       "endDate": "2016-01-01 00:00:00",
-      "score": "9.00",
-      "courses": [""]
+      "score": "9.00"
     },
     {
       "institution": "Facultad de Ingeniería",
@@ -108,8 +126,7 @@
       "studyType": "Bachelor",
       "startDate": "2004-01-01 00:00:00",
       "endDate": "2009-01-01 00:00:00",
-      "score": "7.23",
-      "courses": [""]
+      "score": "7.23"
     },
     {
       "institution": "ESMET N° 1",
@@ -119,8 +136,7 @@
       "studyType": "High School",
       "startDate": "1998-01-01 00:00:00",
       "endDate": "2002-01-01 00:00:00",
-      "score": "9.81",
-      "courses": [""]
+      "score": "9.81"
     }
   ],
   "awards": [
@@ -290,12 +306,29 @@
   ],
   "projects": [
     {
-      "name": "PrecioNafta.com",
+      "name": "Precio Nafta",
       "isActive": true,
-      "description": "Aplicación web de precios de combustibles en Argentina",
-      "highlights": ["API", "Surtidores", "Nafta", "GNC", "Gasoil", "Mapa"],
+      "description": "Aplicación web y móvil de precios de combustibles en Argentina",
+      "highlights": [
+        "API",
+        "Surtidores",
+        "Nafta",
+        "GNC",
+        "Gasoil",
+        "Mapa",
+        "PlayStore",
+        "PWA"
+      ],
       "url": "https://www.precionafta.com",
-      "github": ""
+      "playStore": "https://play.google.com/store/apps/details?id=com.precionafta.www.twa&hl=es_AR"
+    },
+    {
+      "name": "PromiedoX",
+      "isActive": true,
+      "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
+      "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
+      "github": "https://github.com/josemqu/promiedox",
+      "url": "https://chromewebstore.google.com/detail/promiedox/cbojoejgbalfpgifhmjjbhhkincninan"
     },
     {
       "name": "¿Qué Comemos?",
@@ -345,13 +378,6 @@
         "Charts"
       ],
       "github": "https://github.com/josemqu/fondos_comunes"
-    },
-    {
-      "name": "Promiedos",
-      "isActive": false,
-      "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
-      "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
-      "github": "https://github.com/josemqu/promiedos"
     },
     {
       "name": "Mundial 2022",

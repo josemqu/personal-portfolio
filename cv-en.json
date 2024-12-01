@@ -1,4 +1,23 @@
 {
+  "titles": {
+    "about": "About Me",
+    "work": "Work Experience",
+    "education": "Education",
+    "volunteer": "Volunteer",
+    "awards": "Awards",
+    "certificates": "Certificates",
+    "publications": "Publications",
+    "skills": "Skills",
+    "languages": "Languages",
+    "interests": "Interests",
+    "references": "References",
+    "projects": "Projects",
+    "now": "Present",
+    "viewProject": "View Project",
+    "viewCode": "View Code of",
+    "viewApp": "View App",
+    "inPlayStore": "in Play Store"
+  },
   "basics": {
     "name": "José María Quintana",
     "label": "Chemical Engineer specialized in Oil & Gas. Meticulous, analytical, and proactive. Oriented towards data science and technological innovation.",
@@ -35,7 +54,6 @@
       "position": "IT Business Solutions Specialist",
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2024-06-01 00:00:00",
-      "endDate": "",
       "summary": "Designing and implementing customized applications for Conventional and Unconventional operations in Oil and Gas industry. Support and optimization of drilling and well completion control room."
     },
     {
@@ -97,8 +115,7 @@
       "studyType": "Postgraduate",
       "startDate": "2015-01-01 00:00:00",
       "endDate": "2016-01-01 00:00:00",
-      "score": "9.00",
-      "courses": [""]
+      "score": "9.00"
     },
     {
       "institution": "Faculty of Engineering",
@@ -108,8 +125,7 @@
       "studyType": "Bachelor",
       "startDate": "2004-01-01 00:00:00",
       "endDate": "2009-01-01 00:00:00",
-      "score": "7.23",
-      "courses": [""]
+      "score": "7.23"
     },
     {
       "institution": "ESMET N° 1",
@@ -119,8 +135,7 @@
       "studyType": "High School",
       "startDate": "1998-01-01 00:00:00",
       "endDate": "2002-01-01 00:00:00",
-      "score": "9.81",
-      "courses": [""]
+      "score": "9.81"
     }
   ],
   "awards": [
@@ -285,12 +300,20 @@
   ],
   "projects": [
     {
-      "name": "PrecioNafta.com",
+      "name": "Precio Nafta",
       "isActive": true,
-      "description": "Web application for fuel prices in Argentina",
+      "description": "Web and mobile application for fuel prices in Argentina",
       "highlights": ["API", "Pumps", "Gasoline", "CNG", "Diesel", "Map"],
       "url": "https://www.precionafta.com",
-      "github": ""
+      "playStore": "https://play.google.com/store/apps/details?id=com.precionafta.www.twa&hl=es_AR"
+    },
+    {
+      "name": "PromiedoX",
+      "isActive": true,
+      "description": "Chrome extension to enhance user experience on the promiedos.com.ar website",
+      "highlights": ["Soccer", "Averages", "Chrome Extension"],
+      "github": "https://github.com/josemqu/promiedox",
+      "url": "https://chromewebstore.google.com/detail/promiedox/cbojoejgbalfpgifhmjjbhhkincninan"
     },
     {
       "name": "¿Qué Comemos?",
@@ -340,13 +363,6 @@
         "Charts"
       ],
       "github": "https://github.com/josemqu/fondos_comunes"
-    },
-    {
-      "name": "Promiedos",
-      "isActive": false,
-      "description": "Chrome extension to enhance user experience on the promiedos.com.ar website",
-      "highlights": ["Soccer", "Averages", "Chrome Extension"],
-      "github": "https://github.com/josemqu/promiedos"
     },
     {
       "name": "World Cup 2022",

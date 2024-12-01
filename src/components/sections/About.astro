@@ -4,13 +4,16 @@ import type { CV } from "@/types/cv";
 
 interface Props {
   basics: CV["basics"];
+  titles: CV["titles"];
 }
 
-const { basics } = Astro.props;
+const { basics, titles } = Astro.props;
 const summary = basics.summary;
+const title = titles.about;
+console.log({ titles });
 ---
 
-<Section title="Sobre mí">
+<Section title={title}>
   <div>
     {summary.map((p) => <p>{p}</p>)}
   </div>

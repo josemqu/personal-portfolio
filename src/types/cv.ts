@@ -1,4 +1,5 @@
 export interface CV {
+  titles: Titles;
   basics: Basics;
   work: Array<Work>;
   volunteer: Array<Volunteer>;
@@ -11,6 +12,26 @@ export interface CV {
   interests: Array<Interests>;
   references: Array<References>;
   projects: Array<Projects>;
+}
+
+export interface Titles {
+  about: string;
+  work: string;
+  education: string;
+  volunteer: string;
+  awards: string;
+  certificates: string;
+  publications: string;
+  skills: string;
+  languages: string;
+  interests: string;
+  references: string;
+  projects: string;
+  now: string;
+  viewProject: string;
+  viewCode: string;
+  viewApp: string;
+  inPlayStore: string;
 }
 
 export interface Basics {
@@ -45,19 +66,17 @@ export interface Work {
   startDate: string;
   endDate?: string | null;
   summary: string;
-  url?: string;
+  url?: string | null;
 }
-
-type DateStr = `${string}-${string}-${string}`;
 
 export interface Volunteer {
   organization: string;
   position: string;
   url: string;
-  startDate: DateStr;
-  endDate: DateStr;
+  startDate: string;
+  endDate: string;
   summary: string;
-  highlights: Highlight[];
+  highlights: string[];
 }
 
 export interface Skills {
@@ -83,7 +102,7 @@ export interface Certificates {
 export interface Publications {
   name: string;
   publisher: string;
-  releaseDate: DateStr;
+  releaseDate: string;
   url: string;
   summary: string;
 }
@@ -94,10 +113,9 @@ export interface Education {
   url: string;
   area: string;
   studyType: string;
-  startDate: DateStr;
-  endDate: DateStr;
+  startDate: string;
+  endDate: string;
   score: string;
-  courses: Array<string>;
 }
 
 export interface Languages {
@@ -127,9 +145,10 @@ export interface Projects {
   name: string;
   isActive: boolean;
   description: string;
-  highlights: Highlight[];
-  url: string;
-  github: string;
+  highlights: string[];
+  url?: string;
+  github?: string;
+  playStore?: string;
 }
 
 export interface Interests {
@@ -141,5 +160,3 @@ export interface References {
   name: string;
   reference: string;
 }
-
-type Highlight = Array<String>;
