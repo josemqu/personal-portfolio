@@ -1,6 +1,13 @@
 ---
+// set language as a prop
+interface Props {
+  language: string;
+}
+
+const { language } = Astro.props;
+
 const textSize = 20;
-const textYpos = 19;
+const textYPosition = 19;
 ---
 
 <!-- <Section > -->
@@ -20,7 +27,7 @@ const textYpos = 19;
         stroke-linejoin="round"
         class="feather feather-es"
       >
-        <text x="5" y={textYpos}>ES</text>
+        <text x="5" y={textYPosition}>ES</text>
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +41,7 @@ const textYpos = 19;
         stroke-linejoin="round"
         class="feather feather-en"
       >
-        <text x="-1" y={textYpos}>EN</text>
+        <text x="-1" y={textYPosition}>EN</text>
       </svg>
     </div>
   </label>

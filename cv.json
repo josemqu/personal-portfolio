@@ -19,6 +19,7 @@
     "inPlayStore": "en Play Store"
   },
   "basics": {
+    "language": "es",
     "name": "José María Quintana",
     "label": "Ing. Químico especializado en Oil & Gas. Meticuloso, analítico y proactivo. Orientado a la ciencia de datos y la innovación tecnológica.",
     "image": "/me.webp",

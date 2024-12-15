@@ -4,13 +4,18 @@ import Phone from "@/icons/Phone.astro";
 import X from "@/icons/X.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
-import ThemeToggle from "@/components/ThemeToggle.astro";
-import LanguageToggle from "@/components/LanguageToggle.astro";
+// import ThemeToggle from "@/components/ThemeToggle.astro";
+// import LanguageToggle from "@/components/LanguageToggle.astro";
 import { Player } from "@/components/Player.jsx";
+// import { Language } from "@/components/Language.jsx";
+// import { Switch } from "free-astro-components";
 
 import type { SocialIcon } from "@/types/types.d.ts";
 
+import { ThemeSwitch } from "free-astro-components";
+
 interface Props {
+  language: string;
   name: string;
   label: string;
   email: string;
@@ -26,7 +31,7 @@ interface Props {
   }[];
 }
 
-const { name, email, phone, profiles, label } = Astro.props;
+const { language, name, email, phone, profiles, label } = Astro.props;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
@@ -105,11 +110,16 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
       <div class="icon" title="AI generated (NotebookLM)" id="play-pause">
         <Player client:load />
       </div>
+      <div title="Change language" id="change-language">
+        <a href={language === "es" ? `/en` : `/`}>
+          {language === "es" ? "EN" : "ES"}
+        </a>
+      </div>
     </footer>
-    <ThemeToggle />
   </div>
-  <!-- <LanguageToggle /> -->
 </div>
+
+<script></script>
 
 <style>
   .info {
@@ -155,6 +165,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
     width: 32px;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: 600;
+    font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
   }
 
   footer a:hover,

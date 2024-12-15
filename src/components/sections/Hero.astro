@@ -8,12 +8,13 @@ interface Props {
 }
 
 const { basics } = Astro.props;
-const { name, label, location, profiles, phone, email } = basics;
+const { language, name, label, location, profiles, phone, email } = basics;
 // console.log(basics)
 ---
 
 <div class="container">
   <Info
+    language={language}
     name={name}
     email={email}
     phone={phone}

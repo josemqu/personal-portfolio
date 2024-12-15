@@ -35,6 +35,7 @@ export interface Titles {
 }
 
 export interface Basics {
+  language: string;
   name: string;
   label: string;
   image: string;

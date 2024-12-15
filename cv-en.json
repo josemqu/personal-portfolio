@@ -19,6 +19,7 @@
     "inPlayStore": "in Play Store"
   },
   "basics": {
+    "language": "en",
     "name": "José María Quintana",
     "label": "Chemical Engineer specialized in Oil & Gas. Meticulous, analytical, and proactive. Oriented towards data science and technological innovation.",
     "image": "/me.webp",
