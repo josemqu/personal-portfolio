@@ -3,6 +3,7 @@ import Info from "./Info.astro";
 import Section from "@/components/Section.astro";
 
 interface Props {
+  language: string;
   name: string;
   label: string;
   email: string;
@@ -18,7 +19,7 @@ interface Props {
   }[];
 }
 
-const { name, label, email, phone, location, profiles } = Astro.props;
+const { language, name, label, email, phone, location, profiles } = Astro.props;
 ---
 
 <Section>
@@ -29,6 +30,7 @@ const { name, label, email, phone, location, profiles } = Astro.props;
       </a>
     </figure>
     <Info
+      language={language}
       name={name}
       label={label}
       email={email}
