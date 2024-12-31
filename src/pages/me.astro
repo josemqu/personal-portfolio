@@ -2,13 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import HeroFull from "../components/sections/HeroFull.astro";
 import { basics } from "@cv";
-const { name, label, email, phone, location, profiles } = basics;
+const { language, name, label, email, phone, location, profiles } = basics;
 ---
 
 <Layout title={`Perfil de ${name} - ${label}`}>
   <main>
     <a href="/" class="body-section">
       <HeroFull
+        language={language}
         name={name}
         label={label}
         email={email}
