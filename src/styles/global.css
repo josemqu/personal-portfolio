@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
+:root {
   --color-bg: #f0f0f0;
   --color-bg2: #fff;
   --color-text: #777;
@@ -60,4 +60,4 @@
   --color-shadow: #000000;
   --color-box-shadow: rgba(0, 0, 0, 0.1);
   --color-header-header: #2d2d2d;
-} */
+}

@@ -11,6 +11,8 @@ import Certificates from "@/components/sections/Certificates.astro";
 import Skills from "@/components/sections/Skills.astro";
 import Footer from "@/components/sections/Footer.astro";
 
+import { slide, fade } from "astro:transitions";
+
 import {
   titles,
   basics,
@@ -32,7 +34,10 @@ const { name } = basics;
   <header>
     <Hero basics={basics} />
   </header>
-  <main transition:name="main-section">
+  <main
+    transition:name="main-section"
+    transition:animate={fade({ duration: "0.4s" })}
+  >
     <About basics={basics} titles={titles} />
     <Experience work={work} titles={titles} />
     <Certificates certificates={certificates} titles={titles} />
@@ -86,6 +91,18 @@ const { name } = basics;
 
     .desc {
       text-wrap: balance;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    html > body > header:not([data-scroll="0"]) header {
+      box-shadow: 0 10px 10px var(--color-box-shadow);
+    }
+  }
+
+  @media screen and (min-width: 701px) and (min-height: 20px) {
+    html > body > header:not([data-scroll="0"]) header {
+      box-shadow: 0 10px 10px var(--color-box-shadow);
     }
   }
 </style>

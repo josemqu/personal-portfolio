@@ -1,6 +1,7 @@
 ---
 import Info from "./Info.astro";
 import Section from "@/components/Section.astro";
+import { fade } from "astro:transitions";
 
 interface Props {
   language: string;
@@ -26,7 +27,12 @@ const { language, name, label, email, phone, location, profiles } = Astro.props;
   <div class="profileContainer">
     <figure>
       <a href="/me">
-        <img transition:name="profile" src="me_big.jpg" alt={name} />
+        <img
+          transition:name="profile"
+          transition:animate={fade({ duration: "0.4s" })}
+          src="me_big.jpg"
+          alt={name}
+        />
       </a>
     </figure>
     <Info
