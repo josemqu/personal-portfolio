@@ -4,6 +4,8 @@ import Phone from "@/icons/Phone.astro";
 import X from "@/icons/X.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
+import ArrowDown from "@/icons/arrow-down.astro";
+import Download from "@/icons/Download.astro";
 // import ThemeToggle from "@/components/ThemeToggle.astro";
 // import LanguageToggle from "@/components/LanguageToggle.astro";
 import { Player } from "@/components/Player.jsx";
@@ -106,6 +108,21 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           );
         })
       }
+      {/* Botón de descarga de CV */}
+      <a
+        href={language === "es"
+          ? "/public/assets/CV%20QUINTANA_es_2506.pdf"
+          : "/public/assets/CV%20QUINTANA_en_2505.pdf"}
+        download
+        title={language === "es"
+          ? "Descargar CV en español"
+          : "Download CV in English"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style="display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--block-quote-border); padding: 4px; height: 32px; width: 32px; border-radius: 6px; cursor: pointer; font-weight: 600; font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem;"
+      >
+        <Download />
+      </a>
       <div class="icon" title="AI generated (NotebookLM)" id="play-pause">
         <Player client:load />
       </div>
