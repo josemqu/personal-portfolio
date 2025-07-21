@@ -168,24 +168,31 @@ const { work, titles } = Astro.props;
 </style>
 
 <script>
-  let coll = document.getElementsByClassName("collapsible");
-  let i;
+  function initializeCollapsible() {
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function (this: HTMLButtonElement) {
-      let content = this.nextElementSibling;
-      // content?.classList.toggle("collapsed");
-      content?.classList.toggle("show");
-      // if (
-      //   content?.classList.contains("collapsed") ||
-      //   content?.clientHeight === 0
-      // ) {
-      //   content?.classList.add("collapsed");
-      //   this.querySelector(".button")?.classList.remove("active");
-      // } else {
-      //   content?.classList.remove("collapsed");
-      //   this.querySelector(".button")?.classList.add("active");
-      // }
-    });
+    for (i = 0; i < coll.length; i++) {
+      // Remove existing listeners to avoid duplicates
+      const newElement = coll[i].cloneNode(true);
+      coll[i].parentNode?.replaceChild(newElement, coll[i]);
+    }
+
+    // Re-get elements after cloning
+    coll = document.getElementsByClassName("collapsible");
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function (this: HTMLButtonElement) {
+        let content = this.nextElementSibling;
+        content?.classList.toggle("show");
+        this.querySelector(".button")?.classList.toggle("active");
+      });
+    }
   }
+
+  // Initialize on page load
+  initializeCollapsible();
+
+  // Re-initialize after view transitions
+  document.addEventListener('astro:page-load', initializeCollapsible);
 </script>
