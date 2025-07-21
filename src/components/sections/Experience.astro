@@ -23,7 +23,7 @@ const { work, titles } = Astro.props;
           <li>
             <div class="bullet" />
             <article>
-              <header class="collapsible">
+              <header class="collapsible experience-collapsible">
                 <div>
                   <a href={url} title={`Ver ${name}`} target="_blank">
                     <h3>{name}</h3>
@@ -168,22 +168,23 @@ const { work, titles } = Astro.props;
 </style>
 
 <script>
-  function initializeCollapsible() {
-    let coll = document.getElementsByClassName("collapsible");
+  function initializeExperienceCollapsible() {
+    let coll = document.getElementsByClassName("experience-collapsible");
     let i;
 
+    // Remove existing listeners to avoid duplicates
     for (i = 0; i < coll.length; i++) {
-      // Remove existing listeners to avoid duplicates
-      const newElement = coll[i].cloneNode(true);
-      coll[i].parentNode?.replaceChild(newElement, coll[i]);
+      const element = coll[i] as HTMLElement;
+      const newElement = element.cloneNode(true) as HTMLElement;
+      element.parentNode?.replaceChild(newElement, element);
     }
 
     // Re-get elements after cloning
-    coll = document.getElementsByClassName("collapsible");
+    coll = document.getElementsByClassName("experience-collapsible");
     
     for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function (this: HTMLButtonElement) {
-        let content = this.nextElementSibling;
+      coll[i].addEventListener("click", function (this: HTMLElement) {
+        let content = this.nextElementSibling as HTMLElement;
         content?.classList.toggle("show");
         this.querySelector(".button")?.classList.toggle("active");
       });
@@ -191,8 +192,8 @@ const { work, titles } = Astro.props;
   }
 
   // Initialize on page load
-  initializeCollapsible();
+  initializeExperienceCollapsible();
 
   // Re-initialize after view transitions
-  document.addEventListener('astro:page-load', initializeCollapsible);
+  document.addEventListener('astro:page-load', initializeExperienceCollapsible);
 </script>
