@@ -314,7 +314,8 @@
       "description": "Web and mobile application for fuel prices in Argentina",
       "highlights": ["API", "Pumps", "Gasoline", "CNG", "Diesel", "Map"],
       "url": "https://www.precionafta.com",
-      "playStore": "https://play.google.com/store/apps/details?id=com.precionafta.www.twa&hl=es_AR"
+      "playStore": "https://play.google.com/store/apps/details?id=com.precionafta.www.twa&hl=es_AR",
+      "appStore": "https://apps.apple.com/us/app/precio-nafta/id6749783431"
     },
     {
       "name": "PromiedoX",

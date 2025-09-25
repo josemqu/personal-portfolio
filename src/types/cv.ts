@@ -150,6 +150,7 @@ export interface Projects {
   url?: string;
   github?: string;
   playStore?: string;
+  appStore?: string;
 }
 
 export interface Interests {

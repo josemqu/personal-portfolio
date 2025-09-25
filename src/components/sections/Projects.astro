@@ -1,6 +1,7 @@
 ---
 import GitHub from "@/icons/GitHub.astro";
 import PlayStore from "@/icons/PlayStore.astro";
+import AppStore from "@/icons/AppStore.astro";
 import Section from "../Section.astro";
 import type { Projects, Titles } from "@/types/cv.ts";
 
@@ -25,9 +26,11 @@ const title = titles.projects;
           url,
           github,
           playStore,
+          appStore,
         }) => {
           const urlSrc = url ? new URL(url) : "#";
           const playStoreSrc = playStore ? new URL(playStore) : "#";
+          const appStoreSrc = appStore ? new URL(appStore) : "#";
           return (
             <li>
               <article>
@@ -46,29 +49,44 @@ const title = titles.projects;
                           class="running"
                           aria-label="En producción"
                           data-tooltip="En producción"
-                          tabindex="0"
                         >
                           &#x25cf;
                         </span>
                       )}
                       {github && (
                         <a
-                          class="github-code-link"
+                          class="github-code-link with-tooltip icon-link"
                           href={github}
                           target="_blank"
                           title={`${titles.viewCode} ${name}`}
+                          aria-label={`${titles.viewCode} ${name}`}
+                          data-tooltip={`${titles.viewCode} ${name}`}
                         >
                           <GitHub />
                         </a>
                       )}
                       {playStore && (
                         <a
-                          class="github-code-link"
+                          class="github-code-link with-tooltip icon-link store-link"
                           href={playStoreSrc}
                           target="_blank"
                           title={`${name} ${titles.inPlayStore}`}
+                          aria-label={`${name} ${titles.inPlayStore}`}
+                          data-tooltip={`${name} ${titles.inPlayStore}`}
                         >
                           <PlayStore />
+                        </a>
+                      )}
+                      {appStore && (
+                        <a
+                          class="github-code-link with-tooltip icon-link store-link"
+                          href={appStoreSrc}
+                          target="_blank"
+                          title={`${name} App Store`}
+                          aria-label={`${name} App Store`}
+                          data-tooltip={`${name} App Store`}
+                        >
+                          <AppStore />
                         </a>
                       )}
                     </div>
@@ -126,6 +144,7 @@ const title = titles.projects;
   }
 
   article h3 span.running {
+    margin-left: 4px;
     font-size: small;
     color: var(--running-bg);
     position: relative;
@@ -176,18 +195,14 @@ const title = titles.projects;
     z-index: 10;
   }
 
-  article h3 span.running:hover::after,
-  article h3 span.running:focus::after,
-  article h3 span.running:active::after {
+  article h3 span.running:hover::after {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) scale(1);
     bottom: 150%;
   }
 
-  article h3 span.running:hover::before,
-  article h3 span.running:focus::before,
-  article h3 span.running:active::before {
+  article h3 span.running:hover::before {
     opacity: 1;
     visibility: visible;
     bottom: 142%;
@@ -215,8 +230,65 @@ const title = titles.projects;
     padding: 0.2rem 0.6rem;
   }
 
-  .github-code-link {
-    margin-left: 5px;
+  /* Tooltip for icon links (GitHub / Play Store) */
+  a.with-tooltip.icon-link {
+    margin-left: 4px;
+    position: relative;
+  }
+
+  a.with-tooltip.icon-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 140%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.98);
+    background: var(--color-bg2);
+    color: var(--bold-text);
+    border: 1px solid var(--block-quote-border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    box-shadow: 0 6px 16px var(--color-box-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.15s ease,
+      transform 0.15s ease,
+      visibility 0.15s ease,
+      bottom 0.15s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  a.with-tooltip.icon-link::before {
+    content: "";
+    position: absolute;
+    bottom: 132%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--color-bg2);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.15s ease,
+      visibility 0.15s ease,
+      bottom 0.15s ease;
+    z-index: 10;
+  }
+
+  a.with-tooltip.icon-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+    bottom: 150%;
+  }
+
+  a.with-tooltip.icon-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 142%;
   }
 
   .bullet {
