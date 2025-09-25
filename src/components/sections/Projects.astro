@@ -41,7 +41,16 @@ const title = titles.projects;
                       >
                         {name}
                       </a>
-                      {isActive && <span class="running">&#x25cf;</span>}
+                      {isActive && (
+                        <span
+                          class="running"
+                          aria-label="En producción"
+                          data-tooltip="En producción"
+                          tabindex="0"
+                        >
+                          &#x25cf;
+                        </span>
+                      )}
                       {github && (
                         <a
                           class="github-code-link"
@@ -117,8 +126,71 @@ const title = titles.projects;
   }
 
   article h3 span.running {
-    font-size: x-small;
+    font-size: small;
     color: var(--running-bg);
+    position: relative;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  /* Tooltip */
+  article h3 span.running::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 140%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.98);
+    background: var(--color-bg2);
+    color: var(--bold-text);
+    border: 1px solid var(--block-quote-border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    box-shadow: 0 6px 16px var(--color-box-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.15s ease,
+      transform 0.15s ease,
+      visibility 0.15s ease,
+      bottom 0.15s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  article h3 span.running::before {
+    content: "";
+    position: absolute;
+    bottom: 132%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--color-bg2);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.15s ease,
+      visibility 0.15s ease,
+      bottom 0.15s ease;
+    z-index: 10;
+  }
+
+  article h3 span.running:hover::after,
+  article h3 span.running:focus::after,
+  article h3 span.running:active::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+    bottom: 150%;
+  }
+
+  article h3 span.running:hover::before,
+  article h3 span.running:focus::before,
+  article h3 span.running:active::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 142%;
   }
 
   footer {
