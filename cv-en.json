@@ -71,7 +71,12 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
       "endDate": "2024-05-31 00:00:00",
-      "summary": "In charge of crude oil billing and cost analysis for marketing in Argentina. Customer credit line management, control of services billed by suppliers, and analysis of accounting accounts."
+      "summary": [
+        "Responsible for crude oil billing in Argentina (USD 40 million monthly).",
+        "Supervision of supplier services.",
+        "Preparation and tracking of cost and sales budgets.",
+        "Key liaison for the design, implementation, and maintenance of interactive management reports (Power BI, Power Automate, Advanced Excel)."
+      ]
     },
     {
       "name": "Tecpetrol",
