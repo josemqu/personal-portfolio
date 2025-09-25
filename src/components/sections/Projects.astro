@@ -41,7 +41,7 @@ const title = titles.projects;
                       >
                         {name}
                       </a>
-                      {isActive && <span class="bullet">&#x25cf;</span>}
+                      {isActive && <span class="running">&#x25cf;</span>}
                       {github && (
                         <a
                           class="github-code-link"
@@ -116,8 +116,9 @@ const title = titles.projects;
     text-decoration: underline;
   }
 
-  article h3 span {
-    color: var(--slider-input-bg);
+  article h3 span.running {
+    font-size: x-small;
+    color: var(--running-bg);
   }
 
   footer {

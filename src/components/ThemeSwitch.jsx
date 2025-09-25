@@ -90,6 +90,7 @@ export const ThemeSwitch = () => {
           --pills-text: #222;
           --slider-bg-before: #fff;
           --slider-input-bg: #58b4ff;
+          --running-bg: #090;
           --color-shadow: #555;
           --color-box-shadow: rgba(100, 100, 100, 0.1);
           --color-header-header: #f0f0f0;
@@ -111,6 +112,7 @@ export const ThemeSwitch = () => {
           --pills-text: #222;
           --slider-bg-before: #fff;
           --slider-input-bg: #58b4ff;
+          --running-bg: #090;
           --color-shadow: #555;
           --color-box-shadow: rgba(100, 100, 100, 0.1);
           --color-header-header: #fff;
@@ -128,6 +130,7 @@ export const ThemeSwitch = () => {
           --hover-border-color: #80d0ff;
           --block-quote-text: #dddddd;
           --slider-input-bg: #58b4ff;
+          --running-bg: #090;
           --slider-bg: #333;
           --pills-bg: #58b4ff;
           --pills-text: #222;
