@@ -82,6 +82,7 @@ export const ThemeSwitch = () => {
           --nav-text: #000000;
           --code: #f2f2f2;
           --block-quote-border: #999;
+          --block-quote-border-small: #ddd;
           --hover-border-color: #727272;
           --block-quote-text: #222;
           --slider-bg: #dddddd;
@@ -102,6 +103,7 @@ export const ThemeSwitch = () => {
           --nav-text: #000000;
           --code: #f2f2f2;
           --block-quote-border: #999;
+          --block-quote-border-small: #ddd;
           --hover-border-color: #727272;
           --block-quote-text: #222;
           --slider-bg: #ddd;
@@ -122,6 +124,7 @@ export const ThemeSwitch = () => {
           --nav-text: #dddddd;
           --code: #f2f2f2;
           --block-quote-border: #58b4ff;
+          --block-quote-border-small: #888;
           --hover-border-color: #80d0ff;
           --block-quote-text: #dddddd;
           --slider-input-bg: #58b4ff;
