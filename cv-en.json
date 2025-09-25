@@ -27,7 +27,9 @@
     "phone": "+54 11 4169 4662",
     "url": "https://portfolio-delta-seven-33.vercel.app/",
     "summary": [
-      "My passion for data science and emerging technology drives me to seek new challenges in this field, aiming to generate innovative solutions with a focus on efficiency."
+      "Web developer with a strong engineering background and hands-on experience building and maintaining robust, secure, and scalable web applications.",
+      "I enjoy working with data and technology to solve real-world problems, uncover patterns, clarify information, and help teams work smarter. ",
+      "Particularly interested in developing platforms that connect data, business, and user experience. Capable of leading end-to-end projects and collaborating in agile teams."
     ],
     "location": {
       "address": "",
@@ -56,7 +58,12 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2024-06-01 00:00:00",
       "endDate": "2025-06-30 00:00:00",
-      "summary": "Designing and implementing customized applications for Conventional and Unconventional operations in Oil and Gas industry. Support and optimization of drilling and well completion control room."
+      "summary": [
+        "Designing and implementing customized applications for Conventional and Unconventional operations in Oil and Gas industry. Support and optimization of drilling and well completion control room.",
+        "Leading the team responsible for providing support to the drilling, completion and workover applications.",
+        "Responsable of the correct functioning of the Control Room in the Real-Time Operations Center of Buenos Aires (RTOC).",
+        "Management of maintenance, design and implementation of customized applications for the production engineering team."
+      ]
     },
     {
       "name": "Tecpetrol",

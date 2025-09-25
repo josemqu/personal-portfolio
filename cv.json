@@ -27,7 +27,9 @@
     "phone": "+54 11 4169 4662",
     "url": "https://portfolio-delta-seven-33.vercel.app/",
     "summary": [
-      "Mi pasión por la ciencia de datos y la tecnología emergente me impulsa a buscar nuevos desafíos en este campo, con el objetivo generar soluciones innovadoras y con foco en la eficiencia."
+      "Desarrollador web con sólida formación en ingeniería y experiencia real creando y manteniendo aplicaciones web robustas, seguras y escalables.",
+      "Disfruto trabajar con datos y tecnología para resolver problemas reales, encontrar patrones, clarificar información y ayudar a los equipos a trabajar de manera más inteligente.",
+      "Especial interés en el desarrollo de plataformas que conectan datos, negocio y experiencia de usuario. Capacidad para liderar proyectos end-to-end y colaborar en equipos ágiles."
     ],
     "location": {
       "address": "",
@@ -56,7 +58,12 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2024-06-01 00:00:00",
       "endDate": "2025-06-30 00:00:00",
-      "summary": "Diseño e implementación de aplicaciones personalizadas para operaciones convencionales y no convencionales en la industria del petróleo y el gas. Soporte y optimización de sala de control de perforación y terminación de pozos."
+      "summary": [
+        "Diseño e implementación de aplicaciones personalizadas para operaciones convencionales y no convencionales en la industria del petróleo y el gas. Soporte y optimización de sala de control de perforación y terminación de pozos.",
+        "Líder del equipo responsable de brindar soporte a las aplicaciones de perforación, terminación y workover.",
+        "Responsable del correcto funcionamiento de la Sala de Control en el Centro de Operaciones en Tiempo Real de Buenos Aires (RTOC).",
+        "Gestión del mantenimiento, diseño e implementación de aplicaciones personalizadas para el equipo de ingeniería de producción."
+      ]
     },
     {
       "name": "Tecpetrol",
@@ -64,7 +71,9 @@
       "url": "https://www.tecpetrol.com/es",
       "startDate": "2021-01-01 00:00:00",
       "endDate": "2024-05-31 00:00:00",
-      "summary": "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables."
+      "summary": [
+        "Encargado de la facturación de petróleo crudo y análisis de costos de comercialización en Argentina. Administración de líneas de crédito de clientes, control de servicios facturados por proveedores y análisis de cuentas contables."
+      ]
     },
     {
       "name": "Tecpetrol",

@@ -66,7 +66,7 @@ export interface Work {
   position: string;
   startDate: string;
   endDate?: string | null;
-  summary: string;
+  summary: string | string[];
   url?: string | null;
 }
 
