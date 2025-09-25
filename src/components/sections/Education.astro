@@ -16,14 +16,14 @@ const title = titles.education;
   <ul>
     {
       education.map(
-        ({ institution, college, startDate, endDate, area, url }) => {
+        ({ institution, college, startDate, endDate, area, url }, index) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : `${titles.now}`;
           const years = `${startYear} - ${endYear}`;
 
           return (
-            <li>
+            <li class="experience-item section-animate" style={`animation-delay: ${index * 0.1}s`}>
               <div class="bullet" />
               <article>
                 <header class="collapsible education-collapsible">
