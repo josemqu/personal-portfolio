@@ -11,7 +11,7 @@ const textYPosition = 19;
 ---
 
 <!-- <Section > -->
-<div class="language-switch-wrapper no-print" transition:name="language-switch">
+<div class="language-switch-wrapper no-print">
   <label class="language-switch" for="language">
     <input type="checkbox" id="language" />
     <div class="language-slider no-select">
@@ -90,7 +90,7 @@ const textYPosition = 19;
     transition: 0.4s;
     width: 20px;
     border-radius: 50%;
-    z-index: 1 !important;
+    z-index: 1;
   }
 
   input:checked + .language-slider {
@@ -108,11 +108,11 @@ const textYPosition = 19;
       opacity 0.2s ease 0s,
       transform 0.35s ease 0s;
     pointer-events: none;
-    z-index: 2000 !important;
+    z-index: 1;
   }
 
   text {
-    z-index: 5000 !important;
+    z-index: 1;
   }
 
   .no-select {

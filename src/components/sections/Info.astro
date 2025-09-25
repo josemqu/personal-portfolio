@@ -127,7 +127,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
         <Player client:load />
       </div>
       <div title="Change language" id="change-language">
-        <a href={language === "es" ? `/en` : `/`}>
+        <a href={language === "es" ? `/en` : `/`} data-language-toggle>
           {language === "es" ? "EN" : "ES"}
         </a>
       </div>
