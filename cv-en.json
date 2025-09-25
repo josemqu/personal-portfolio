@@ -280,6 +280,26 @@
         "CSS Framework",
         "Responsive Design"
       ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript", "SPA"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Fullstack", "SSR", "SSG"]
+    },
+    {
+      "name": "ChartJS",
+      "level": "Intermediate",
+      "keywords": ["Data Visualization", "Charts", "Frontend"]
+    },
+    {
+      "name": "Leaflet",
+      "level": "Intermediate",
+      "keywords": ["Maps", "Geospatial", "Frontend"]
     }
   ],
   "languages": [
