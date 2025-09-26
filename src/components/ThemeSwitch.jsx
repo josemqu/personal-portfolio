@@ -73,7 +73,7 @@ export const ThemeSwitch = () => {
           </svg>
         </div>
       </label>
-      <style jsx>{`
+      <style>{`
         :root {
           --color-bg: #f0f0f0;
           --color-bg2: #fff;
