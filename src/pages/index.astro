@@ -55,6 +55,12 @@ const { name } = basics;
     --profile-img-max-width: 500px;
   }
 
+  @media (width <= 360px) {
+    main {
+      padding: 0.75rem;
+    }
+  }
+
   header {
     display: flex;
     justify-content: center;
@@ -66,8 +72,9 @@ const { name } = basics;
 
   main {
     padding: 2rem;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     max-width: 1000px;
+    width: 100%;
   }
 
   @media (width <= 700px) {

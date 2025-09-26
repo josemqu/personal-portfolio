@@ -82,9 +82,9 @@ const title = titles.projects;
                           class="github-code-link with-tooltip icon-link store-link"
                           href={appStoreSrc}
                           target="_blank"
-                          title={`${name} App Store`}
-                          aria-label={`${name} App Store`}
-                          data-tooltip={`${name} App Store`}
+                          title={`${name} en App Store`}
+                          aria-label={`${name} en App Store`}
+                          data-tooltip={`${name} en App Store`}
                         >
                           <AppStore />
                         </a>
@@ -110,7 +110,7 @@ const title = titles.projects;
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     /* margin-inline: 8px; */
   }
@@ -304,6 +304,21 @@ const title = titles.projects;
       /* border: none; */
       /* box-shadow: 0 1px 1px var(--code); */
       /* padding: 0 0 16px 0; */
+    }
+  }
+
+  @media (width <= 360px) {
+    ul {
+      grid-template-columns: 1fr; /* Forzar una columna en pantallas ultra pequeñas */
+    }
+
+    .nowrap {
+      flex-wrap: wrap; /* Permitir salto de línea para título e iconos */
+      row-gap: 0.25rem;
+    }
+
+    article h3 {
+      word-break: break-word; /* Evitar overflow por palabras largas */
     }
   }
 </style>
