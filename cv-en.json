@@ -343,14 +343,6 @@
       "appStore": "https://apps.apple.com/us/app/precio-nafta/id6749783431"
     },
     {
-      "name": "PromiedoX",
-      "isActive": true,
-      "description": "Chrome extension to enhance user experience on the promiedos.com.ar website",
-      "highlights": ["Soccer", "Averages", "Chrome Extension"],
-      "github": "https://github.com/josemqu/promiedox",
-      "url": "https://chromewebstore.google.com/detail/promiedox/cbojoejgbalfpgifhmjjbhhkincninan"
-    },
-    {
       "name": "¿Qué Comemos?",
       "isActive": true,
       "description": "Nutritional information of your meals by analyzing images",
@@ -366,6 +358,22 @@
       ],
       "url": "https://que-comemos-ai.vercel.app/",
       "github": "https://github.com/josemqu/que-comemos-ai"
+    },
+    {
+      "name": "World Cup 2022",
+      "isActive": true,
+      "description": "Responsive design of the FIFA World Cup 2022 fixture",
+      "highlights": [
+        "Soccer",
+        "Web Scraping",
+        "Fixture",
+        "World Cup",
+        "FIFA",
+        "2022",
+        "API"
+      ],
+      "github": "https://github.com/josemqu/2022-world-cup-fixture",
+      "url": "https://josemqu.github.io/2022-world-cup-fixture/"
     },
     {
       "name": "Email Classifier",
@@ -400,20 +408,11 @@
       "github": "https://github.com/josemqu/fondos_comunes"
     },
     {
-      "name": "World Cup 2022",
-      "isActive": true,
-      "description": "Responsive design of the FIFA World Cup 2022 fixture",
-      "highlights": [
-        "Soccer",
-        "Web Scraping",
-        "Fixture",
-        "World Cup",
-        "FIFA",
-        "2022",
-        "API"
-      ],
-      "github": "https://github.com/josemqu/2022-world-cup-fixture",
-      "url": "https://josemqu.github.io/2022-world-cup-fixture/"
+      "name": "PromiedoX",
+      "isActive": false,
+      "description": "Chrome extension to enhance user experience on the promiedos.com.ar website",
+      "highlights": ["Soccer", "Averages", "Chrome Extension"],
+      "github": "https://github.com/josemqu/promiedox"
     }
   ]
 }

@@ -358,14 +358,6 @@
       "appStore": "https://apps.apple.com/us/app/precio-nafta/id6749783431"
     },
     {
-      "name": "PromiedoX",
-      "isActive": true,
-      "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
-      "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
-      "github": "https://github.com/josemqu/promiedox",
-      "url": "https://chromewebstore.google.com/detail/promiedox/cbojoejgbalfpgifhmjjbhhkincninan"
-    },
-    {
       "name": "¿Qué Comemos?",
       "isActive": true,
       "description": "Información nutricional de tus comidas analizando imágenes",
@@ -381,6 +373,22 @@
       ],
       "url": "https://que-comemos-ai.vercel.app/",
       "github": "https://github.com/josemqu/que-comemos-ai"
+    },
+    {
+      "name": "Mundial 2022",
+      "isActive": true,
+      "description": "Responsive design del fixture de la Copa del Mundo de la FIFA 2022",
+      "highlights": [
+        "Fútbol",
+        "Web Scraping",
+        "Fixture",
+        "Mundial",
+        "FIFA",
+        "2022",
+        "API"
+      ],
+      "github": "https://github.com/josemqu/2022-world-cup-fixture",
+      "url": "https://josemqu.github.io/2022-world-cup-fixture/"
     },
     {
       "name": "Clasificador Mails",
@@ -415,20 +423,12 @@
       "github": "https://github.com/josemqu/fondos_comunes"
     },
     {
-      "name": "Mundial 2022",
-      "isActive": true,
-      "description": "Responsive design del fixture de la Copa del Mundo de la FIFA 2022",
-      "highlights": [
-        "Fútbol",
-        "Web Scraping",
-        "Fixture",
-        "Mundial",
-        "FIFA",
-        "2022",
-        "API"
-      ],
-      "github": "https://github.com/josemqu/2022-world-cup-fixture",
-      "url": "https://josemqu.github.io/2022-world-cup-fixture/"
+      "name": "PromiedoX",
+      "isActive": false,
+      "description": "Extensión de Chrome para mejorar la experiencia de usuario en la web de promiedos.com.ar",
+      "highlights": ["Fútbol", "Promedios", "Chrome Extension"],
+      "github": "https://github.com/josemqu/promiedox",
+      "url": "https://chromewebstore.google.com/detail/promiedox/cbojoejgbalfpgifhmjjbhhkincninan"
     }
   ]
 }
