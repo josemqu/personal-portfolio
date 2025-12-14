@@ -26,6 +26,17 @@ const groupedWorks = Object.values(
     {}
   )
 );
+
+const locale = titles.now === "Actual" ? "es-AR" : "en-US";
+
+const formatMonthYear = (dateStr: string) => {
+  const formatted = new Intl.DateTimeFormat(locale, {
+    month: "short",
+    year: "2-digit",
+  }).format(new Date(dateStr));
+
+  return locale.startsWith("es") ? formatted.replace(".", "") : formatted;
+};
 ---
 
 <Section title={titles.work}>
@@ -46,12 +57,12 @@ const groupedWorks = Object.values(
             <ul class="company-experiences">
               {group.items.map(
                 ({ startDate, endDate, position, summary }, index) => {
-                  const startYear = new Date(startDate).getFullYear();
-                  const endYear =
+                  const startLabel = formatMonthYear(startDate);
+                  const endLabel =
                     endDate != null
-                      ? new Date(endDate).getFullYear()
+                      ? formatMonthYear(endDate)
                       : `${titles.now}`;
-                  const years = `${startYear} - ${endYear}`;
+                  const years = `${startLabel} - ${endLabel}`;
                   return (
                     <li class="experience-item">
                       <div class="bullet small" />
@@ -62,7 +73,7 @@ const groupedWorks = Object.values(
                           </div>
                           <div class="right">
                             <h3>
-                              <time>{years}</time>
+                              <time class="date-range">{years}</time>
                             </h3>
                             <div class="button">
                               <ArrowDown />
@@ -157,6 +168,12 @@ const groupedWorks = Object.values(
   article h4 {
     color: var(--bold-text);
     font-weight: 400;
+  }
+
+  .date-range {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    font-variant-numeric: tabular-nums;
   }
 
   .company-header h3 {

@@ -53,6 +53,17 @@
   },
   "work": [
     {
+      "name": "Consultor independiente",
+      "position": "Consultor en soluciones tecnológicas, sistemas de información y business intelligence (BI)",
+      "url": "https://www.linkedin.com/in/josemqu/",
+      "startDate": "2025-07-01 00:00:00",
+      "endDate": null,
+      "summary": [
+        "Consultor independiente especializado en soluciones tecnológicas, sistemas de información y business intelligence (BI). Brindo asesoramiento a empresas y profesionales en la definición, implementación y optimización de herramientas IT que mejoran la eficiencia operativa y facilitan la toma de decisiones basada en datos.",
+        "Mi enfoque combina una sólida base técnica con una mirada estratégica orientada al negocio, acompañando a las organizaciones en sus procesos de transformación digital y adopción de nuevas tecnologías."
+      ]
+    },
+    {
       "name": "Tecpetrol",
       "position": "Especialista en Soluciones Informáticas de Negocio",
       "url": "https://www.tecpetrol.com/es",
@@ -389,6 +400,22 @@
       ],
       "github": "https://github.com/josemqu/2022-world-cup-fixture",
       "url": "https://josemqu.github.io/2022-world-cup-fixture/"
+    },
+    {
+      "name": "Mundial 2026",
+      "isActive": true,
+      "description": "Fixture del Mundial 2026 con pronósticos y simulaciones",
+      "highlights": [
+        "Fútbol",
+        "Fixture",
+        "Mundial",
+        "FIFA",
+        "2026",
+        "Pronósticos",
+        "Simulaciones"
+      ],
+      "url": "https://fifa-world-cup-2026.vercel.app/",
+      "github": "https://github.com/josemqu/fifa-world-cup-2026"
     },
     {
       "name": "Clasificador Mails",

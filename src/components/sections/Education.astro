@@ -10,6 +10,17 @@ interface Props {
 
 const { education, titles } = Astro.props;
 const title = titles.education;
+
+const locale = titles.now === "Actual" ? "es-AR" : "en-US";
+
+const formatMonthYear = (dateStr: string) => {
+  const formatted = new Intl.DateTimeFormat(locale, {
+    month: "short",
+    year: "2-digit",
+  }).format(new Date(dateStr));
+
+  return locale.startsWith("es") ? formatted.replace(".", "") : formatted;
+};
 ---
 
 <Section title={title}>
@@ -17,13 +28,16 @@ const title = titles.education;
     {
       education.map(
         ({ institution, college, startDate, endDate, area, url }, index) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : `${titles.now}`;
-          const years = `${startYear} - ${endYear}`;
+          const startLabel = formatMonthYear(startDate);
+          const endLabel =
+            endDate != null ? formatMonthYear(endDate) : `${titles.now}`;
+          const years = `${startLabel} - ${endLabel}`;
 
           return (
-            <li class="experience-item section-animate" style={`animation-delay: ${index * 0.1}s`}>
+            <li
+              class="experience-item section-animate"
+              style={`animation-delay: ${index * 0.1}s`}
+            >
               <div class="bullet" />
               <article>
                 <header class="collapsible education-collapsible">
@@ -35,7 +49,7 @@ const title = titles.education;
                   </div>
                   <div class="right">
                     <h3>
-                      <time>{years}</time>
+                      <time class="date-range">{years}</time>
                     </h3>
                     <div class="button">
                       <ArrowDown />
@@ -102,6 +116,12 @@ const title = titles.education;
     font-weight: 400;
   }
 
+  .date-range {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -154,7 +174,9 @@ const title = titles.education;
   .content {
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+    transition:
+      max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s ease-in-out;
     overflow: hidden;
     will-change: max-height, opacity;
   }
@@ -162,7 +184,9 @@ const title = titles.education;
   .content.show {
     max-height: 1000px; /* Adjust this value based on your content's maximum height */
     opacity: 1;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out 0.1s;
+    transition:
+      max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s ease-in-out 0.1s;
   }
 
   /* Style the collapsible content. Note: hidden by default */
@@ -193,7 +217,7 @@ const title = titles.education;
 
     // Re-get elements after cloning
     coll = document.getElementsByClassName("education-collapsible");
-    
+
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function (this: HTMLElement) {
         let content = this.nextElementSibling as HTMLElement;
@@ -207,5 +231,5 @@ const title = titles.education;
   initializeEducationCollapsible();
 
   // Re-initialize after view transitions
-  document.addEventListener('astro:page-load', initializeEducationCollapsible);
+  document.addEventListener("astro:page-load", initializeEducationCollapsible);
 </script>
