@@ -345,6 +345,21 @@
   ],
   "projects": [
     {
+      "name": "Optimapp",
+      "isActive": true,
+      "description": "Web app (PWA) to add geographic stops, reorder/optimize routes, and export to Google Maps / WhatsApp",
+      "highlights": [
+        "PWA",
+        "Routing",
+        "Geolocation",
+        "Optimization",
+        "Google Maps",
+        "WhatsApp"
+      ],
+      "url": "https://optimapp.vercel.app/",
+      "github": "https://github.com/josemqu/directions-optimizer-app"
+    },
+    {
       "name": "Precio Nafta",
       "isActive": true,
       "description": "Web and mobile application for fuel prices in Argentina",
