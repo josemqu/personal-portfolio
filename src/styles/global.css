@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #f0f0f0;
-  --color-bg2: #fff;
-  --color-text: #777;
-  --bold-text: #222;
-  --nav-text: #000000;
+  --color-bg: #f5f2ec;
+  --color-bg2: #fffdf8;
+  --color-text: #5e625f;
+  --bold-text: #17211d;
+  --nav-text: #17211d;
+  --accent: #d76745;
+  --accent-soft: #f3ddd2;
   --code: #f2f2f2;
   --block-quote-border: #999;
   --block-quote-border-small: #ddd;
@@ -25,11 +27,13 @@
 }
 
 [data-theme="light"] {
-  --color-bg: #f0f0f0;
+  --color-bg: #f5f2ec;
   --color-bg2: #fff;
-  --color-text: #777;
-  --bold-text: #222;
-  --nav-text: #000000;
+  --color-text: #5e625f;
+  --bold-text: #17211d;
+  --nav-text: #17211d;
+  --accent: #d76745;
+  --accent-soft: #f3ddd2;
   --code: #f2f2f2;
   --block-quote-border: #999;
   --block-quote-border-small: #ddd;
@@ -47,11 +51,13 @@
 }
 
 [data-theme="dark"] {
-  --color-bg: #1a1a1a;
-  --color-bg2: #2d2d2d;
-  --color-text: #b3b3b3;
-  --bold-text: #ffffff;
-  --nav-text: #ffffff;
+  --color-bg: #121a17;
+  --color-bg2: #1c2823;
+  --color-text: #b6c1ba;
+  --bold-text: #f5f3ed;
+  --nav-text: #f5f3ed;
+  --accent: #ef8a67;
+  --accent-soft: #4a3028;
   --code: #2d2d2d;
   --block-quote-border: #58b4ff;
   --block-quote-border-small: #888;
@@ -154,3 +160,33 @@
   opacity: 0;
   animation: slideInFromRight 0.6s ease-out forwards;
 }
+
+/* Personal editorial finish */
+html {
+  background-image: radial-gradient(circle at 8% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 34rem);
+}
+
+body { color: var(--bold-text); }
+
+h1, h2, h3, h4 { letter-spacing: -0.03em; }
+
+h2 {
+  position: relative;
+  padding-bottom: 0.55rem;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.75rem;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--accent);
+}
+
+a { color: var(--accent); transition: color 160ms ease, transform 160ms ease; }
+a:hover { color: var(--bold-text); }
+::selection { background: var(--accent); color: var(--color-bg2); }
+*:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }

@@ -345,6 +345,20 @@
   ],
   "projects": [
     {
+      "name": "Jubilación Pro",
+      "isActive": true,
+      "description": "Advanced financial independence and retirement simulator with inflation-adjusted projections",
+      "highlights": [
+        "Finance",
+        "Retirement",
+        "Investments",
+        "Simulation",
+        "Inflation",
+        "PWA"
+      ],
+      "url": "https://jubilacion-pro.vercel.app/"
+    },
+    {
       "name": "Optimapp",
       "isActive": true,
       "description": "Web app (PWA) to add geographic stops, reorder/optimize routes, and export to Google Maps / WhatsApp",
